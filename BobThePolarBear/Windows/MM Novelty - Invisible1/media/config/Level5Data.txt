@@ -1,0 +1,105 @@
+;
+;Define The Level Name
+;
+[LevelName]
+Eugene's Lair
+;
+;  Set the Background Colour
+;
+[BackgroundColour]
+DARKREDCOLOUR
+
+;
+;  Set the Border Colour
+;
+[BorderColour]
+DARKBLUECOLOUR
+
+;
+; Want to use a PNG for blank background block?
+;
+[BlockNOP]
+BlockNOP-Black.png
+
+;
+;  Which of the 20 Sprite Sets do you want to use?
+;  Starts (0-19)
+;
+[SpriteSet]
+4
+
+;
+;  Define the Door Sprite To Use
+;  (0-19)
+;
+[ExitBlock]
+4
+
+;
+;  Now define the Level Data
+;	0  = Empty Space
+;	1  = Solid Platform
+;	2  = Solid Platform
+;	3  = Impassable Wall
+;	4  = Collapsible Platform
+;	5  = Hazard 1
+;	6  = Hazard 2
+;	7  = Conveyor Platform Moving Right To Left
+;	12 = Conveyor Platform Moving Left To Right 
+;	9  = Collectable Object
+;	10 = Willy's Exit/Door Position (Top Left Corner)
+;	11 = Special Control to detect Willy in the door
+;
+[LevelData]
+30000000000000000000600000000003
+30000000000000000000000000000093
+30000000000000000000000000000003
+30000000000000000000000000000003
+30000000000000000000000050000003
+31111111111111000044441111110003
+30000000009000000000000000000113
+30000000000000000000050000000903
+30000000000000000077777777770003
+30001111111111000000000000000003
+30000000000000000000000000000003
+34411111111111000011111110000013
+30000009390000000000000000000003
+311000003000003AB300000000000003
+300005003000003BB333333355000003
+33333333333333333333333333333333
+
+;
+; Sticky Conveyor
+; If you want Willy to Stick to the Platform when landing
+; and facing in the opposite direction and the player
+; is trying to move in the opposite direction
+; Set Value to 1 if you want Willy not to Move
+; Set Value to 0 if you allow Willy to move against the flow
+[StickyConveyor]
+2
+
+
+;
+;   Define the Actors on the Caverns
+;
+;   ActorName, Start Block X, Start Block Y, 
+;			   Initial Direction, 
+;  			   Min Block X, Min Block Y, 
+;			   Max Block X, Max Block Y, 
+;			   dx (pixels), dy (pixels), 
+;			   tick count
+;			   leftFrame, rightFrame, UpFrame, DownFrame, maxFrames, Frames Per Animation Seg
+;
+[Actors]
+YellowToilet.png, 12,3, 8, 1, 3, 12,  3,-16, 0, 4, 4, 1, 8, 8, 8, 4
+WhiteToilet.png,  4, 7, 1, 4, 7, 12,  7, 16, 0, 4, 4, 1, 8, 8, 8, 4
+Eugene.png,		 15, 0, 7,15, 0, 15, 11,  0, 1, 2, 4, 1, 8, 8, 8, 4,Eugene
+;
+;   Player Start Block Position
+;
+[HeroStart]
+MinerWilly.png,2,3,1,16,2,4,16
+;MinerWilly.png,28,3,1,16,2,5,16
+
+[ReplayData]
+J00n10J20660Z60>:0R:0><0j<0i=0X?0aD0hD01J0PJ04M0@M04P0@P0AR00S0YU0eU01V08V0YW0@[0B\0n]0H^0a`0m`08a0\b0Hd0dd00e0Rf0>m02n0N21:31851A51m51I61X61a710;1A@1eB19C1eE1iE1HF1:G16I1jI1

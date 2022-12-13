@@ -1,0 +1,95 @@
+; 9 TWEAKED-HARD
+
+; Bob Edit 04-10-2019
+
+[LevelName]
+Don't Be A Bully
+
+[LevelMusic]
+Surf Shimmy-c.ogg
+
+[WillyDieSound]
+Ray-2e.wav
+
+[BackgroundColour]
+CUSTOM:0:15:47
+
+[BorderColour]
+CUSTOM:150:150:50
+
+[SpriteSet]
+8
+
+[ExitBlock]
+6
+
+;	0 = Empty Space
+;	1 = Solid Platform
+;	2 = Solid Platform
+;	3 = Impassable Wall
+;	4 = Collapsible Platform
+;	5 = Hazard 1
+;	6 = Hazard 2
+;	7 = Conveyor Platform Moving Right To Left
+;	C = Conveyor Platform Moving Left To Right 
+;	9 = Collectable Object
+;	A = Willy's Exit/Door Position (Top Left Corner)
+;	B = Special Control to detect Willy in the door
+;	F = Special Block (Willy's Home Graphic)
+
+
+[LevelData]
+3AB00000000090000000000000000093
+3BB00000000000000000000000000003
+39000000000000000000000000000003
+30000000000000000000000000000003
+30000000000000055000000000000003
+34400000440011111111001110044003
+30000000000000000000000000000003
+30000000000000000000000000000443
+300110011100CCCCCCCC000000000003
+35000000000000000000000011111003
+31400000000000000000000000000003
+30000000000000055000000000000093
+30500001100001111110000440000323
+33300000000000000000000000003333
+33300000000000000000000000033333
+333222222CCCCCCCCCCCCCC222233333
+
+[Switches]
+SWCloudAsmall.png,       5, 0, 1, SwitchAA, OpenTrapDoor, 1:1
+SWCloudBsmall.png,       6, 0, 1, SwitchAB, OpenTrapDoor, 1:1
+SWCloudCsmall.png,       7, 0, 1, SwitchAC, OpenTrapDoor, 1:1
+SWCloudDsmall.png,       8, 0, 1, SwitchAD, OpenTrapDoor, 1:1
+
+SWCloudAsmall.png,      14, 0, 1, SwitchBA, OpenTrapDoor, 1:1
+SWCloudBsmall.png,      15, 0, 1, SwitchBB, OpenTrapDoor, 1:1
+SWCloudCsmall.png,      16, 0, 1, SwitchBC, OpenTrapDoor, 1:1
+SWCloudDsmall.png,      17, 0, 1, SwitchBD, OpenTrapDoor, 1:1
+
+SWCloudAsmall.png,      24, 0, 1, SwitchCA, OpenTrapDoor, 1:1
+SWCloudBsmall.png,      25, 0, 1, SwitchCB, OpenTrapDoor, 1:1
+SWCloudCsmall.png,      26, 0, 1, SwitchCC, OpenTrapDoor, 1:1
+SWCloudDsmall.png,      27, 0, 1, SwitchCD, OpenTrapDoor, 1:1
+
+BobSwitchSandCastle.png,	7, 14, 0, Switch1, OpenTrapDoor, 3:11:2:6:3:6:9:6:10:6
+BobSwitchSandCastle.png,   24, 14, 0, Switch3, OpenTrapDoor, 24:13:25:13:28:6:29:6:30:8:31:8
+
+
+[Actors]
+RedAmoeba.png,		 5, 3, 1,  5, 1,  5,13,  0, 7, 4, 4,1,8,8, 4, 4
+BlueAmoeba.png,		10, 1, 1, 10, 0, 10,13,  0, 5, 4, 4,1,8,8, 4, 4
+GreenAmoeba.png,	20, 3, 1, 20, 0, 20,13,  0, 4, 4, 4,1,8,8, 4, 4	 
+MagentaAmoeba.png,	25, 6, 1, 25, 1, 25, 7,  0, 4, 4, 4,1,8,8, 4, 4
+
+SpikeTrolleyGreen.png,  17, 3, 1, 12, 3, 18, 3, 16, 0, 5, 1,1,1,1, 4, 4
+SpikeTrolleyTeal.png,   14,10, 1, 13,10, 17,10, 16, 0, 5, 1,1,1,1, 4, 4
+
+
+[HeroStart]
+WillyHair.png,    3,13,  3, 16,2, 4, 16
+;MinerWilly.png, 29,10, 13, 16,2, 4, 16
+
+
+[ReplayData]
+110]10i10=40I40e60170=90I90P;0Q<0e<01=0H?0T?0n?04B08B0RE0FF0ZF0XH0BJ0NJ0bJ0FO0RO0HQ02R0nR0LT0ZU0FV0RW08X0AX0hY04Z0YZ0=\0Q\00^0Yf0mf09g00i0ij0Ek0Qk00l0Tm0`n0Q01]01911]21A31M51i51

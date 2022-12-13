@@ -1,0 +1,108 @@
+; 6 TWEAKED-HARD
+
+; Bob Edit 14-10-2019
+
+[LevelName]
+Packing Plants
+
+[LevelMusic]
+Pinball Spring-qf3.ogg
+
+[WillyDieSound]
+Pacman-2.wav
+
+[HighScoreMusic]
+EineKleineNachtMusic.ogg
+
+[BackgroundColour]
+CUSTOM:0:24:0
+
+[BorderColour]
+DARKGREENCOLOUR
+
+[SpriteSet]
+5
+
+[ExitBlock]
+5
+
+;	0 = Empty Space
+;	1 = Solid Platform
+;	2 = Solid Platform
+;	3 = Impassable Wall
+;	4 = Collapsible Platform
+;	5 = Hazard 1
+;	6 = Hazard 2
+;	7 = Conveyor Platform Moving Right To Left
+;	C = Conveyor Platform Moving Left To Right 
+;	9 = Collectable Object
+;	A = Willy's Exit/Door Position (Top Left Corner)
+;	B = Special Control to detect Willy in the door
+
+
+[LevelData]
+10000002222200021200022222200AB1
+30059000000000093900090000000BB3
+30022000000000003000000000000003
+35000000000000000000000000000003
+32000000000000000000060000000003
+30000002200000021200022222200063
+30440000004400093900000000000223
+30000000000000003004400000000093
+30000000000000000000000222220003
+34400000000000000000000000000003
+39000000222222221222222220000443
+30000000000009003009000000000003
+30065000044000003000004400070003
+3007777003300000D000003300000003
+3000000063300000D000003300000093
+13333333311333333333331133333331
+
+
+[StickyConveyor]
+0
+
+
+;[CustomSpriteSheet]
+;CustomSpriteSheet1.png
+
+[BackGroundStaticImages]
+;#Window1.png, 404, 80, 128
+;#B2mid.png, 64, 48, 45, 0.0
+pacman-512-256.png, 72, 48, 55
+
+[ForeGroundStaticImages]
+B2c-e-s-tb2pix.png, 0, 0, 47
+
+;[BlockNOP]
+;BlockNOP-B2.png
+
+
+[SwitchSoundOn]
+Chain-f2.wav
+
+[Switches]
+BobSwitchPullBlue2.png,	16, 8, 0, Switch1, OpenTrapDoor, 17:14:17:15
+
+
+; ActorName, Start Block X, Start Block Y, 
+; Initial Direction, 
+; Min Block X, Min Block Y, 
+; Max Block X, Max Block Y, 
+; dx (pixels), dy (pixels), 
+; tick count
+; leftFrame, rightFrame, UpFrame, DownFrame, maxFrames, Frames Per Animation Seg
+
+[Actors]
+GoldPacman.png,      8, 8, 2,  8, 8, 14, 8,  16, 0, 4, 4,1,8,8, 8, 4
+PacmanGreen.png,    15, 8, 3, 15, 8, 21, 8,  16, 0, 4, 4,1,8,8, 8, 4
+PacmanBlue.png,	    13,13, 8, 11,13, 14,13, -16, 0, 3, 4,1,8,8, 8, 4, , Switch1, UpdateBlockParms, 11:13:20:13
+MagentaPacman.png,  27,13, 5, 24,13, 29,14, -16, 0, 3, 4,1,8,8, 8, 4
+
+
+[HeroStart]
+BobWillyPack.png, 15, 3, 16, 16,2,4,16
+
+
+[ReplayData]
+R10@20L20@30Q30060<60`60i60]80190E;0Q;0P>0B?0n?0J@09B0=D0YD0BF0FI0ZI00L02M0FM0ZM0>Q0:R0^S02T08U0<V0HV0QW0hX0AZ0UZ0aZ00\01^0Z`0n`0Ba0nc0Be0>f0jf06h0Rh0Hi0ai05j0Qj0Xl0dl0Xm0Jn0F11B21

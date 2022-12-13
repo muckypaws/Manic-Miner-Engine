@@ -1,0 +1,88 @@
+; 12 TWEAKED-HARD
+
+; Bob Edit 25-09-2019
+
+[LevelName]
+Flaming Barrels Of Kong
+
+[LevelMusic]
+Mouse Trap.ogg
+
+[WillyDieSound]
+Mummy-3.wav
+
+[BackgroundColour]
+BLACKCOLOUR
+
+[BorderColour]
+DARKBLUECOLOUR
+
+[SpriteSet]
+7
+
+[ExitBlock]
+7
+
+
+; 0 = Empty Space
+; 1 = Solid Platform
+; 2 = Solid Platform
+; 3 = Impassable Wall
+; 4 = Collapsible Platform
+; 5 = Hazard 1
+; 6 = Hazard 2
+; 7 = Conveyor Platform Moving Right To Left
+; C = Conveyor Platform Moving Left To Right 
+; 9 = Collectable Object
+; A = Willy's Exit/Door Position (Top Left Corner)
+; B = Special Control to detect Willy in the door
+; D = Removable WALL Block
+; E = Removable Platform Block 1
+; G = Removable Collapsing Platform Block 1
+
+
+[LevelData]
+33230000032332300300323000003233
+39060000060000600009606000006903
+300000000000000GG000000000000003
+30000000000000090000000000000003
+30000000000000000000000000000003
+34410000011441300314444000004443
+30090000000000300300000000000043
+30000001000000344300000000000003
+34440000000090309300000077777773
+30000000001441300350000000000093
+30900040000000000311000000000003
+34400000000000000D00000011100043
+30000110000000000D00005000005003
+30000000000CC33AB33CCCCCCCCCC093
+300000055000033BB335000000000003
+33333333333333333333777777777773
+
+
+[StickyConveyor]
+2
+
+
+[Switches]
+Switches.png,		 6, 0, 0, Switch1, OpenTrapDoor, 18:12:18:13
+BobSwitchBlank.png,	18, 0, 0, Switch2, OpenTrapDoor, 16:3:17:3
+
+
+[Actors]
+BobBatNew.png, 		  	25,  2, 2,  1,  2, 29,  2,  16, 0,  3, 4,1,8,8, 8, 4
+
+MagentaBarrel.png,   	26,  6, 2, 24,  6, 28,  6, -16, 0,  3, 4,1,8,8, 4, 4
+YellowBarrel.png, 	13, 11, 1, 11, 11, 15, 11,  16, 0,  4, 4,1,8,8, 4, 4, , Switch1, UpdateBlockParms, 11:11:20:11
+GreenBarrel.png,      4, 13, 4,  1, 13,  9, 13,  16, 0,  4, 4,1,8,8, 4, 4
+
+GreenKong.png,      15,  0, 1, 15,  0,  15, 0,   0, 0, 40, 4,1,8,8, 2, 2, , Switch2, DoKongDrop, MagentaKong.png:15:0:15:13:0:8:2:4:AddKongPoints
+
+
+[HeroStart]
+MinerWilly.png, 2,13,3,16,2,4,16
+
+
+[ReplayData]
+R10P20:30N30b30860D60070A70=80D90f902;06<0R<0Q>0U?01@08A0BA0VA0dA0hA0YB0UD01E0MG0aG0@H02J0iJ0jK0VL0jL08M01N0ZO0fP0:Q0`R0iR08T0BT0hU0TX0jX08]0b_0n_0B`0^b0Rc0@e0je0@f0:k0Nk0bk0Hm09o0541I41061:61n71b810:1i:1m;1A<18>1R>1h>1b?1F@1:A1VB12C1VD1TE1]E1dF1PG1aG1]I19J18N1DN10O1AO18R1
+

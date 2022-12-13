@@ -1,0 +1,93 @@
+; 22 TWEAKED-HARD
+
+; Bob Edit 06-10-2019
+
+[LevelName]
+Credits>
+
+[LevelMusic]
+Royal Banana-e.ogg
+
+[WillyDieSound]
+die.wav
+
+[BackgroundColour]
+CUSTOM:0:0:7
+
+[BorderColour]
+CUSTOM:76:0:0
+
+[SpriteSet]
+11
+
+[ExitBlock]
+18
+
+
+[LevelData]
+33333333333333333333333333333333
+30000000000000000000000000000003
+30100010009000000002222200090003
+30119110022220000000020004444003
+30101010200000000009020004000403
+301000100222000AB002020004444003
+301000100000200BB000200004000403
+30000000222200000000000004444003
+30044400000000000003000300000003
+30400040300030000003003001000103
+30444440339030000003330001191103
+30409040303030077003093001010103
+30400040300330000003000301000103
+30000000300030000000000001000103
+30000000000000000000000000000003
+33333333333333333333333333333333
+
+
+[StickyConveyor]
+0
+
+
+;[Switches]
+;BobSwitchCord.png,		 2, 1, 0, CordR, OpenTrapDoor, 5:5:6:5:7:5
+;BobSwitchCordB.png,		30,12, 0, CordB, OpenTrapDoor, 5:14:5:15
+
+
+; ActorName, Start Block X, Start Block Y, 
+; Initial Direction, 
+; Min Block X, Min Block Y, 
+; Max Block X, Max Block Y, 
+; dx (pixels), dy (pixels), 
+; tick count
+; leftFrame, rightFrame, UpFrame, DownFrame, maxFrames, Frames Per Animation Seg
+
+[Actors]
+BobPlasmaY2.png,    15, 5, 3, 15, 1, 15, 9,  0,-5, 6, 4,1,8,8, 4, 4
+;BobPlasmaY.png,    17, 4, 1, 17, 1, 17,13,  0, 4, 6, 4,1,8,8, 4, 4
+
+SpikeRedDown.png,	 3, 0, 2,  3, 0,  3, 0,  8, 0,26, 4,1,8,8, 8, 4
+SpikeRedDown.png,	26, 0, 2, 26, 0, 26, 0,  8, 0,26, 4,1,8,8, 8, 4
+SpikeRedDown.png,	 5, 0, 2,  5, 0,  5, 0,  8, 0,26, 4,1,8,8, 8, 4
+SpikeRedDown.png,	28, 0, 2, 28, 0, 28, 0,  8, 0,26, 4,1,8,8, 8, 4
+
+SpikeRedUp.png,		 3,14, 2,  3,14,  3,14,  8, 0,26, 4,1,8,8, 8, 4
+SpikeRedUp.png,		26,14, 2, 26,14, 26,14,  8, 0,26, 4,1,8,8, 8, 4
+SpikeRedUp.png,		 5,14, 2,  5,14,  5,14,  8, 0,26, 4,1,8,8, 8, 4
+SpikeRedUp.png,		28,14, 2, 28,14, 28,14,  8, 0,26, 4,1,8,8, 8, 4
+
+SpikeRedUp.png,     8, 8, 1,  8, 8,  8, 8,  8, 0,26, 4,1,8,8, 8, 4
+SpikeRedUp.png,    12, 8, 1, 12, 8, 12, 8,  8, 0,26, 4,1,8,8, 8, 4
+SpikeRedUp.png,    19, 7, 4, 19, 7, 19, 7,  8, 0,26, 4,1,8,8, 8, 4
+SpikeRedUp.png,    23, 7, 4, 23, 7, 23, 7,  8, 0,26, 4,1,8,8, 8, 4
+
+
+BobAlienNew.png,    8,14, 1,  1,14, 29,14, 16, 0, 3, 4,1,8,8, 8, 4
+BobAlienNew.png,   18,14, 3,  1,14, 29,14, 16, 0, 3, 4,1,8,8, 8, 4
+BobAlienNew.png,   25,14, 8,  1,14, 29,14,-16, 0, 3, 4,1,8,8, 8, 4
+
+
+[HeroStart]
+Willy20.png,   14, 13, 1, 16,2,4,16
+
+
+[ReplayData]
+940860170@<0L<0`<01@0<F0HF0bF0hN0ZQ0FR02S0`X0iX0XY0b^00`0A`0=d0Qd08h09j0el01m0511941H41b41851:91^=1B?1>B1JB10F1ZG1>K1RK1XM1AO1]O19R1PU1IV1PV1AW1HW1DY1hY1QZ1e[11\15a1\a1na1Je1hj1lk18l1Rm1Xm1jo1V32b32

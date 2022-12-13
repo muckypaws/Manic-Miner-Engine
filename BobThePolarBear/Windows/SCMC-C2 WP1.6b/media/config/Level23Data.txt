@@ -1,0 +1,87 @@
+; 23 TWEAKED-HARD
+
+; Bob Edit 06-10-2019
+
+[LevelName]
+>Credit & Thanks
+
+[LevelMusic]
+Royal Banana-e.ogg
+
+[WillyDieSound]
+die.wav
+
+[BackgroundColour]
+CUSTOM:0:0:7
+
+[BorderColour]
+CUSTOM:76:0:0
+
+[SpriteSet]
+11
+
+[ExitBlock]
+18
+
+
+[LevelData]
+33356333333563333335633333356333
+330000000000000AB000000000000033
+300009000222200BB004440000000003
+30004440020002000040904001111903
+30040004022229000044444010000003
+30044444020002000040004010111003
+30040004022220000040004010010003
+30040004000000000000000001110003
+30000000033300000000002200000003
+30011100300030003003020020409403
+30100010300000003003020920400403
+30190000300030000339020020400403
+30100010933300000030002200400403
+30011100000000000030000000044003
+33000000000000000000000000000033
+33333333333333333333333333333333
+
+
+[StickyConveyor]
+0
+
+
+;[Switches]
+;BobSwitchCord.png,		 2, 1, 0, CordR, OpenTrapDoor, 5:5:6:5:7:5
+;BobSwitchCordB.png,		30,12, 0, CordB, OpenTrapDoor, 5:14:5:15
+
+
+; ActorName, Start Block X, Start Block Y, 
+; Initial Direction, 
+; Min Block X, Min Block Y, 
+; Max Block X, Max Block Y, 
+; dx (pixels), dy (pixels), 
+; tick count
+; leftFrame, rightFrame, UpFrame, DownFrame, maxFrames, Frames Per Animation Seg
+
+[Actors]
+;BloodDrop.png,    	 1, 0, 1,  1, 0,  1,13,  0, 4, 2, 1,1,1,1, 8, 8, Satellite
+Drop.png, 	    	11, 1, 1, 11, 1, 11,13,  0, 5, 2, 1,1,1,1, 8, 8, Satellite
+;BloodDrop.png,	    21, 0, 1, 21, 0, 21,13,  0, 2, 2, 1,1,1,1, 8, 8, Satellite
+
+SpikeRedUp.png,		 9, 7, 1,  9, 7,  9, 7,  8, 0,26, 4,1,8,8, 8, 4
+SpikeRedUp.png,		11, 7, 1, 11, 7, 11, 7,  8, 0,26, 4,1,8,8, 8, 4
+SpikeRedDown2.png,	 9,12, 1,  9,12,  9,12,  8, 0,26, 4,1,8,8, 8, 4
+SpikeRedDown2.png,	11,12, 1, 11,12, 11,12,  8, 0,26, 4,1,8,8, 8, 4
+
+SpikeRedUp.png,		16, 8, 4, 16, 8, 16, 8,  8, 0,26, 4,1,8,8, 8, 4
+SpikeRedUp.png,		19, 8, 4, 19, 8, 19, 8,  8, 0,26, 4,1,8,8, 8, 4
+SpikeRedLeft.png,	17,12, 4, 17,12, 17,12,  8, 0,26, 4,1,8,8, 8, 4
+SpikeRedRight.png,	19,12, 4, 19,12, 19,12,  8, 0,26, 4,1,8,8, 8, 4
+
+BobBlob.png,		 6,14, 1,  2,14, 28,14, 16, 0, 4, 4,1,8,8, 8, 4
+BobBlob.png,		26,14, 8,  2,14, 28,14,-16, 0, 4, 4,1,8,8, 8, 4
+
+
+[HeroStart]
+Willy20.png,   14, 13, 1, 16,2,4,16
+
+
+[ReplayData]
+940860170@<0L<0`<01@0<F0HF0bF0hN0ZQ0FR02S0`X0iX0XY0b^00`0A`0=d0Qd08h09j0el01m0511941H41b41851:91^=1B?1>B1JB10F1ZG1>K1RK1XM1AO1]O19R1PU1IV1PV1AW1HW1DY1hY1QZ1e[11\15a1\a1na1Je1hj1lk18l1Rm1Xm1jo1V32b32

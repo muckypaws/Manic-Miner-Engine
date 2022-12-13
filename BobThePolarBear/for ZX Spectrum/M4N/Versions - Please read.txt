@@ -1,0 +1,28 @@
+==============================================
+ M4N - Manic-4-Noobs | Versions - Please read
+==============================================
+
+
+
+31-May-2021
+-----------
+Manic-4-Noobs (Final), is the final version with a few slightly tweaked layouts and graphics I noticed after (ver. 1) and one additional music track and one additional "bleep" track :)
+
+Manic4Noob.tap, tape format conversion kindly done by Lee Price. This is the same game as Manic-4-Noobs (Final).
+
+
+
+17-May-2021
+-----------
+
+Manic-4-Noobs (ver. 1), used to be called Manic-4-Noobs (ver. 1-e-ad-sfx-off).
+
+Basically the new version has a sound effect turned off because players might find it annoying. I should have done this from the beginning rather than hedging my bets and creating two almost identical versions :)
+
+But for those more technically minded:
+
+POKE 39892,211 & 39893,248 turns the extra bleep effect [ON].
+
+POKE 39892,000 & 39893,000 turns the extra bleep effect [OFF] -- default.
+
+ - - - - -

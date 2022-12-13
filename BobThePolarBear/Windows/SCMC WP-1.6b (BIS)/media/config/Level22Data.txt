@@ -1,0 +1,99 @@
+;
+;Define The Level Name
+;
+[LevelName]
+Brass Penguins?
+
+;
+;  Set the Background Colour
+;
+[BackgroundColour]
+DARKBLUECOLOUR
+
+;
+;  Set the Border Colour
+;
+[BorderColour]
+DARKREDCOLOUR
+
+;
+;  Which of the 20 Sprite Sets do you want to use?
+;  Starts (0-19)
+;
+[SpriteSet]
+1
+
+;
+;  Define the Door Sprite To Use
+;  (0-19)
+;
+[ExitBlock]
+1
+
+;
+;  Now define the Level Data
+;	0  = Empty Space
+;	1  = Solid Platform
+;	2  = Solid Platform
+;	3  = Impassable Wall
+;	4  = Collapsible Platform
+;	5  = Hazard 1
+;	6  = Hazard 2
+;	7  = Conveyor Platform Moving Right To Left
+;	12 = Conveyor Platform Moving Left To Right 
+;	9  = Collectable Object
+;	10 = Willy's Exit/Door Position (Top Left Corner)
+;	11 = Special Control to detect Willy in the door
+;
+[LevelData]
+30006000000000003333333333333333
+30000009000000003444464494644463
+30000000000000003333344444444443
+30000000000000000000344444444443
+30000000000000000000344444444443
+31111111111444113333344444449443
+30000000000000003446444444444443
+31444441100000000000000000004443
+30000000011110000000000000044443
+31110000006001111111111111111113
+30090000000000000000000000000093
+300CCCC0000000000000000000000003
+30000000000001111111111111111113
+30000300011100000000000000000AB3
+30000300000000000000000000000BB3
+31111111111111111111111111111113
+
+;
+; Sticky Conveyor
+; If you want Willy to Stick to the Platform when landing
+; and facing in the opposite direction and the player
+; is trying to move in the opposite direction
+; Set Value to 1 if you want Willy not to Move
+; Set Value to 0 if you allow Willy to move against the flow
+[StickyConveyor]
+2
+
+;
+;   Define the Actors on the Caverns
+;
+;   ActorName, Start Block X, Start Block Y, 
+;			   Initial Direction, 
+;  			   Min Block X, Min Block Y, 
+;			   Max Block X, Max Block Y, 
+;			   dx (pixels), dy (pixels), 
+;			   tick count
+;			   leftFrame, rightFrame, UpFrame, DownFrame, maxFrames, Frames Per Animation Seg
+;
+[Actors]
+ChillyYellow.png,18, 3,8,1 , 3,18, 3,-16,0,4,4,1,8,8,8,4
+ChillyBlue.png,  29,13,8,12,13,29,13,-16,0,4,4,1,8,8,8,4
+
+;
+;   Player Start Block Position
+;
+[HeroStart]
+MinerWilly.png,2,13,1,16,2,4,16
+
+[ReplayData]
+I30j30F40T40X40a90B:0^:02;0f=0:>0AE0MN0YN0mO0IP0MQ01R0=S0iS0@T0RT0nW0JX0h[0a\0P^0b^0Fe0Jf0Yf0Mg0ag0@i0Li0`i0:m0001:41a41061I61U=1a=1H?11E1EE1QE1PH1JI10J1:J1FM1jM1NO1bO1IX1H`1Q`1``11a1Xa1ba1^b1Jc1^h12i1hj1:l1
+b20830Y30R40f40:50@50R50P60290F:0R:0^<02=0VB0JC0aE0MP0YP0=R0aR0]S09T0=U00V0BV0nX0JY0I]0H^0j^0`f04g0@g0Lh0@i0ii0Hl0Tl00m0Ro0H11A21m81991m:1I;10?12@1hI12K1>L1RL1

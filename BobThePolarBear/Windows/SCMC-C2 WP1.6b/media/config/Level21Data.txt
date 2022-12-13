@@ -1,0 +1,106 @@
+; 21 TWEAKED-HARD
+
+; Bob Edit 05-10-2019
+
+[LevelName]
+MANIC MINER
+
+[LevelMusic]
+Moonlight Sonata x2e.ogg
+
+[WillyDieSound]
+die.wav
+
+[BackgroundColour]
+CUSTOM:0:0:7
+
+[BorderColour]
+CUSTOM:76:0:0
+
+[SpriteSet]
+11
+
+[ExitBlock]
+18
+
+; 0 = Empty Space
+; 1 = Solid Platform
+; 2 = Solid Platform
+; 3 = Impassable Wall
+; 4 = Collapsible Platform
+; 5 = Hazard 1
+; 6 = Hazard 2
+; 7 = Conveyor Platform Moving Right To Left
+; C = Conveyor Platform Moving Left To Right 
+; 9 = Collectable Object
+; A = Willy's Exit/Door Position (Top Left Corner)
+; B = Special Control to detect Willy in the door
+; F = Special Block (Willy's Home Graphic)
+
+
+[LevelData]
+33333333333333333333333333333333
+30000000000000000000000000090AB3
+31000100009000030003000000222BB3
+31101100044400033003907002000203
+31010190400040030303007002000003
+31000100444440030033007002000203
+31000100400040030003007000222003
+30000000400040000000007000000003
+30000000000000000000009000000003
+30000000070000000004444400000003
+30200020070030003004000000111103
+30220220070033003004444900109013
+30202020070030303004000000111103
+39200020070030033904444400101003
+30200020090030003000000000100113
+33333333333333333333333333333333
+
+
+[StickyConveyor]
+0
+
+
+;[Switches]
+;BobSwitchCord.png,		 2, 1, 0, CordR, OpenTrapDoor, 5:5:6:5:7:5
+;BobSwitchCordB.png,		30,12, 0, CordB, OpenTrapDoor, 5:14:5:15
+
+
+; ActorName, Start Block X, Start Block Y, 
+; Initial Direction, 
+; Min Block X, Min Block Y, 
+; Max Block X, Max Block Y, 
+; dx (pixels), dy (pixels), 
+; tick count
+; leftFrame, rightFrame, UpFrame, DownFrame, maxFrames, Frames Per Animation Seg
+
+[Actors]
+;Rat.png,			11, 3, 1, 10, 3, 20, 3,  16, 0, 5, 4,1,8,8, 8, 4, , DoorR2, UpdateBlockParms, 10:3:28:3
+
+;BobBlob.png,		 1,13, 3,  1,13, 10,13, 16, 0, 4, 4,1,8,8, 8, 4
+;BobBlob.png,		29,14, 4, 17,14, 29,14,-16, 0, 4, 4,1,8,8, 8, 4
+
+;SpikeRedDown.png,	10, 0, 1, 10, 0, 10, 0,  8, 0,26, 4,1,8,8, 8, 4
+;SpikeRedDown.png,	22, 0, 1, 22, 0, 22, 0,  8, 0,26, 4,1,8,8, 8, 4
+
+SpikeRedUp.png,		15, 1, 1, 15, 1, 15, 1,  8, 0,26, 4,1,8,8, 8, 4
+SpikeRedUp.png,		19, 1, 1, 19, 1, 19, 1,  8, 0,26, 4,1,8,8, 8, 4
+SpikeRedUp.png,		16, 9, 1, 16, 9, 16, 9,  8, 0,26, 4,1,8,8, 8, 4
+SpikeRedUp.png,		12, 9, 1, 12, 9, 12, 9,  8, 0,26, 4,1,8,8, 8, 4
+
+SpikeRedUp.png,		 3,14, 1,  3,14,  3,14,  8, 0,26, 4,1,8,8, 8, 4
+SpikeRedUp.png,		 5,14, 1,  5,14,  5,14,  8, 0,26, 4,1,8,8, 8, 4
+SpikeRedUp.png,		27,14, 1, 27,14, 27,14,  8, 0,26, 4,1,8,8, 8, 4
+SpikeRedUp.png,		28,14, 1, 28,14, 28,14,  8, 0,26, 4,1,8,8, 8, 4
+
+BobPincerRed.png,  7,14, 3,  7,14, 10,14, 16, 0, 5, 4,1,8,8, 8, 4
+BobPincerRed.png, 18,14, 4, 17,14, 24,14, 16, 0, 4, 4,1,8,8, 8, 4
+BobPincerRed.png, 23,14, 4, 17,14, 24,14,-16, 0, 4, 4,1,8,8, 8, 4
+
+
+[HeroStart]
+Willy20.png,   26, 4, 12, 16,2,4,16
+
+
+[ReplayData]
+940860170@<0L<0`<01@0<F0HF0bF0hN0ZQ0FR02S0`X0iX0XY0b^00`0A`0=d0Qd08h09j0el01m0511941H41b41851:91^=1B?1>B1JB10F1ZG1>K1RK1XM1AO1]O19R1PU1IV1PV1AW1HW1DY1hY1QZ1e[11\15a1\a1na1Je1hj1lk18l1Rm1Xm1jo1V32b32

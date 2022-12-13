@@ -1,0 +1,98 @@
+
+; For more details on these instructions please refer to the comments in Level1Data.txt
+
+; ============ CAVERN TITLE ============
+[LevelName]
+Permium Calls
+;Attack of the Mutant Telephones
+
+; ============ MUSIC & SOUND ============
+[LevelMusic]
+Rich Man Echo.ogg
+
+; ============ COLOURS & GRAPHICS ============
+[BackgroundColour]
+BLACKCOLOUR
+
+[BorderColour]
+DARKREDCOLOUR
+
+[BlockNOP]
+BlockNOP.png
+
+;[BackGroundStaticImages]
+; +64 width, +48 height for border.
+;#Gold.png, 64, 48, 120, 0.0
+
+;[ForeGroundStaticImages]
+;sgw-border-new-trans.png, 0, 0, 35
+
+[SpriteSet]
+10
+
+[ExitBlock]
+10
+
+; ============ LEVEL LAYOUT DATA ============
+; 0=Empty, 1=Platform, 2=Platform, 3=Wall, 4=Crumble, 5=Hazard, 6=Hazard,
+; 7=Conveyor-Right, C=Conveyor-Left, 9=Key, A=Exit, B=Door, E&F=Special switch blocks.
+
+[LevelData]
+33333330000000000006000099000003
+3AB00000000000000005000000000993
+3BB00000000000000000000000000113
+31111000000000000000000000000003
+39900000000000000000000000000003
+30000111111000011222222211000003
+30000999999000099999000060000113
+30000000000000000000000060000993
+31100770000000000000000060000113
+39900990000111111111000050000993
+30000000000969999996000000001003
+30000044410060000005000000009003
+30000000090050000000000000001113
+31100000000000000000000111009993
+30000000000000000000000000000003
+31111111111111111111111111111113
+
+; ============ Sticky Conveyor? ============
+
+; If you want Willy to Stick to the Platform when landing and facing in the
+; opposite direction, and player is trying to move in the opposite direction:
+; 0 = Willy moves against the flow of the conveyor.
+; 1 = Willy does not move.
+
+[StickyConveyor]
+0
+
+; ============ Switches ============
+
+[Switches]
+BobMusicSwitch-L.png,	 8, 0, 0, Switch1, OpenTrapDoor, 1:13, s-11-FailureToCommunicate.wav
+BobMusicSwitch-R.png,	20, 6, 0, Switch2, OpenTrapDoor, 1:13, s-11-telephone.wav
+
+; ============ Actors/Baddies ============
+; FN = Actor Filename in Sprite Sheet, SX = Start X, SY = Start Y, ID = Initial Direction/Image,
+; MX = Min X travelled to, MY = Min Y travelled to, FX = Furthest/Max X, FY = Furthest/Max Y,
+; DX = X Distance covered in pixels, DY = Y Distance covered in pixels, TC = Tick Count,
+; LF = Left Frame, RF = Right Frame, UF = Up Frame, DF = Down Frame,
+; TF = Total Frames in animation, FP = Frames per animation segment in each direction.
+
+; FN				SX SY ID  MX MY  FX FY  DX DY TC LF RF UF DF TF FP
+[Actors]
+GreenPhone.png,		 3, 4, 3,  3, 4,  3,13,  0, 2, 4, 4, 1, 8, 8, 4, 4
+MagentaPhone.png,	12, 1, 4, 12, 0, 12, 7,  0, 4, 4, 4, 1, 8, 8, 4, 4
+YellowPhone.png,	21, 6, 2, 21, 6, 21,13,  0, 2, 4, 4, 1, 8, 8, 4, 4	 
+RedPhone.png,	    26, 5, 1, 26, 0, 26,13,  0, 4, 4, 4, 1, 8, 8, 4, 4
+YellowSpinner.png,	15, 3, 1, 15, 3, 24, 3, 16, 0, 5, 1, 1, 1, 1, 4, 4
+GreenSpinner.png,	14, 7, 1, 14, 7, 18, 7, 16, 0,10, 1, 1, 1, 1, 4, 4
+RedSpinner.png,		17,13, 1,  5,13, 19,13,-16, 0, 5, 1, 1, 1, 1, 4, 4
+
+; ============ Willy/Hero ============
+[HeroStart]
+MinerWilly.png,3,1,1,16,2,4,16
+
+; ============ REPLAY DATA (NOT USED IN SGW) ============
+[ReplayData]
+:00H40B50X50:60F80Z80090Q90`:09>0M>0Y>0h>0b?0QA00B0YB0mD0YE0]G09H0hI0:J0^J0jJ08O02P0`R0ZS0fS08T0JU0HY0B]0`_0i_0E`0a`0@b0Jb0fb0:c0Xc0Qd08e0Qe0Xe0le0@f0<g0Hh0dh0hi0Jj06k0Hk09m0Xm0Q21`21a41m41A51071<71H71291`91i918:1I>1]>1i>1@C1YC1hC1DF1`F1iH15I1iI1eM1AN1
+089

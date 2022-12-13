@@ -1,0 +1,96 @@
+;
+;Define The Level Name
+;
+[LevelName]
+Eye o' Oktup
+;
+;  Set the Background Colour
+;
+[BackgroundColour]
+BLACKCOLOUR
+
+;
+;  Set the Border Colour
+;
+[BorderColour]
+DARKBLUECOLOUR
+
+;
+;  Which of the 20 Sprite Sets do you want to use?
+;  Starts (0-19)
+;
+[SpriteSet]
+17
+
+;
+;  Define the Door Sprite To Use
+;  (0-19)
+;
+[ExitBlock]
+17
+
+;
+;  Now define the Level Data
+;	0  = Empty Space
+;	1  = Solid Platform
+;	2  = Solid Platform
+;	3  = Impassable Wall
+;	4  = Collapsible Platform
+;	5  = Hazard 1
+;	6  = Hazard 2
+;	7  = Conveyor Platform Moving Right To Left
+;	C = Conveyor Platform Moving Left To Right 
+;	9  = Collectable Object
+;	A = Willy's Exit/Door Position (Top Left Corner)
+;	B = Special Control to detect Willy in the door
+;	F = Special Block (Willy's Home Graphic)
+;
+[LevelData]
+33333000000000000000003330033AB3
+30000000000000000000003300003BB3
+30000000000000000009003000000003
+30000000000000000000000000000003
+30000000000000000000000010011003
+31003001110011111111000000000003
+30003000000000000000001000000003
+30013000000000000000000000000003
+30003000110033333333003330000003
+31003000000000000000000000000003
+30003001100000000000000000000333
+30013000000000000000000000000033
+30003000000011111111003000000003
+31000000330000000000003300000003
+30000003330000000000003330000003
+11111133333333333333333333111111
+;
+;   Define the Actors on the Caverns
+;
+;   ActorName, Start Block X, Start Block Y, 
+;			   Initial Direction, 
+;  			   Min Block X, Min Block Y, 
+;			   Max Block X, Max Block Y, 
+;			   dx (pixels), dy (pixels), 
+;			   tick count
+;			   leftFrame, rightFrame, UpFrame, DownFrame, maxFrames, Frames Per Animation Seg
+;
+[Actors]
+MagentaJelly.png,    5, 1, 1,  5,  1,   5, 13,  0, 4,  3, 4, 1, 8, 8, 4, 4
+GreenJelly.png, 	10, 1, 1, 10,  0,  10, 13,  0, 3,  4, 4, 1, 8, 8, 4, 4
+BlueJelly.png, 	    20, 1, 1, 20,  0,  20, 13,  0, 4,  2, 4, 1, 8, 8, 4, 4	 
+YellowJelly.png,    25, 1, 1, 25,  1,  25, 13,  0, 1,  2, 3, 1, 8, 8, 4, 4
+GreenTrolley.png,   12, 3, 1, 12,  3,  18,  3, 16, 0, 8, 1, 1, 1, 1, 4, 4
+MagentaTrolley.png, 16, 6, 1, 12,  6,  17,  6, 16, 0,  4, 1, 1, 1, 1, 4, 4
+BlueTrolley.png,    16,10, 1, 12, 10,  17, 10, 16, 0, 8, 1, 1, 1, 1, 4, 4
+YellowTrolley.png,  16,13, 2, 12, 13,  18, 13, -16, 0, 4, 1, 1, 1, 1, 4, 4
+
+;
+;   Player Start Block Position
+;
+;
+;   Actor Filename, Start Block X, Start Block Y, Initial Direction, DX (Pixels), DY (Pixels), Tick Count, Segments
+
+[HeroStart]
+MinerWilly.png,28,13,16,16,2,4,16
+
+[ReplayData]
+900@00110M10A20E30a30`70j90@<0A=00?0j@0QA0]A01B0PF0:G00I0II0hI01K05L0IL0HM0bM0@N0YN0hN0aQ0mT0IU0PU0BV0fV0BW0`W01X0MX0iX0]Z01[0P[0:\0^\0`\0Qc0]c0ic00d02e0Xe0Bh0Nh0Xh0:j0Hj0Jl0nl0Bm0Pm09n0`n01o0`o0:01H01951X51j51861j71681B81X:1^>12?1@A1\A1hA1YC10E1:E1HE1bF1FG1RG1XJ1DV1hV1I[1@\1:]1V]1`^1J_1X_1ac18d1ld1@e1Qh10i12j1Hj1bk1>l1Jm1>o1

@@ -1,0 +1,98 @@
+;
+;Define The Level Name
+;
+[LevelName]
+The Endorian Forest
+;
+;  Set the Background Colour
+;
+[BackgroundColour]
+BLACKCOLOUR
+
+;
+;  Set the Border Colour
+;
+[BorderColour]
+DARKREDCOLOUR
+
+;
+; Want to use a PNG for blank background block?
+;
+[BlockNOP]
+BlockNOP.png
+
+;
+;  Which of the 20 Sprite Sets do you want to use?
+;  Starts (0-19)
+;
+[SpriteSet]
+9
+
+;
+;  Define the Door Sprite To Use
+;  (0-19)
+;
+[ExitBlock]
+9
+
+;
+;  Now define the Level Data
+;	0  = Empty Space
+;	1  = Solid Platform
+;	2  = Solid Platform
+;	3  = Impassable Wall
+;	4  = Collapsible Platform
+;	5  = Hazard 1
+;	6  = Hazard 2
+;	7  = Conveyor Platform Moving Right To Left
+;	C = Conveyor Platform Moving Left To Right 
+;	9  = Collectable Object
+;	A = Willy's Exit/Door Position (Top Left Corner)
+;	B = Special Control to detect Willy in the door
+;	F = Special Block (Willy's Home Graphic)
+;
+[LevelData]
+30000000000601113060611111111113
+30000000000000903000060000000093
+31111110000000003000090000011113
+30060000000000003000000000000003
+30000000000000003111100000000003
+30000000144444443000000111111113
+31111000000900003000000000000003
+30000000000000003111111144400003
+31111100000000003090000000000003
+36000000011111113000000000000113
+31111440000000003111111100000063
+30000000000000003000000644400003
+30000000222222222200000000000003
+311100000000AB000000000000001113
+300000000000BB000000000000000003
+33333333333333333333333333333333
+
+;
+;   Define the Actors on the Caverns
+;
+;   ActorName, Start Block X, Start Block Y, 
+;			   Initial Direction, 
+;  			   Min Block X, Min Block Y, 
+;			   Max Block X, Max Block Y, 
+;			   dx (pixels), dy (pixels), 
+;			   tick count
+;			   leftFrame, rightFrame, UpFrame, DownFrame, maxFrames, Frames Per Animation Seg
+;
+[Actors]
+BlueBunny.png,  	18, 5, 2,  17, 5,  21,  5, 16, 0, 4, 4, 1, 8, 8, 8, 4
+YellowBunny.png,  	 9, 7, 2,  9,  7,  14,  7, 16, 0, 4, 4, 1, 8, 8, 8, 4
+RedBunny.png,   	12,10, 2,  8, 10,  14, 10, 16, 0, 8, 4, 1, 8, 8, 8, 4	 
+MagentaBunny.png,    8,13, 2,  4, 13,  26, 13, 16, 0, 4, 4, 1, 8, 8, 8, 4
+
+;
+;   Player Start Block Position
+;
+;   Actor Filename, Start Block X, Start Block Y, Initial Direction, DX (Pixels), DY (Pixels), Tick Count, Segments
+
+[HeroStart]
+MinerWilly.png,1,4,1,16,2,4,16
+
+[ReplayData]
+Z10>30b30N70Z70P80A;00<0I<0]<0i<0`?0QC08D0JD06N0:N0HN0BO0`O0JP0XP01Q0PQ02R0PR01S0@S0QU0]U0iU0=W0QW0jZ0F\02]0^^0b_08a0Ia0ha01c0Uc0ac08d0\d0Xe01f0Zf0^g02h0hh01i0`l01n0Pn0in00o0i21h31A41851B51V51j51@71A81H91::10<14=1@=1L=1P?1i@1

@@ -1,0 +1,98 @@
+;
+;Define The Level Name
+;
+[LevelName]
+Wacky Amoebatrons
+;
+;  Set the Background Colour
+;
+[BackgroundColour]
+BLACKCOLOUR
+
+;
+;  Set the Border Colour
+;
+[BorderColour]
+DARKBLUECOLOUR
+
+;
+; Want to use a PNG for blank background block?
+;
+[BlockNOP]
+BlockNOP.png
+
+;
+;  Which of the 20 Sprite Sets do you want to use?
+;  Starts (0-19)
+;
+[SpriteSet]
+8
+
+;
+;  Define the Door Sprite To Use
+;  (0-19)
+;
+[ExitBlock]
+8
+
+;
+;  Now define the Level Data
+;	0  = Empty Space
+;	1  = Solid Platform
+;	2  = Solid Platform
+;	3  = Impassable Wall
+;	4  = Collapsible Platform
+;	5  = Hazard 1
+;	6  = Hazard 2
+;	7  = Conveyor Platform Moving Right To Left
+;	C = Conveyor Platform Moving Left To Right 
+;	9  = Collectable Object
+;	A = Willy's Exit/Door Position (Top Left Corner)
+;	B = Special Control to detect Willy in the door
+;	F = Special Block (Willy's Home Graphic)
+;
+[LevelData]
+3AB30000000000000000000000000003
+3BB00000000000090000000000000003
+30000000000000000000000000000003
+30000000000000000000000000000003
+30000000000000000000000000000003
+31111001110011111111001110011003
+30000000000000000000000000000003
+30000000000000000000000000000113
+300110011100CCCCCCCC000000000003
+30000000000000000000001110011003
+31100000000000000000000000000003
+30000000000000000000000000000003
+30011001110011111111001110011003
+30000000000000000000000000000113
+30000000000000000000000000000003
+33333333333333333333333333333333
+;
+;   Define the Actors on the Caverns
+;
+;   ActorName, Start Block X, Start Block Y, 
+;			   Initial Direction, 
+;  			   Min Block X, Min Block Y, 
+;			   Max Block X, Max Block Y, 
+;			   dx (pixels), dy (pixels), 
+;			   tick count
+;			   leftFrame, rightFrame, UpFrame, DownFrame, maxFrames, Frames Per Animation Seg
+;
+[Actors]
+MagentaAmoeba.png,  5,  1, 1,  5,  1,   5, 12,  0, 2,  4, 4, 1, 8, 8, 4, 4
+GreenAmoeba.png, 	10, 1, 1, 10,  1,  10, 12,  0, 4,  4, 4, 1, 8, 8, 4, 4
+BlueAmoeba.png, 	20, 1, 1, 20,  1,  20, 12,  0, 2,  4, 4, 1, 8, 8, 4, 4	 
+RedAmoeba.png,      25, 1, 1, 25,  1,  25, 12,  0, 4,  4, 4, 1, 8, 8, 4, 4
+GreenTrolley.png,   12, 3, 1, 12,  3,  18,  3, 16, 0,  5, 1, 1, 1, 1, 4, 4
+BlueTrolley.png,    16,10, 1, 12, 10,  18, 10, 16, 0, 10, 1, 1, 1, 1, 4, 4
+;
+;   Player Start Block Position
+;
+;   Actor Filename, Start Block X, Start Block Y, Initial Direction, DX (Pixels), DY (Pixels), Tick Count, Segments
+
+[HeroStart]
+MinerWilly.png,2,13,1,16,2,4,16
+
+[ReplayData]
+:00^;0R<0h=0A>0`>0I?0P?0D@0X@0IC0]C0iC00F0IF0mF01G0XG0QO0mO09P0MR0YR0hS0IT0`T0RV08W0QW0`W0AX0]X0iX00Y0iZ0@[0<\0P\0d]0H^0B_0`_02b0Nb0jb0Xd0j61F71Z71><1J<1P>1:?1H?1ZB1nB1BC1`D1dE18F1LG10H1II1XI1YK1mK19L1=N1YN1HP1AQ1eQ11R18S1YS10T1aV1EW1YW1mY1AZ1P]1d]18^1

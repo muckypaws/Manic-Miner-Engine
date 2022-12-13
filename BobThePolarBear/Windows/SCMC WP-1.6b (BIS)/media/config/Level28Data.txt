@@ -1,0 +1,118 @@
+;
+;Define The Level Name
+;
+[LevelName]
+Alan Sugar's Take-Over Bid
+;
+;  Set the Background Colour
+;
+[BackgroundColour]
+BLACKCOLOUR
+
+;
+;  Set the Border Colour
+;
+[BorderColour]
+DARKREDCOLOUR
+
+;
+;  Which of the 20 Sprite Sets do you want to use?
+;  Starts (0-19)
+;
+[SpriteSet]
+7
+
+;
+;  Define the Door Sprite To Use
+;  (0-19)
+;
+[ExitBlock]
+7
+
+;
+;  Now define the Level Data
+;	0  = Empty Space
+;	1  = Solid Platform
+;	2  = Solid Platform
+;	3  = Impassable Wall
+;	4  = Collapsible Platform
+;	5  = Hazard 1
+;	6  = Hazard 2
+;	7  = Conveyor Platform Moving Right To Left
+;	C = Conveyor Platform Moving Left To Right 
+;	9  = Collectable Object
+;	A = Willy's Exit/Door Position (Top Left Corner)
+;	B = Special Control to detect Willy in the door
+;	D = Removable WALL Block
+;	E = Removable Platform Block 1
+;
+[LevelData]
+33333300033333300300000333333333
+36000300000009300300000000000003
+300093000000003EE300000000000003
+30000300001111100000000000000003
+30011300000000000000001111000003
+30000311100000000011000000000003
+31100300600000000000000000000113
+30000300011000000000000001100003
+30011350000000000000000000000003
+30000333333333300333333000000053
+31100000000000000300006000011113
+39000000000000000D00000000000093
+30001111110000000D00000110000003
+30000000000CCC3AB333000000001113
+300000000003333BB333300000000003
+33333333333333333333333111111113
+
+;
+; Sticky Conveyor
+; If you want Willy to Stick to the Platform when landing
+; and facing in the opposite direction and the player
+; is trying to move in the opposite direction
+; Set Value to 1 if you want Willy not to Move
+; Set Value to 0 if you allow Willy to move against the flow
+[StickyConveyor]
+2
+
+;
+; Switches
+;
+; ActorFileName, BlockX, BlockY, StartState, SpecialFunction
+;
+[Switches]
+Switches.png,	6,  0, 0, Switch1, OpenTrapDoor, 18:12:18:13
+Switches.png,	18, 0, 0, Switch2, OpenTrapDoor, 16:3:17:3
+
+;
+;   Define the Actors on the Caverns
+;
+;   ActorName, Start Block X, Start Block Y, 
+;			   Initial Direction, 
+;  			   Min Block X, Min Block Y, 
+;			   Max Block X, Max Block Y, 
+;			   dx (pixels), dy (pixels), 
+;			   tick count
+;			   leftFrame, rightFrame, UpFrame, DownFrame, maxFrames, Frames Per Animation Seg
+;
+[Actors]
+GreenBarrel.png,    9,  13, 4,  1, 13,  9, 13, -16, 0,  4, 4, 1, 8, 8, 4, 4
+BlueBarrel.png, 	18,  7, 2, 18,  7, 21,  7,  16, 0,  4, 4, 1, 8, 8, 4, 4
+MagentaBarrel.png, 	11, 11, 1, 11, 11, 15, 11,  16, 0,  8, 4, 1, 8, 8, 4, 4, , Switch1, UpdateBlockParms, 11:11:18:11
+GreenKong.png,      15,  0, 1, 15,  0, 15,  0,   0, 0, 45, 4, 1, 8, 8, 2, 2, , Switch2, DoKongDrop, MagentaKong.png:15:0:15:13:0:8:2:4:AddKongPoints
+
+
+;
+;   Player Start Block Position
+;
+;
+;   Hero Start Position
+;
+;   Actor Filename, Start Block X, Start Block Y, Initial Direction, DX (Pixels), DY (Pixels), Tick Count, Segments
+
+[HeroStart]
+MinerWilly.png,28,13,16,16,2,4,16
+;MinerWilly.png,19,3,1,16,2,5,16
+;MinerWilly.png,2,3,1,16,2,5,16
+
+[ReplayData]
+420H20Z20i30H40Q40m40950@50J60670J70h70I80`80I90e909:0@:0i:0H;0Z;06<0B<0N=02>08>0Q>0U@09A05D0QD0hD0jE0FG0RG0aL00M0QN00O0:P0hP01Q0HQ09R0MR0aR05T09U0mV09W0XX0bX0XY0iY05Z0IZ0M[0A\0`\0j\0f]0:^01`0Ub01c0Hc02d0@i0ji08j0Jk0Vk0`k0Rm0fm02n0@n0bo0A21`51a;1U<1i<1MH1aH1`L1QN1=O19P1EQ1iQ1HR1jR1VT1JU1NV1:W1HZ1YZ1m\1A]1]_1Q`1h`1Ba1na1:b1Pb1ab1]c1Ad1Pd1bd1ne1Jf1Xf1if1Xh1bh19j18k1Bk1Ho1232`32B62

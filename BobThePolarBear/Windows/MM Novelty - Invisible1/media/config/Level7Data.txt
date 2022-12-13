@@ -1,0 +1,105 @@
+;
+;Define The Level Name
+;
+[LevelName]
+The Vat
+;
+;  Set the Background Colour
+;
+[BackgroundColour]
+BLACKCOLOUR
+
+;
+;  Set the Border Colour
+;
+[BorderColour]
+DARKGREENCOLOUR
+
+;
+; Want to use a PNG for blank background block?
+;
+[BlockNOP]
+BlockNOP.png
+
+;
+;  Which of the 20 Sprite Sets do you want to use?
+;  Starts (0-19)
+;
+[SpriteSet]
+6
+
+;
+;  Define the Door Sprite To Use
+;  (0-19)
+;
+[ExitBlock]
+6
+
+;
+;  Now define the Level Data
+;	0  = Empty Space
+;	1  = Solid Platform
+;	2  = Solid Platform
+;	3  = Impassable Wall
+;	4  = Collapsible Platform
+;	5  = Hazard 1
+;	6  = Hazard 2
+;	7  = Conveyor Platform Moving Right To Left
+;	12 = Conveyor Platform Moving Left To Right 
+;	9  = Collectable Object
+;	10 = Willy's Exit/Door Position (Top Left Corner)
+;	11 = Special Control to detect Willy in the door
+;
+[LevelData]
+30000000000000333333333333333333
+30000000000000000000000000000003
+30000000000000000000000000000003
+30000000000000011344444444444493
+30000000000000000344444444444443
+30000007777700111344444444446443
+31110000000000000344944444444443
+30000000000000000344444444494443
+31000000000000000344444644444443
+30000000000000111344444444444443
+31111111111100000349444444446443
+30000000000000000344444444444493
+30000000000000333344444644444443
+300000000111003AB000000000000003
+300000000000003BB000000000000003
+33333333333333333333333333333333
+
+;
+; Sticky Conveyor
+; If you want Willy to Stick to the Platform when landing
+; and facing in the opposite direction and the player
+; is trying to move in the opposite direction
+; Set Value to 1 if you want Willy not to Move
+; Set Value to 0 if you allow Willy to move against the flow
+[StickyConveyor]
+2
+
+
+;
+;   Define the Actors on the Caverns
+;
+;   ActorName, Start Block X, Start Block Y, 
+;			   Initial Direction, 
+;  			   Min Block X, Min Block Y, 
+;			   Max Block X, Max Block Y, 
+;			   dx (pixels), dy (pixels), 
+;			   tick count
+;			   leftFrame, rightFrame, UpFrame, DownFrame, maxFrames, Frames Per Animation Seg
+;
+[Actors]
+BlueRoo.png,    15,  1, 2, 15,  1, 29,  1,  16, 0,  4, 4, 1, 8, 8, 8, 4
+MagentaRoo.png, 10,  8, 7,  2,  8, 10,  8,  16, 0,  4, 4, 1, 8, 8, 8, 4
+YellowRoo.png, 	17, 13, 2, 17, 13, 29, 13,  16, 0,  4, 4, 1, 8, 8, 8, 4	 
+
+;
+;   Player Start Block Position
+;
+[HeroStart]
+MinerWilly.png,2,13,1,16,2,4,16
+
+[ReplayData]
+210030J60V60j60690R908:0A:0e;09<0U>0i>0]@09A0PA04B00C0BC0FE0jE0^H0jH0@L02O0NO0ZO0hQ0ZU0HX0TX0hX0\Y0XZ0bZ0h\0Aa0ec0Ad08g0ji06m0Jm0ho0<61P61191]=1Q>1

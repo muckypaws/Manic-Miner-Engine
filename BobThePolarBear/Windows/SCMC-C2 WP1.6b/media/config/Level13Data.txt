@@ -1,0 +1,95 @@
+; 13 TWEAKED-HARD
+
+; Bob Edit 04-10-2019
+
+[LevelName]
+The Machine
+
+[LevelMusic]
+Nonstop-e-t.ogg
+
+[WillyDieSound]
+splat-3.wav
+
+[BackgroundColour]
+BLACKCOLOUR
+
+[BorderColour]
+DARKBLUECOLOUR
+
+[SpriteSet]
+12
+
+[ExitBlock]
+12
+
+;	0 = Empty Space
+;	1 = Solid Platform
+;	2 = Solid Platform
+;	3 = Impassable Wall
+;	4 = Collapsible Platform
+;	5 = Hazard 1
+;	6 = Hazard 2
+;	7 = Conveyor Platform Moving Right To Left
+;	C = Conveyor Platform Moving Left To Right 
+;	9 = Collectable Object
+;	A = Willy's Exit/Door Position (Top Left Corner)
+;	B = Special Control to detect Willy in the door
+;	F = Special Block (Willy's Home Graphic)
+
+
+[LevelData]
+33333333333333333333333333333333
+30002000000000000000000000000003
+30002000000000000000000000000003
+30002000111111111109111001111213
+30002000000000000000000000000203
+30002000000000000000000000000203
+30002000110011100911109111110203
+30002000000000000000000000000203
+30002000000000000000000000000203
+30002000111119011100911111091113
+30002000000000000000000000000003
+30002000000000000000000000000003
+30002000111001110011100110011213
+3AB02000000000000000000000000203
+3BB02000000000000000000000000203
+31111777717777777771777777711113
+
+
+[StickyConveyor]
+2
+
+;   ActorName, Start Block X, Start Block Y, 
+;			   Initial Direction, 
+;  			Min Block X, Min Block Y, 
+;			   Max Block X, Max Block Y, 
+;			   dx (pixels), dy (pixels), 
+;			   tick count
+;			   leftFrame, rightFrame, UpFrame, DownFrame, maxFrames, Frames Per Animation Seg
+
+[Actors]
+EyeRed.png,		         6, 1, 2,  6, 1,  6,13,   0, 5, 4, 4,1,8,8, 4, 4
+EyeRed.png,		         1, 1, 2,  5, 1,  5,13,   0, 5, 4, 4,1,8,8, 4, 4
+
+MagentaJackHammer.png, 	10, 1, 1,  8, 1, 29, 1, -16, 0, 3, 4,1,8,8, 4, 4
+GreenJackHammer.png, 	18, 4, 1,  8, 4, 26, 4,  16, 0, 5, 4,1,8,8, 4, 4	 
+YellowJackHammer.png,   22, 7, 2,  8, 7, 26, 7, -16, 0, 3, 4,1,8,8, 4, 4
+RedJackHammer.png,      24,10, 3,  8,10, 29,10,  16, 0, 4, 4,1,8,8, 4, 4
+
+FloorSpike.png,          8, 2, 1,  8, 2,  8, 2,   8, 0,22, 4,1,8,8, 8, 4
+FloorSpike.png,         20, 2, 1, 20, 2, 20, 2,   8, 0,22, 4,1,8,8, 8, 4
+;FloorSpike.png,         25, 5, 1, 25, 5, 25, 5,   8, 0,22, 4,1,8,8, 8, 4
+FloorSpike.png,         11, 8, 1, 11, 8, 11, 8,   8, 0,22, 4,1,8,8, 8, 4
+FloorSpike.png,         22, 8, 1, 22, 8, 22, 8,   8, 0,22, 4,1,8,8, 8, 4
+;FloorSpike.png,         14,11, 1, 14,11, 14,11,   8, 0,22, 4,1,8,8, 8, 4
+;FloorSpike.png,         27,11, 1, 27,11, 27,11,   8, 0,22, 4,1,8,8, 8, 4
+FloorSpike.png,          8,14, 1,  8,14,  8,14,   8, 0,22, 4,1,8,8, 8, 4
+FloorSpike.png,         18,14, 1, 18,14, 18,14,   8, 0,22, 4,1,8,8, 8, 4
+
+[HeroStart]
+MinerWilly.png, 27,13, 9,16,2,4,16
+
+
+[ReplayData]
+Q10U80i80=;0T<0f<0\=0`?0D@0X@06B0ZB0FF0bF0fH0:I0@K0bL0^N0DO0eO04Q0PR0AT0UW01X0ZY0>Z0RZ0X_0a_0@a0aa0Hb01d0]n0Ao0

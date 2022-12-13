@@ -1,0 +1,115 @@
+; 5 TWEAKED-HARD 1.5g
+
+; Bob Edit 18-12-2019
+
+[LevelName]
+Toilet Block!
+
+[LevelMusic]
+Upbeat Forever faster.ogg
+
+[WillyDieSound]
+splat-3.wav
+
+[HighScoreMusic]
+EKNM.ogg
+
+[BackgroundColour]
+CUSTOM:7:15:0
+
+[BorderColour]
+CUSTOM:58:32:8
+
+[SpriteSet]
+4
+
+[ExitBlock]
+4
+
+;	0 = Empty Space
+;	1 = Solid Platform
+;	2 = Solid Platform
+;	3 = Impassable Wall
+;	4 = Collapsible Platform
+;	5 = Hazard 1
+;	6 = Hazard 2
+;	7 = Conveyor Platform Moving Right To Left
+;	C = Conveyor Platform Moving Left To Right 
+;	9 = Collectable Object
+;	A = Willy's Exit/Door Position (Top Left Corner)
+;	B = Special Control to detect Willy in the door
+
+
+[LevelData]
+39060000006000000006000600000603
+30000000000000000000000000000093
+30000000000000000000000000000003
+30000000000000000000000000000003
+30000000000000000000000005500003
+31111444411114000044411111110003
+39000000009000000000000000000113
+30000000000000000000550000000093
+30000000000000000077777777770003
+30001111111114000000000000000003
+30000000000000000000000000000003
+31441111111144000041114000004443
+30000000300000000000000000000003
+311000003003003AB300500000000003
+390000093053093BB303333500000093
+31111111323333322323333311111113
+
+
+[StickyConveyor]
+2
+
+
+;[CustomSpriteSheet]
+;CustomSpriteSheet1.png
+
+[BackGroundStaticImages]
+;#Window1.png, 404, 80, 128
+;#B2mid.png, 64, 48, 45, 0.0
+wall-512x256-s-g50.png, 64, 48, 95
+mario-small-d.png, 163, 55, 190
+sonic-small-d.png, 474, 55, 190
+
+[ForeGroundStaticImages]
+B2c-e-s-tb2pix.png, 0, 0, 47
+
+;[BlockNOP]
+;BlockNOP-B2.png
+
+
+[SwitchSoundOn]
+Chain-f2.wav
+
+[Switches]
+;SWBlockA.png,  12, 13, 1, SwitchA, OpenTrapDoor, 1:1
+;SWBlockB.png,  13, 13, 1, SwitchB, OpenTrapDoor, 1:1
+;SWBlockC.png,  12, 14, 1, SwitchC, OpenTrapDoor, 1:1
+;SWBlockD.png,  13, 14, 1, SwitchD, OpenTrapDoor, 1:1
+
+
+;   ActorName, Start Block X, Start Block Y, 
+;			   Initial Direction, 
+;  			   Min Block X, Min Block Y, 
+;			   Max Block X, Max Block Y, 
+;			   dx (pixels), dy (pixels), 
+;			   tick count
+;			   leftFrame, rightFrame, UpFrame, DownFrame, maxFrames, Frames Per Animation Seg
+
+[Actors]
+WhiteToilet.png,    7, 3, 3,  1, 3, 12, 3, 16,  0, 4, 4,1,8,8, 8, 4
+WhiteToilet.png,    4, 7, 1,  4, 7, 12, 7, 16,  0, 4, 4,1,8,8, 8, 4
+YellowToilet.png,   3,13, 2,  3,13,  6,13, 16,  0, 4, 4,1,8,8, 8, 4
+YellowToilet.png,  24,13, 4, 24,13, 29,13, 16,  0, 4, 4,1,8,8, 8, 4
+
+Eugene.png,        15, 6, 7, 15, 0, 15,11,  0, -1, 1, 4,1,8,8, 8, 4,Eugene
+
+
+[HeroStart]
+MinerWilly.png, 2,3,1,16,2,4,16
+
+
+[ReplayData]
+:10@20j30V40250V80:90N=0j=0F?0B@00A09A0RC06E0bE0@F0QF0XG0iH0EJ0YJ0UN0iN0mP09Q08R0DR08S0bS00U0bU0`V02X0PX0YY0mY09Z0e^0A_0@`0Bb0Hc0ac0Md0ad08e0Jf0Pf0Rg0^g0:h0Pj0211V21j21651B51

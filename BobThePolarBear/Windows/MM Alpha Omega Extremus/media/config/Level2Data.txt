@@ -1,0 +1,148 @@
+;
+;Define The Level Name
+;
+[LevelName]
+#  Omega Barrier Extremus  #
+;#$#$ Omega Barrier Extremus $#$#
+
+;  Set the Background Colour
+;
+[BackgroundColour]
+BLACKCOLOUR
+
+;  Set the Border Colour
+;
+[BorderColour]
+DARKREDCOLOUR
+
+; Want to use a PNG for blank background block?
+;
+[BlockNOP]
+BlockNOP.png
+
+;   Set the Level Music
+;
+[LevelMusic]
+MouseTrap.ogg
+
+; Override for the default end of Final Cavern Music
+; Needs Swordfish
+;
+[FinalCavernMusic]
+CavernComplete.ogg
+
+[ForeGroundStaticImages]
+border-skulls-BASE.png, 0, 0, 22
+
+;  Which of the 20 Sprite Sets do you want to use?
+;  Starts (0-19)
+;
+[SpriteSet]
+19
+
+;  Define the Door Sprite To Use
+;  (0-19)
+;
+[ExitBlock]
+19
+
+;  Now define the Level Data
+;	0  = Empty Space
+;	1  = Solid Platform
+;	2  = Solid Platform
+;	3  = Impassable Wall
+;	4  = Collapsible Platform
+;	5  = Hazard 1
+;	6  = Hazard 2
+;	7  = Conveyor Platform Moving Right To Left
+;	C  = Conveyor Platform Moving Left To Right 
+;	9  = Collectable Object
+;	A  = Willy's Exit/Door Position (Top Left Corner)
+;	B  = Special Control to detect Willy in the door
+;	F  = Special Block (Willy's Home Graphic)
+;
+[LevelData]
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFFABF090000000F
+FFFFFFFFFFFFFFFFFFFBBF000000009F
+FFFFFFFFFFFFFFFFFFF00F000000000F
+30000000000000000000000000000113
+30000000000000000000000000000003
+3CCCCCCCCCCCCCCCCCCCCCC000400003
+30000000059050900509050900001003
+31100000000000000000000000000003
+30000110000000000000000000000003
+30000000000000000000000000000003
+33333333333333333333333333333333
+
+; Sticky Conveyor
+; If you want Willy to Stick to the Platform when landing
+; and facing in the opposite direction and the player
+; is trying to move in the opposite direction
+; Set Value to 1 if you want Willy not to Move
+; Set Value to 0 if you allow Willy to move against the flow
+[StickyConveyor]
+1
+
+; ============ Switches ============
+
+[Switches]
+FireSwitch.png,	 30, 13, 0, Switch1, OpenTrapDoor, 1:12, Fire.wav
+
+
+;   Define the Actors on the Caverns
+;
+;   ActorName, Start Block X, Start Block Y, 
+;			   Initial Direction, 
+;  			   Min Block X, Min Block Y, 
+;			   Max Block X, Max Block Y, 
+;			   dx (pixels), dy (pixels), 
+;			   tick count
+;			   leftFrame, rightFrame, UpFrame, DownFrame, maxFrames, Frames Per Animation Seg
+;
+[Actors]
+;YellowCamera.png,   7, 13, 1,  7, 13,  22, 13, 16,0,4,4,1,8,8,4,4
+
+ChillyYellow.png,    7, 13, 1,  7,13, 22,13, 16,0,4,4,2,8,8,8,4
+;ChillyYellow.png,  14, 13, 1,  7,13, 22,13, 16,0,4,4,2,8,8,8,4
+
+BlueBall.png,		24, 6, 2, 24, 5, 24,11,  0, 3,  4, 4, 1, 8, 8, 4, 4
+Eye.png,   			24, 8, 2, 24, 7, 24,13,  0, 3,  4, 4, 1, 8, 8, 4, 4
+
+GreenBird.png,		2, 8, 5, 2, 8, 2, 8,-16,0,20,4,2,8,8,8,4
+
+BlueScorpion.png,	1,13, 5, 1,13, 1,13,-16,0,4,4,2,8,8,8,4
+BlueScorpion.png,	2,13, 1, 2,13, 2,13, 16,0,4,4,2,8,8,8,4
+BlueScorpion.png,	3,13, 4, 3,13, 3,13, 16,0,4,4,2,8,8,8,4
+
+BlueScorpion.png,	26,13, 1, 26,13, 26,13, 16,0,4,4,2,8,8,8,4
+BlueScorpion.png,	27,13, 4, 27,13, 27,13, 16,0,4,4,2,8,8,8,4
+
+;   Player Start Block Position
+;   Actor Filename, Start Block X, Start Block Y, Initial Direction, DX (Pixels), DY (Pixels), Tick Count, Segments
+
+[HeroStart]
+MinerWilly.png,29,13,16,16,2,4,16
+
+;
+; Trigger Caverns Complete Sequence (Graphic Must be in Main Sprite Sheet)
+;
+;	Graphic Name, Block X, Block Y, Manic X, Manic Y, Frame
+[SwordFish]
+SwordFish.png	, 19, 5, 19, 2, 4
+
+;   End of Cavern 20 Music (Needs Swordfish)
+;
+[FinalCavernMusic]
+CavernComplete.ogg
+
+
+; Replay Data to demonstrate how the level can be completed
+; Must be the last Tag
+;
+[ReplayData]
+A20h20a800=0<=0H=0A>00B0<B0PB0IE08G0DG0XG01I0MJ0aJ0mK0IL00M0jM0NN0bN08Q0RW0^X0:Y0hY0:Z0NZ0R[0`[0Q\0P]0I^0X^0B_00`09`0Hb01j0P01<21X21Q41E71Q71e81I91P91R:1^;12<18=14D1XD1

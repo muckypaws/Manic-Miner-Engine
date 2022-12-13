@@ -1,0 +1,99 @@
+; 4 TWEAKED-HARD 1.5g
+
+; Bob Edit: 18-12-2019
+
+[LevelName]
+Den Tredje Tatningen
+
+[LevelMusic]
+Swan Lake-ef.ogg
+
+[WillyDieSound]
+splat-3.wav
+
+[HighScoreMusic]
+EKNM.ogg
+
+[BackgroundColour]
+CUSTOM:0:15:39
+
+[BorderColour]
+CUSTOM:0:47:63
+
+[SpriteSet]
+3
+
+[ExitBlock]
+2
+
+
+[LevelData]
+36009000600031333133313331333133
+30000000000060000000000009000AB3
+30000000000090000000000000000BB3
+30000000000000000004222400000003
+1CCCCC00000000000000000000007711
+30000000200000042400000000000003
+30000000000420000000000400000093
+1CCCC000000900000000000000000003
+39000000420000000000000000044003
+30000000000000000024200000090003
+1CCC0000000000000000000000000711
+30000000000042400000002420000003
+30000004000000000000000000000003
+1CC00000000000000004000000000003
+30000000000000000000005000500053
+333CCCCCCCCCCCCCCCC3331333133313
+
+
+[StickyConveyor]
+0
+
+
+;[CustomSpriteSheet]
+;CustomSpriteSheet1.png
+
+[BackGroundStaticImages]
+#Window1.png, 404, 80, 128
+#B2mid.png, 64, 48, 45, 0.0
+
+[ForeGroundStaticImages]
+B2c-e-s-tb2pix.png, 0, 0, 47
+
+;[BlockNOP]
+;BlockNOP-B2.png
+
+
+[SwitchSoundOn]
+Chain-f2.wav
+
+[Switches]
+BobSWIceFloorLeft.png,	  1,  4, 1, L1, OpenTrapDoor, 3:0
+BobSWIceFloorLeft.png,	  1,  7, 1, L2, OpenTrapDoor, 3:0
+BobSWIceFloorLeft.png,	  1, 10, 1, L3, OpenTrapDoor, 3:0
+BobSWIceFloorLeft.png,	  1, 13, 1, L4, OpenTrapDoor, 3:0
+BobSWIceFloorLeft.png,	  2, 15, 1, L5, OpenTrapDoor, 3:0
+
+BobSWIceFloorRight.png,	 30,  4, 1, R1, OpenTrapDoor, 3:0
+BobSWIceFloorRight.png,	 30, 10, 1, R2, OpenTrapDoor, 3:0
+
+
+;   ActorName, Start Block X, Start Block Y, 
+;			   Initial Direction, 
+;  			   Min Block X, Min Block Y, 
+;			   Max Block X, Max Block Y, 
+;			   dx (pixels), dy (pixels), 
+;			   tick count
+;			   leftFrame, rightFrame, UpFrame, DownFrame, maxFrames, Frames Per Animation Seg
+;
+[Actors]
+RedSeal.png,	 4,13, 1, 3,13, 17,13, 16,0, 3, 4, 1,8,8, 8, 4
+GreenSeal.png,	11,13, 7, 3,13, 17,13,-16,0, 4, 4, 1,8,8, 8, 4
+BlueSeal.png,	14,13, 2, 3,13, 17,13, 16,0, 5, 4, 1,8,8, 8, 4
+
+[HeroStart]
+MinerWilly.png,   19,13, 16, 16, 2, 4,16
+
+
+[ReplayData]
+170]70i70e;09<05>0Q>05@01A08A0RA0FB0:C0FE0:F0hG01H0mH0II05L01M0RM0NN0jN08P0AP0UP0QS0`S02T0^T0RU0NW0ZW0FZ0ZZ0n^0:_06b0dd0md09i0Mj0aj00l0Rl0>m0jm0>01

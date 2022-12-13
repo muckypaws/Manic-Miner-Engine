@@ -1,0 +1,85 @@
+; 20 TWEAKED-HARD
+
+; Bob Edit 03-10-2019
+
+[LevelName]
+When Doppelgangers Attack!
+;There And Back Again... Again!
+
+[LevelMusic]
+Mountain King.ogg
+
+[WillyDieSound]
+die.wav
+
+[BackgroundColour]
+CUSTOM:0:20:0
+
+[BorderColour]
+CUSTOM:0:68:0
+
+[SpriteSet]
+19
+
+[ExitBlock]
+19
+
+;
+; Now define the Level Data
+; 0 = Empty Space
+; 1 = Solid Platform
+; 2 = Solid Platform
+; 3 = Impassable Wall
+; 4 = Collapsible Platform
+; 5 = Hazard 1
+; 6 = Hazard 2
+; 7 = Conveyor Platform Moving Right To Left
+; C = Conveyor Platform Moving Left To Right 
+; 9 = Collectable Object
+; A = Willy's Exit/Door Position (Top Left Corner)
+; B = Special Control to detect Willy in the door
+; F = Special Block (Willy's Home Graphic)
+;
+
+[LevelData]
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFFFFF090005090F
+FFFFFFFFFFFFFFFFFFABFF000000000F
+FFFFFFFFFFFFFFFFFFBBFF000000000F
+39000000000000000000000000000003
+10000000000000000000000000000001
+3CCCCCCCCCCCCCCCCCCCCCC000440003
+10000000590500900509050000004041
+33300000000000000000000000000003
+10E00400000000000000000000000001
+39D00000000000600000000000000333
+1112222222222222222222CCCCC22111
+
+
+[Switches]
+BobSwitchModernRight.png,    30,  8, 0, Switch1, OpenTrapDoor, 3:14:3:15
+
+
+[StickyConveyor]
+2
+
+
+[Actors]
+EyeGreen.png,     24, 6, 2, 24, 5, 24,12,  0,-3, 4, 4,1,8,8, 4, 4
+Rat.png,           4,14, 2,  3,14, 27,14, 16, 0, 4, 4,1,8,8, 8, 4, , Switch1, UpdateBlockParms, 1:14:27:14
+
+Rat.png,          10,14, 1,  3,14, 27,14, 16, 0, 4, 4,1,8,8, 8, 4, , Switch1, UpdateBlockParms, 1:14:27:14
+
+MariaWalk.png,     7,13, 1,  3,13, 20,13, 16, 0, 4, 4,1,8,8, 8, 4, , Switch1, UpdateBlockParms, 1:13:20:13
+
+
+[HeroStart]
+MinerWilly.png, 29,12, 12,16,2,4,16
+;MinerWilly.png, 1,8, 12,16,2,4,16
+
+[ReplayData]
+Q100209:0P?0lF0`J0dL0XM0QN08Q01R08R0aR0hR0QS0XS0DV0`W0\X0XY0YZ0E^0i_0@`0R`0Ha0Ta08b0Ab0=c09f0Hf0Zg0`g0<01H01B91n:12<1F=12>10?1A@18A1AB1HB1AE1@L1<M1`N19O1eS19T18W1RW1XW12[1@_1T_18`11a1Hd1\d18e1Qe1Ef19g1@g1<h1hh1Bi10j1J12^12

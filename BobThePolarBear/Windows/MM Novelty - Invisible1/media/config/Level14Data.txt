@@ -1,0 +1,98 @@
+;
+;Define The Level Name
+;
+[LevelName]
+Skylab Landing Bay
+;
+;  Set the Background Colour
+;
+[BackgroundColour]
+DARKBLUECOLOUR
+
+;
+;  Set the Border Colour
+;
+[BorderColour]
+DARKYELLOWCOLOUR
+
+;
+; Want to use a PNG for blank background block?
+;
+[BlockNOP]
+BlockNOP-Black.png
+
+;
+;  Which of the 20 Sprite Sets do you want to use?
+;  Starts (0-19)
+;
+[SpriteSet]
+13
+
+;
+;  Define the Door Sprite To Use
+;  (0-19)
+;
+[ExitBlock]
+13
+
+;
+;  Now define the Level Data
+;	0  = Empty Space
+;	1  = Solid Platform
+;	2  = Solid Platform
+;	3  = Impassable Wall
+;	4  = Collapsible Platform
+;	5  = Hazard 1
+;	6  = Hazard 2
+;	7  = Conveyor Platform Moving Right To Left
+;	C = Conveyor Platform Moving Left To Right 
+;	9  = Collectable Object
+;	A = Willy's Exit/Door Position (Top Left Corner)
+;	B = Special Control to detect Willy in the door
+;	F = Special Block (Willy's Home Graphic)
+;
+[LevelData]
+300000000000000AB000000000000003
+300000000000000BB000000000000003
+30000000000000000000000900000003
+30000000000000000000000000000003
+30000000000000000000000000000003
+30000000000000012000000000000003
+30012000000120000001200000012003
+30000001200000009000000120090003
+30090000000000000000000000000003
+30000120000001200000012000000123
+30000000000000000000000000000003
+31200000012000077777700001200003
+30000000000000000000000000000003
+30000001200000000000000000000003
+30000000000000000000000000000003
+33333333333333333333333333333333
+;
+;   Define the Actors on the Caverns
+;
+;   ActorName, Start Block X, Start Block Y, 
+;			   Initial Direction, 
+;  			   Min Block X, Min Block Y, 
+;			   Max Block X, Max Block Y, 
+;			   dx (pixels), dy (pixels), 
+;			   tick count
+;			   leftFrame, rightFrame, UpFrame, DownFrame, maxFrames, Frames Per Animation Seg
+;
+[Actors]
+WhiteSatellite.png, 	 1,  0, 1,  1,  0, 1,  9,  0, 4,  2, 1, 1, 1, 1, 8, 8, Satellite
+BlueSatellite.png, 	 	11,  0, 1, 11,  0,11,  4,  0, 1,  3, 1, 1, 1, 1, 8, 8, Satellite
+YellowSatellite.png, 	21,  0, 1, 21,  0,21,  7,  0, 3,  2, 1, 1, 1, 1, 8, 8, Satellite
+
+
+;
+;   Player Start Block Position
+;
+;
+;   Actor Filename, Start Block X, Start Block Y, Initial Direction, DX (Pixels), DY (Pixels), Tick Count, Segments
+
+[HeroStart]
+MinerWilly.png,28,13,16,16,2,4,16
+
+[ReplayData]
+110m90Y:0U<0A=0:>0N>0R>0f>0j>0@?0b?00A0bB0nB08C0ND0hD02F0fH0:I0HJ02K0FK0RK08L0JQ0VQ02R0HR09S0US0`S0:W0nW0JX0`Y01Z0HZ09\0E\0Q\0h]0I_0U_0`_0Y`08a0Za0na08b0ib0]c0ac05d09d0=f0Qf0hg0Dh0

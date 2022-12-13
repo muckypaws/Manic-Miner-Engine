@@ -1,0 +1,50 @@
+
+::  Credits:	MM Alpha Omega Extremus					::
+
+::  System:		Any modern Windows PC					::
+
+::  Made with:	WonkyPix engine 1.6b					::
+
+::  Graphics:	Andy Noble (items made invisible)		::
+
+::  Edited:		2022-12-12								::
+
+
+Original Manic Miner Game by Matthew Smith
+==========================================
+
+(c) 1983 BUG-BYTE Limited, and SOFTWARE PROJECTS Limited.
+(c) 1997 Alchemist Research.
+
+
+Huge Thanks To (in alphabetical order)
+======================================
+
+AGK -- The base for game engine
+appgamekit.com
+
+Jason Brooks -- Huge help with the game engine
+manicmineragk.wordpress.com
+
+Andy Noble -- The graphics are all Andy's with almost everything made invisible by me :o)
+andynoble.co.uk
+
+Matthew Smith -- The genius behind the original game
+en.wikipedia.org/wiki/Matthew_Smith_(games_programmer)
+
+WonkyPix -- The game engine development studio
+WonkyPix.com
+
+
+Main Changes
+============
+
+All platforms, conveyors, crumble, walls and nasties are invisible but are still functional.
+
+Horizontal Baddies are invisible when travelling from right-to-left but can still kill.
+
+A couple of extra visible hazards have been added.
+
+Six keys to collect each cavern rather than five.
+
+Enjoy! :O)

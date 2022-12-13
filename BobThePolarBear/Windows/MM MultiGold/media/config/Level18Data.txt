@@ -1,0 +1,98 @@
+
+; For more details on these instructions please refer to the comments in Level1Data.txt
+
+; ============ CAVERN TITLE ============
+[LevelName]
+Golden Harvest
+;The Warehouse
+
+; ============ MUSIC & SOUND ============
+[LevelMusic]
+Rich Man Alt Echo.ogg
+
+; ============ COLOURS & GRAPHICS ============
+[BackgroundColour]
+BLACKCOLOUR
+
+; ============ COLOURS & GRAPHICS ============
+[BorderColour]
+DARKREDCOLOUR
+
+[BlockNOP]
+BlockNOP.png
+
+;[BackGroundStaticImages]
+; +64 width, +48 height for border.
+;#Gold.png, 64, 48, 120, 0.0
+
+;[ForeGroundStaticImages]
+;sgw-border-new-trans.png, 0, 0, 35
+
+[SpriteSet]
+16
+
+[ExitBlock]
+16
+
+; ============ LEVEL LAYOUT DATA ============
+; 0=Empty, 1=Platform, 2=Platform, 3=Wall, 4=Crumble, 5=Hazard, 6=Hazard,
+; 7=Conveyor-Right, C=Conveyor-Left, 9=Key, A=Exit, B=Door, E&F=Special switch blocks.
+
+[LevelData]
+39900000000000000000000000000333
+30000000000000000000000000000AB3
+30000000000000000000000000000BB3
+30000000000000000000000000000993
+30000050050005005000005050000003
+31144444440044444440044994400113
+34464444440044444440044444400993
+34444444440044499440044444600443
+34400444440044CCCCC0044444400443
+39900444440044444440044444400443
+34400444440044444449946444400443
+34400444460044444444444449900443
+34400444440044444444444444400443
+30000000000000000000000000000003
+30000000000000000000000000011113
+31111111111111111111111111111113
+
+; ============ Sticky Conveyor? ============
+
+; If you want Willy to Stick to the Platform when landing and facing in the
+; opposite direction, and player is trying to move in the opposite direction:
+; 0 = Willy moves against the flow of the conveyor.
+; 1 = Willy does not move.
+[StickyConveyor]
+0
+
+; ============ Switches ============
+;
+; ActorFileName, BlockX, BlockY, StartState, SpecialFunction
+
+[Switches]
+BobMusicSwitch-L.png,	 7, 0, 0, Switch1, OpenTrapDoor, 1:1, s-17-Hay.wav
+BobMusicSwitch-R.png,	30,13, 0, Switch2, OpenTrapDoor, 1:1, s-17-Drinker.wav
+
+; ============ Actors/Baddies ============
+; FN = Actor Filename in Sprite Sheet, SX = Start X, SY = Start Y, ID = Initial Direction/Image,
+; MX = Min X travelled to, MY = Min Y travelled to, FX = Furthest/Max X, FY = Furthest/Max Y,
+; DX = X Distance covered in pixels, DY = Y Distance covered in pixels, TC = Tick Count,
+; LF = Left Frame, RF = Right Frame, UF = Up Frame, DF = Down Frame,
+; TF = Total Frames in animation, FP = Frames per animation segment in each direction.
+
+; FN					SX SY ID  MX MY  FX FY  DX DY TC LF RF UF DF TF FP
+[Actors]
+BlueThresher.png,		 3, 8, 2,  3, 8,  3,13,  0, 3, 4, 4, 1, 8, 8, 4, 4
+YellowThresher.png,		10, 8, 3, 10, 0, 10,13,  0,-4, 4, 4, 1, 8, 8, 4, 4
+WhiteThresher.png,		19, 6, 4, 19, 0, 19, 8,  0, 4, 5, 4, 1, 8, 8, 4, 4	 
+MagentaThresher.png,	27, 0, 1, 27, 0, 27,12,  0, 4, 3, 4, 1, 8, 8, 4, 4
+RedBob.png,				 5,13, 1,  5,13,  8,13, 16, 0, 8, 4, 1, 8, 8, 4, 4
+BlueBob.png,			12,13, 1, 12,13, 25,13, 16, 0, 4, 4, 1, 8, 8, 4, 4
+
+; ============ Willy/Hero ============
+[HeroStart]
+MinerWilly.png,1,3,16,16,2,4,16
+
+; ============ REPLAY DATA (NOT USED IN SGW) ============
+[ReplayData]
+Z00`00Y10m10420820Z30h50B80X80::0H:01;08;09<0@<0l<08=04?0H?0IA0eA01B0]C0@D01E0EE0iE00F0aF0mF0@G0BH0XI0BJ0HJ0:L0NL0bL00M0jR0VS0bS0hS0RW08Y0<Z0XZ0R]0h_0Aa0`b02c0>c0Rc0nf0Jg0`i0il0Hm0Ym0=n0Qn0001D01`01<21`21Z61X71b71V81291F:1J;1h;14<1

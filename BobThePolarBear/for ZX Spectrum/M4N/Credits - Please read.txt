@@ -1,0 +1,148 @@
+=============================================
+ M4N - Manic-4-Noobs | Credits - Please read
+=============================================
+
+
+ 31-May-2021
+-------------
+
+Manic4Noob.tap tape format conversion with loader kindly done by Lee Price. This is the same game as Manic-4-Noobs (Final).
+
+
+
+
+07-April-2021
+-------------
+
+Will keep this short as know most peeps scan-read these :)
+
+Detailed description of project will (eventually) appear on:
+
+bobstuff.net
+
+(Very much a work-in-progress website).
+
+ - - - - -
+
+Manic Miner was created by the genius: Matthew Smith.
+
+Copyright ©: BugByte Ltd. 1983, Software Projects 1983.
+
+Additional Routines: "Drop Splat" sound effect based on code by Brendan Alford.
+
+Would like to thank Jim Bagley and Daniel A. Nagy for help with routines that I've either
+
+butchered beyond recognition or have earmarked for "Manic-minors" :)
+
+Other routines are my own work, and a bit clunky as only recently getting back into Z80 m/c.
+
+If you wish to use them please let me know as I might have a more streamlined version,
+
+and maybe think about giving me a credit, poured blood, sweat and tears into every byte :)
+
+ - - - - -
+
+Resources used:
+
+The complete Manic Miner RAM disassembly 20200731
+© 1983 Bug-Byte Ltd. © 2020 Richard Dymond.
+https://skoolkid.github.io/manicminer/dec/index.html
+
+Dr. Andrew Broad
+Sinclair ZX Spectrum
+Manic Miner/Jet Set Willy
+Manic Miner Room-Format
+http://www.icemark.com/dataformats/manic/mmformat.htm
+
+Z-80 Refence Guide by Alan Tully -- need to know what the instructions do before tweaking them :)
+https://www.google.co.uk/books/edition/Z80_Reference_Guide/wLQekgEACAAJ?hl=en
+
+Spectaculator emulator -- used mainly for entering data.
+https://www.spectaculator.com/
+
+ZXSpin emulator -- used mainly for entering code.
+https://www.zophar.net/sinclair.html
+
+PixelFont Editor by Richard Prinz -- basic, but does what I need and very easy to use.
+https://www.min.at/prinz/o/software/pixelfont/
+
+ - - - - -
+
+Special thanks to all the kind and knowledgeable people in the following Facebook groups:
+
+Central Cavern - The Wonderful World of Willy,
+
+Spectrum For Everyone,
+
+Z80 Assembly Programming On The ZX Spectrum,
+
+Happy Coding ZX.
+
+A number of people have offered encouragement and pointed me in the right direction.
+
+So would hate to single out anyone in particular, but, Andy Ford has been a great help
+
+when I couldn't see the bytes for the bits.
+
+ - - - - -
+ 
+The Tweak Testers (The Dirty Dozen) :):
+
+AG  -- Adrian Grubb,
+
+IE  -- Ian Ellis,
+
+DB  -- Dave Brown,
+
+MS  -- Matthew Stroud,
+
+ME  -- Mark Elliot,
+
+AF  -- Andy Ford,
+
+SP  -- Steve Payne,
+
+RG  -- Rob Gregorczyk,
+
+MNE -- Mark Erlam,
+
+JB  -- Justin Bennett,
+
+MG  -- Marcin Gos,
+
+MK  -- Milivoj Kostic.
+
+ - - - - -
+
+For my own taste, on Windows 10, like how the game...
+
+...looks using: Spectaculator,
+https://www.spectaculator.com/
+
+...plays using Fuse,
+http://fuse-emulator.sourceforge.net/
+
+...sounds using ZXSpin (but only with echo/reverb on).
+https://www.zophar.net/sinclair.html
+
+These emulators have a number of settings to adjust the display and sound,
+
+please tweak them to your own personal taste :)
+
+ - - - - -
+
+And finally, as Spock once said to a Dalek in Rivendell...
+
+...
+
+...
+
+...
+
+...
+
+...
+
+...may the force be with you :P
+
+ - - - - -

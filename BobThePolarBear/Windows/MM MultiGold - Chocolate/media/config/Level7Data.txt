@@ -1,0 +1,93 @@
+
+; For more details on these instructions please refer to the comments in Level1Data.txt
+
+; ============ CAVERN TITLE ============
+[LevelName]
+The Processing Plant
+;Processing Plant
+
+; ============ MUSIC & SOUND ============
+[LevelMusic]
+Hall Echo.ogg
+
+; ============ COLOURS & GRAPHICS ============
+[BackgroundColour]
+BLACKCOLOUR
+
+[BorderColour]
+DARKREDCOLOUR
+
+[BlockNOP]
+BlockNOP.png
+
+;[BackGroundStaticImages]
+; +64 width, +48 height for border.
+;#Gold.png, 64, 48, 120, 0.0
+
+;[ForeGroundStaticImages]
+;sgw-border-new-trans.png, 0, 0, 35
+
+[SpriteSet]
+5
+
+[ExitBlock]
+5
+
+; ============ LEVEL LAYOUT DATA ============
+; 0=Empty, 1=Platform, 2=Platform, 3=Wall, 4=Crumble, 5=Hazard, 6=Hazard,
+; 7=Conveyor-Right, C=Conveyor-Left, 9=Key, A=Exit, B=Door, E&F=Special switch blocks.
+
+[LevelData]
+30000000000000000000000000000AB3
+30000900000000000000000000000BB3
+30000100000000000000000000000003
+30000000000000000000000000000003
+30000000999000099000069999000003
+30099000111000011000011111009993
+30011000000000003000000000001113
+30000000000000003000000999990003
+39900000000000000000000111110003
+31100009999999999999999999000003
+30000001111111113111111111000003
+30000000000000003600000000009993
+30059990000000003000009900001113
+30077770000000000000001100000003
+39999999999999999999990000000003
+31111111111111111111111111111113
+
+; ============ Sticky Conveyor? ============
+
+; If you want Willy to Stick to the Platform when landing and facing in the
+; opposite direction, and player is trying to move in the opposite direction:
+; 0 = Willy moves against the flow of the conveyor.
+; 1 = Willy does not move.
+[StickyConveyor]
+0
+
+; ============ Switches ============
+
+[Switches]
+BobMusicSwitch-L.png,	15, 6, 0, Switch1, OpenTrapDoor, 1:13, s-6-pacman.wav
+
+; ============ Actors/Baddies ============
+; FN = Actor Filename in Sprite Sheet, SX = Start X, SY = Start Y, ID = Initial Direction/Image,
+; MX = Min X travelled to, MY = Min Y travelled to, FX = Furthest/Max X, FY = Furthest/Max Y,
+; DX = X Distance covered in pixels, DY = Y Distance covered in pixels, TC = Tick Count,
+; LF = Left Frame, RF = Right Frame, UF = Up Frame, DF = Down Frame,
+; TF = Total Frames in animation, FP = Frames per animation segment in each direction.
+
+; FN				SX SY ID  MX MY  FX FY  DX DY TC LF RF UF DF TF FP
+[Actors]
+YellowPacman.png,	 7, 8, 2,  7, 8, 14, 8, 16, 0, 4, 4, 1, 8, 8, 8, 4
+MagentaPacman.png,	14, 8, 3, 14, 8, 21, 8, 16, 0, 4, 4, 1, 8, 8, 8, 4
+GoldPacman.png,		25,13, 1, 24,13, 29,14, 16, 0, 4, 4, 1, 8, 8, 8, 4	 
+BluePacman.png,		 8,13, 4,  7,13, 20,13, 16, 0, 4, 4, 1, 8, 8, 8, 4	 
+
+; ============ Willy/Hero ============
+[HeroStart]
+MinerWilly.png,15,3,16,16,2,4,16
+
+; ============ REPLAY DATA (NOT USED IN SGW) ============
+[ReplayData]
+Y00M10120e40950880B80690B900<0R<0^<02=0@=0A>0R?0f?02@0`B0:C0NC0ZD0VG0bG00J0QJ0XK0IO0hV0QW0]W0iW08X0aX05^0Y^0`^0:_08b02c0Hc0Bd0Hf0Jl0>m0Jm0N11b11^31Z41161U61a61h61l71`81:916:1B:1P:19;1e;11<18<1:=1^>1:?1P?11A15B1IB1hB1jC1`D1BF1VF12G18G1
+

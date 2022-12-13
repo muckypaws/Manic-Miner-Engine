@@ -1,0 +1,48 @@
+
+::  Credits:	MM Novelty - Invisible1					::
+
+::  System:		Any modern Windows PC					::
+
+::  Made with:	WonkyPix engine 1.6b					::
+
+::  Graphics:	Andy Noble (platforms made invisible)	::
+
+::  Edited:		2022-12-10								::
+
+
+Original Manic Miner Game by Matthew Smith
+==========================================
+
+(c) 1983 BUG-BYTE Limited, and SOFTWARE PROJECTS Limited.
+(c) 1997 Alchemist Research.
+
+
+Huge Thanks To (in alphabetical order)
+======================================
+
+AGK -- The base for game engine
+appgamekit.com
+
+Jason Brooks -- Huge help with the game engine
+manicmineragk.wordpress.com
+
+Andy Noble -- The graphics are all Andy's with the platforms made invisible by me :o)
+andynoble.co.uk
+
+Matthew Smith -- The genius behind the original game
+en.wikipedia.org/wiki/Matthew_Smith_(games_programmer)
+
+WonkyPix -- The game engine development studio
+WonkyPix.com
+
+
+Main Changes
+============
+
+All platforms are invisible but still function,
+
+100 starting lives,
+
+1,000 points per key, extra life is still at 10,000.
+
+Enjoy! :O)

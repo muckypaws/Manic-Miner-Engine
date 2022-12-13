@@ -1,0 +1,102 @@
+;
+;Define The Level Name
+;
+[LevelName]
+Pac Up Your Troubles
+;
+;  Set the Background Colour
+;
+[BackgroundColour]
+BLACKCOLOUR
+
+;
+;  Set the Border Colour
+;
+[BorderColour]
+DARKREDCOLOUR
+
+;
+;  Which of the 20 Sprite Sets do you want to use?
+;  Starts (0-19)
+;
+[SpriteSet]
+5
+
+;
+;  Define the Door Sprite To Use
+;  (0-19)
+;
+[ExitBlock]
+5
+
+;
+;  Now define the Level Data
+;	0  = Empty Space
+;	1  = Solid Platform
+;	2  = Solid Platform
+;	3  = Impassable Wall
+;	4  = Collapsible Platform
+;	5  = Hazard 1
+;	6  = Hazard 2
+;	7  = Conveyor Platform Moving Right To Left
+;	12 = Conveyor Platform Moving Left To Right 
+;	9  = Collectable Object
+;	10 = Willy's Exit/Door Position (Top Left Corner)
+;	11 = Special Control to detect Willy in the door
+;
+[LevelData]
+33333333333333333333333333333113
+30000000000000000000000093000AB3
+30000000000000000000000003050BB3
+30013333333333333333333333331113
+31000000000000000000000000000003
+35000000000000000000050000000033
+31111111111111100001111000111113
+30000093333000000000000111000093
+30003000000000000000000000000003
+30003000000000000000000500001113
+30011111111111111111111111000003
+30000000000000333333300000000003
+30000000000000060906000000011903
+31177770000000000000000300000003
+33333331000000000000000300000003
+33333333111111111111111333333333
+
+;
+; Sticky Conveyor
+; If you want Willy to Stick to the Platform when landing
+; and facing in the opposite direction and the player
+; is trying to move in the opposite direction
+; Set Value to 1 if you want Willy not to Move
+; Set Value to 0 if you allow Willy to move against the flow
+[StickyConveyor]
+0
+
+;
+;   Define the Actors on the Caverns
+;
+;   ActorName, Start Block X, Start Block Y, 
+;			   Initial Direction, 
+;  			   Min Block X, Min Block Y, 
+;			   Max Block X, Max Block Y, 
+;			   dx (pixels), dy (pixels), 
+;			   tick count
+;			   leftFrame, rightFrame, UpFrame, DownFrame, maxFrames, Frames Per Animation Seg
+;
+[Actors]
+YellowPacman.png,   6,  8, 2, 6,   8, 13,  8,  16, 0,  4, 4, 1, 8, 8, 8, 4
+MagentaPacman.png, 14,  8, 3, 14,  8, 21,  8,  16, 0,  4, 4, 1, 8, 8, 8, 4
+GoldPacman.png,	   25, 13, 1, 24, 13, 29, 14,  16, 0,  4, 4, 1, 8, 8, 8, 4	 
+BluePacman.png,	    8, 13, 4,  8, 13, 20, 13,  16, 0,  4, 4, 1, 8, 8, 8, 4	 
+;
+;   Player Start Block Position
+;
+;   Actor Filename, Start Block X, Start Block Y, Initial Direction, DX (Pixels), DY (Pixels), Tick Count, Segments
+
+[HeroStart]
+MinerWilly.png,12,4,16,16,2,4,16
+
+[ReplayData]
+900m40I50X50j50670R70>80R80X80J:0i:0E;00<0j<0V=0j=0@H0IH08S0BS09\0@\0Q\0X^0B`0Ya0ma09b0Hb09c0@g0Jg0Pg0\h0hh0Z01V31B41h41151H71R71`71181P81Z81h91::1X:1:;1H;11<1:=1N=1Z=1`=1j>1f@12A1nB1RC1@E1IE1XF1aG1@H1BN1XN1jR10U1QU1=V1IV1PV11X15Y1AY1HY1:[1V\1Z\1h\19^1=_1A_1H_11`18c1Dc1Hc1Rd1^g1jg1Qj1ej1ij10k12n1Nn1jn1@02i02=12H12B22V32j32`42152E62Q62082992H92j92X:2T;2`;2Z<2>?2J?2
+I00E50Y50`50B60V70j708B0AB0:M01U0`W0:X0XZ0Q\0h]0Q^0`^0J`0aa05b0Qb0hb0Yc0@g0Jg0Pg0Ti0Xi0:01X21:31^31j31841I51j71H:1Z:18;1i;1`>1J@18B1ZD1fD10E1ZF1NG1bG1VI1:J1@L1aL1HN1jO1HP1:S1PT1ZT1@U11V1=V1IV1hV1aW1UX1aX1HY1ZZ1>\1J\11^1]^1i^1`b14c18c1jc1ng1:h1aj1=k1Ik1Pk1Zl1hl1Jn1nn1Bo1Ho1B02012R12`12a22h22Q42]42i42852B62H62:72F72R72h72i82P92Q:2m:2A;2X<2I=2P=2j=2H>2\>2h>2B?2>A2bA2
+

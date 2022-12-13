@@ -1,0 +1,87 @@
+
+; For more details on these instructions please refer to the comments in Level1Data.txt
+
+; Changes for Ruby: Top Trolly removed, Sped up bottom trolly, Amoebatrons travel all the way top to bottom.
+
+; ============ CAVERN TITLE ============
+[LevelName]
+Wacky Amoebatrons
+
+; ============ MUSIC & SOUND ============
+[LevelMusic]
+Rich Man Echo.ogg
+
+; ============ COLOURS & GRAPHICS ============
+[BackgroundColour]
+BLACKCOLOUR
+
+[BorderColour]
+DARKBLUECOLOUR
+
+[BackGroundStaticImages]
+; Border: width +64, height +48. (Good transparents for gold backgrounds: 65, 105, 145).
+#BG01.png, 64, 48, 66, 0.0
+
+;[ForeGroundStaticImages]
+;sgw-border-new-trans.png, 0, 0, 35
+
+[SpriteSet]
+8
+
+[ExitBlock]
+8
+
+; ============ LEVEL LAYOUT DATA ============
+; 0=Empty, 1=Platform, 2=Platform, 3=Wall, 4=Crumble, 5=Hazard, 6=Hazard,
+; 7=Conveyor-Right, C=Conveyor-Left, 9=Key, A=Exit, B=Door, E&F=Special switch blocks.
+
+[LevelData]
+3AB30000000000090000000000000003
+3BB00000000000000000000000000003
+30000000000000000000000000000003
+30000000000000000000000000000003
+30000000000000000000000000000003
+31111001110011111111001110011003
+30000000000000000000000000000003
+30000000000000000000000000000113
+300110011100CCCCCCCC000000000003
+30000000000000000000001110011003
+31100000000000000000000000000003
+30000000000000000000000000000003
+30011001110011111111001110011003
+30000000000000000000000000000113
+30000000000000000000000000000003
+31111111111111111111111111111113
+
+; ============ Sticky Conveyor? ============
+
+; If you want Willy to Stick to the Platform when landing and facing in the
+; opposite direction, and player is trying to move in the opposite direction:
+; 0 = Willy moves against the flow of the conveyor.
+; 1 = Willy does not move.
+[StickyConveyor]
+0
+
+; ============ Actors/Baddies ============
+; FN = Actor Filename in Sprite Sheet, SX = Start X, SY = Start Y, ID = Initial Direction/Image,
+; MX = Min X travelled to, MY = Min Y travelled to, FX = Furthest/Max X, FY = Furthest/Max Y,
+; DX = X Distance covered in pixels, DY = Y Distance covered in pixels, TC = Tick Count,
+; LF = Left Frame, RF = Right Frame, UF = Up Frame, DF = Down Frame,
+; TF = Total Frames in animation, FP = Frames per animation segment in each direction.
+
+; FN				SX SY ID  MX  MY  FX FY  DX DY TC LF RF UF DF TF FP
+[Actors]
+MagentaAmoeba.png,	 5, 1, 1,  5,  0,  5,13,  0, 2, 4, 4, 1, 8, 8, 4, 4
+GreenAmoeba.png,	10, 1, 1, 10,  0, 10,13,  0, 4, 4, 4, 1, 8, 8, 4, 4
+BlueAmoeba.png,		20, 2, 1, 20,  0, 20,13,  0, 2, 4, 4, 1, 8, 8, 4, 4	 
+RedAmoeba.png,		25, 1, 1, 25,  0, 25,13,  0, 4, 4, 4, 1, 8, 8, 4, 4
+;GreenTrolley.png,	12, 3, 1, 12,  3, 18, 3, 16, 0, 4, 1, 1, 1, 1, 4, 4
+BlueTrolley.png,	14,10, 1, 12, 10, 18,10, 16, 0, 6, 1, 1, 1, 1, 4, 4
+
+; ============ Willy/Hero ============
+[HeroStart]
+MinerWilly.png,3,13,3,16,2,4,16
+
+; ============ REPLAY DATA (NOT USED IN SGW) ============
+[ReplayData]
+:00^;0R<0h=0A>0`>0I?0P?0D@0X@0IC0]C0iC00F0IF0mF01G0XG0QO0mO09P0MR0YR0hS0IT0`T0RV08W0QW0`W0AX0]X0iX00Y0iZ0@[0<\0P\0d]0H^0B_0`_02b0Nb0jb0Xd0j61F71Z71><1J<1P>1:?1H?1ZB1nB1BC1`D1dE18F1LG10H1II1XI1YK1mK19L1=N1YN1HP1AQ1eQ11R18S1YS10T1aV1EW1YW1mY1AZ1P]1d]18^1

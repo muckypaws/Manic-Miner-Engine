@@ -1,0 +1,92 @@
+; 8 TWEAKED-HARD
+
+; Bob Edit 06-10-2019
+
+[LevelName]
+It's Bananas! B-AN-AN-AS!
+
+[LevelMusic]
+Spooky 3q.ogg
+
+[WillyDieSound]
+Mummy-3.wav
+
+[BackgroundColour]
+BLACKCOLOUR
+
+[BorderColour]
+DARKBLUECOLOUR
+
+[SpriteSet]
+7
+
+[ExitBlock]
+7
+
+;	0 = Empty Space
+;	1 = Solid Platform
+;	2 = Solid Platform
+;	3 = Impassable Wall
+;	4 = Collapsible Platform
+;	5 = Hazard 1
+;	6 = Hazard 2
+;	7 = Conveyor Platform Moving Right To Left
+;	C = Conveyor Platform Moving Left To Right 
+;	9 = Collectable Object
+;	A = Willy's Exit/Door Position (Top Left Corner)
+;	B = Special Control to detect Willy in the door
+;	D = Removable WALL Block
+;	E = Removable Platform Block 1
+
+
+[LevelData]
+33323000003230000390322303223093
+32306000006060900300600606006003
+306000000000000EE300000000000003
+30000000000000000300000000000003
+39000000000000000300000000000003
+31111000041111104344100000011443
+30000000000000000300001000000003
+30044000000000004D00000010000003
+30900000111000000D00000000100443
+30000000000000004311111000000003
+34400000000041100309000000001113
+30000000044000000300000000000003
+30001100000000000300011111110003
+30000000000CCC3AB311000000009043
+300050005000003BB300000500050003
+31111111111111222211111111111113
+
+
+[StickyConveyor]
+0
+
+
+; Switches
+; ActorFileName, BlockX, BlockY, StartState, SpecialFunction
+
+[Switches]
+Switches.png,		 7, 0, 0, Switch1, OpenTrapDoor, 18:8:18:9
+BobSwitchBlank.png,	19, 0, 0, Switch2, OpenTrapDoor, 16:3:17:3
+
+
+[Actors]
+GreenBarrel.png,		 3, 13, 2,  1, 13,  9, 13,  16, 0,  4, 4,1,8,8, 4, 4
+BlueBarrel.png,			19,  7, 2, 18,  7, 21,  7,  16, 0,  5, 4,1,8,8, 4, 4, , Switch1, UpdateBlockParms, 17:7:21:7
+MagentaBarrel.png,		11, 11, 1, 11, 11, 15, 11,  16, 0,  6, 4,1,8,8, 4, 4
+;MagentaBarrel.png,		15, 11, 1, 11, 11, 15, 11,  16, 0,  6, 4,1,8,8, 4, 4, , Switch1, UpdateBlockParms, 11:11:18:11
+YellowBarrel.png,		21, 10, 2, 21, 10, 26, 10,  16, 0,  5, 4,1,8,8, 4, 4
+
+GreenKong.png,       15,  0, 1, 15,  0, 15,  0,   0, 0, 40, 4,1,8,8, 2, 2, , Switch2, DoKongDrop, MagentaKong.png:15:0:15:13:0:8:2:4:AddKongPoints
+
+;Acorn.png,        	 1, 0, 1,  1, 0,  1,13,  0, 3, 2, 1,1,1,1, 8, 8, Satellite
+BloodDrop.png,     	11, 1, 1, 11, 1, 11, 3,  0, 3, 2, 1,1,1,1, 8, 8, Satellite
+;Acorn.png, 	    21, 0, 1, 21, 0, 21,13,  0, 2, 2, 1,1,1,1, 8, 8, Satellite
+
+
+[HeroStart]
+MinerWilly.png, 1,13,1,16,2,4,16
+
+
+[ReplayData]
+J10@20j20N30b30h60470]70P90i90E;0Q;0m=0I>0X>0b>06B0BB0fC0BD0`D0AE0]F0iF0eH0AI00K0BK0PK0lK0PL0jL0nM0ZN0PR0\R0hS0JT0FX0RY0>[0Z[01]0e]09^0M`0Fa0Rc0ni0ej0Ll0Pl0al0`o0Y01H11221X21I41]41151291`91:<1F<1Z<1h<1V@1j@1nB1RC1XC1aD10E1BG1hG11H1=H1YH18I1BI1VJ12K1XL1aL1hL1TM10N19N15O1AO1EQ1IQ1@W1

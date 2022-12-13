@@ -1,0 +1,212 @@
+
+; "MM MultiGold"
+; 40th Anniversary Tribute
+; Edit by: BobThePolarBear
+; Last edit on: 2022-12-07
+
+; Semicoloned instructions are disabled but kept for reference.
+
+; ============ CAVERN TITLE & POINTS-PER-KEY (OPTINAL) ============
+
+[LevelName]
+MM MultiGold
+;Solid Gold Willy
+;40th Anniversary Tribute
+
+;[CollectablePoints]
+;100
+
+
+; ============ MUSIC & SOUND ============
+
+[LevelMusic]
+JSW-RH Echo.ogg
+;Rich Man Alt Echo.ogg
+;Hall Echo.ogg
+
+;[HighScoreMusic]
+;EineKleineNachtMusic.ogg
+
+[WillyDieSound]
+die.wav
+
+
+; ============ COLOURS & GRAPHICS ============
+
+[BackgroundColour]
+BLACKCOLOUR
+;CUSTOM:20:0:0
+
+[BorderColour]
+DARKREDCOLOUR
+
+;[CustomSpriteSheet]
+;CustomSpriteSheet1.png
+
+[BackGroundStaticImages]
+; Border: width +64, height +48. (Good transparents for gold backgrounds: 65, 105, 145).
+#BG01.png, 64, 48, 234, 0.0
+
+;[ForeGroundStaticImages]
+;sgw-border-new-trans.png, 0, 0, 35
+
+;[BlockNOP]
+;BlockNOP.png
+
+; Sprite Sets (0-19)
+[SpriteSet]
+0
+
+; Exit door (0-19)
+[ExitBlock]
+0
+
+
+; ============ LEVEL LAYOUT DATA ============
+
+;	0 = Empty Space
+;	1 = Platform 1
+;	2 = Platform 2
+;	3 = Wall (Impassable)
+;	4 = Collapsible Platform/Crumble
+;	5 = Hazard 1
+;	6 = Hazard 2
+;	7 = Conveyor Platform Moving Right To Left
+;	C = Conveyor Platform Moving Left To Right
+;	9 = Key/Collectable Object
+;	A = Willy's Exit/Door Position (Top-Left Corner)
+;	B = Special Control to detect Willy in the door
+;	D = Special block for switch action Removable Wall
+;	E = Special block for switch action Removable Platform 1
+;	F = Special Block (Willy's Home Graphic)
+;   G = Special block for switch action Removable Crumble
+
+[LevelData]
+30600000000000000000000000000603
+30000000000000000000000000000003
+30000000000000000000000000000003
+31111111111111111111111111111113
+30000000000000000000000000000003
+30000000000000000000000000000003
+31111111111111111111111111111113
+30000000000000000000000000000003
+30000000000000000000000000000003
+34411111111111111111111111111443
+30000000020000000000000000000003
+30000000000000000000000000000003
+34411111111111111111111111111443
+30000000000000000000000000009AB3
+33300000005000000000000000000BB3
+31111111111111111111111111111113
+
+
+; ============ Sticky Conveyor? ============
+
+; If you want Willy to Stick to the Platform when landing and facing in the
+; opposite direction, and player is trying to move in the opposite direction:
+; 0 = Willy moves against the flow of the conveyor.
+; 1 = Willy does not move.
+
+[StickyConveyor]
+2
+
+
+; ============ Switches ============
+
+[Switches]
+BobMusicSwitch-I.png,	 2, 4, 0, Switch1, OpenTrapDoor, 1:13, s-16-ImFree.wav
+BobMusicSwitch-I.png,	21, 4, 0, Switch2, OpenTrapDoor, 1:13, s-18-Cartman.wav
+BobMusicSwitch-I.png,	22, 7, 0, Switch3, OpenTrapDoor, 1:13, s-19-Shocking.wav
+
+BobMusicSwitch-L.png,	 1, 7, 0, Switch11, OpenTrapDoor, 1:13, s-0-Fanfair.wav
+BobMusicSwitch-R.png,	29,10, 0, Switch12, OpenTrapDoor, 1:13, s-0-ayntkata.wav
+
+BobMusicSwitch-L.png,	 4,13, 0, Switch23, OpenTrapDoor, 1:13, s-0-Nostromo2.wav
+
+; ============ Actors/Baddies ============
+
+; FN = Actor Filename in Sprite Sheet,
+; SX = Start X,
+; SY = Start Y,
+; ID = Initial Direction/Image,
+; MX = Min X travelled to,
+; MY = Min Y travelled to, 
+; FX = Furthest/Max X travelled to,
+; FY = Furthest/Max Y travelled to, 
+; DX = X Distance covered in pixels after each sequence
+; DY = Y Distance covered in pixels after each sequence 
+; TC = Tick Count -- usefull for slowing down or speeding up Actor
+; LF = Left Frame
+; RF = Right Frame
+; UF = Up Frame
+; DF = Down Frame
+; TF = Total Frames in Actors animation -- 1/2 prevents the 4 horizontal return frames
+; 										-- double speeds up return frames
+; FP = Frames per animation segment in each direction
+
+; FN          	  SX SY  ID  MX  MY  FX FY  DX DY TC LF RF UF DF TF FP
+[Actors]
+Phil.png,			 6, 1,  1,  1,  1, 29, 1, 16, 0, 4, 4, 2, 8, 8, 8, 4
+ChillyYellow.png,	28, 4,  5,  1,  4, 29, 4,-16, 0, 5, 4, 2, 8, 8, 8, 4
+RedSeal.png,	 	 5, 7,  2,  3,  7, 27, 7, 16, 0, 6, 4, 2, 8, 8, 8, 4
+YellowBunny.png,	25,10,  6,  3, 10, 27,10,-16, 0, 5, 4, 2, 8, 8, 8, 4
+
+
+; ============ Willy/Hero ============
+
+; FN = Filename
+;  X = X Starting location from top-left
+,  Y = Y Starting location from top-left
+, ID = Initial Direction Willy is facing
+, DX = (Pixels)
+; DY = (Pixels)
+; TC = Tick Count -- low value is faster movement, high value is slower
+;  S = Segments
+
+; FN      		    X  Y ID DX DY TC  S
+[HeroStart]
+MinerWilly.png,		4,13, 1,16, 2, 4,16
+
+[HeroDeathHeight]
+5
+
+
+; ------------ Engine Notes ------------
+
+; Background Static Image List (behind game-board)
+; X = 0, Y = 0, Top-Left Corner in Pixels.
+; Opacity: Transparent to Opaque (0-255) 
+;
+; Rotation Parameters Optional
+; However, Initial Angle In Degrees +/- as a float, i.e 5.2 = 5.2 degrees.
+;
+; You can use Sprites from a Custom Sprite Sheet or As Individual Backgrounds.
+;
+; If using sprites from custom sprite sheet 
+;		#Filename.png, X, Y, Opacity, [Rotation Angle Initial, Rotate By Angle].
+;
+; If using sprite from artwork.png file 
+;	 	Filename.png, X, Y, Opacity, [Rotation Angle Initial, Rotate By Angle].
+;
+; The # Denotes if the sprite is found in the texture atlas, or in a filename.
+;
+; To centre the sprite to the Gameboard use C instead of a pixel co-ordinate.
+;		Optionally use C for X or Y coordinate to centre on playarea.
+
+
+; ------------ Bob Notes ------------
+
+; This data is heavily commented and contains some references which are not used.
+; It gives an idea of how these options/customisations are used.
+; For more details please see the WonkyPix program documentation.
+; Some of these engine notes have edited and added to for personal clarity :)
+; Please enjoy.
+
+
+; ============ REPLAY DATA (NOT USED IN SGW) ============
+
+[ReplayData]
+J10f70080B90N90b90N>0b>0X?0<@0P@01B0mB01C08C04F0HF01G0EI01J0=N00O0DP0XP0ZQ0FS0RS0fU0BV0nW0ZX0FZ0ZZ0N\0:]0@^0Y^0<_0H_09a0Ea0aa0ha0Jc08d0id0=e0Ie00h0ih00j0Im08n0in0Ho0L01h01b31861b61671B71N;1R;1
+
+;Z50><0J<06>0:>06@0B@0nB0BC0ND0bD00E09F0=G0IG0PG0DJ0`J0IK0PM0QN00O0LP0`P0TS0@T0lT08U0JU0hU0aV05W0<W0@W0BX06Y0BY0N[0R[06^0B^0>`02a0>b02c0Vd0Be08f0\f0Xg0Ih0Mi0ai0Mk01l0Pn0Ao0U11I21h41j51@81R916:1J:1>>1J>18C1JC1
+;B100F=00:>00NA002B006F00BF006J002K00>M00:N00@N001110M2109310@310D9108:109;10=B101C10MI100L10LL10:N10N220B3206820J820F<20B=20N@20BA20ND20JF200H20<I208K20AL205O20AO20E13015300930A;30H?304A308B302H30FM302N30N540:640@>402@40

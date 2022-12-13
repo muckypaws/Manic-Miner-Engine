@@ -1,0 +1,99 @@
+
+; For more details on these instructions please refer to the comments in Level1Data.txt
+
+; ============ CAVERN TITLE ============
+[LevelName]
+The Final Barrier
+
+[CollectablePoints]
+40
+
+; ============ MUSIC & SOUND ============
+[LevelMusic]
+Ruby2.ogg
+
+; Override default end of Final Cavern Music, needs Swordfish
+[FinalCavernMusic]
+CavernComplete.ogg
+
+; ============ COLOURS & GRAPHICS ============
+[BackgroundColour]
+CUSTOM:25:0:0
+;VERYDARKREDCOLOUR
+
+; ============ COLOURS & GRAPHICS ============
+[BorderColour]
+DARKREDCOLOUR
+
+[BackGroundStaticImages]
+; Border: width +64, height +48. (Good transparents for gold backgrounds: 65, 105, 145).
+#BG01.png, 64, 48, 66, 0.0
+
+;[ForeGroundStaticImages]
+;sgw-border-new-trans.png, 0, 0, 35
+
+[SpriteSet]
+19
+
+[ExitBlock]
+19
+
+
+; ============ LEVEL LAYOUT DATA ============
+; 0=Empty, 1=Platform, 2=Platform, 3=Wall, 4=Crumble, 5=Hazard, 6=Hazard,
+; 7=Conveyor-Right, C=Conveyor-Left, 9=Key, A=Exit, B=Door, D&E=Special switch blocks, F=Title Graphic.
+
+[LevelData]
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+FFFFFFFFFFFFFFFFFFFABF000000999F
+FFFFFFFFFFFFFFFFFFFBBF000000999F
+FFFFFFFFFFFFFFFFFFF99F000000999F
+39999999999999999999999900999113
+39999999999999999999999900999993
+3CCCCCCCCCCCCCCCCCCCCCC900499993
+39999999959999999599959900991993
+31199990000000000000000000009993
+39999110000000000000000000009993
+39999990000000000000000000009993
+31111111111111111111111111111113
+
+; ============ Sticky Conveyor? ============
+
+; If you want Willy to Stick to the Platform when landing and facing in the
+; opposite direction, and player is trying to move in the opposite direction:
+; 0 = Willy moves against the flow of the conveyor.
+; 1 = Willy does not move.
+[StickyConveyor]
+1
+
+; ============ Actors/Baddies ============
+; FN = Actor Filename in Sprite Sheet, SX = Start X, SY = Start Y, ID = Initial Direction/Image,
+; MX = Min X travelled to, MY = Min Y travelled to, FX = Furthest/Max X, FY = Furthest/Max Y,
+; DX = X Distance covered in pixels, DY = Y Distance covered in pixels, TC = Tick Count,
+; LF = Left Frame, RF = Right Frame, UF = Up Frame, DF = Down Frame,
+; TF = Total Frames in animation, FP = Frames per animation segment in each direction.
+
+; FN          	  SX SY  ID  MX  MY  FX FY  DX DY TC LF RF UF DF TF FP
+[Actors]
+YellowCamera.png,   7, 13, 1,  7, 13,  22, 13, 16, 0,  4, 4, 1, 8, 8, 4, 4
+Eye.png,   			24, 6, 2, 24,  5,  24, 13,  0, 2,  4, 4, 1, 8, 8, 4, 4
+
+
+; ============ Willy/Hero ============
+[HeroStart]
+MinerWilly.png,29,13,16,16,2,4,16
+
+
+; Trigger Caverns Complete Sequence (Graphic Must be in Main Sprite Sheet)
+;	Graphic Name, Block X, Block Y, Manic X, Manic Y, Frame
+[SwordFish]
+SwordFish.png	, 19, 5, 19, 2, 4
+
+
+; ============ REPLAY DATA (NOT USED IN SGW) ============
+[ReplayData]
+A20h20a800=0<=0H=0A>00B0<B0PB0IE08G0DG0XG01I0MJ0aJ0mK0IL00M0jM0NN0bN08Q0RW0^X0:Y0hY0:Z0NZ0R[0`[0Q\0P]0I^0X^0B_00`09`0Hb01j0P01<21X21Q41E71Q71e81I91P91R:1^;12<18=14D1XD1

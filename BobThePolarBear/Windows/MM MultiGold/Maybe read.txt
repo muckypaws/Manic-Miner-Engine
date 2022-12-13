@@ -1,0 +1,77 @@
+
+:: Credits:		MM MultiGold					::
+
+:: System:		Any modern Windows PC			::
+
+:: Made with:	WonkyPix engine 1.6b			::
+
+:: Graphics:	Based on those by Andy Noble	::
+
+:: Music:		Rob Hubbard and Various Artists	::
+
+:: Voice:		Alex Botten						::
+
+:: Snippets:	Various Artists					::
+
+:: Edited:		2022-12-08						::
+
+
+Original Manic Miner Game by Matthew Smith
+==========================================
+
+(c) 1983 BUG-BYTE Limited, and SOFTWARE PROJECTS Limited.
+(c) 1997 Alchemist Research.
+
+
+Huge Thanks To (in alphabetical order)
+======================================
+
+AGK -- The base for game engine:
+appgamekit.com
+
+Alex Botten -- Voice tallent, "Willy" etc.	
+
+Jason Brooks -- Huge help with the game engine:
+manicmineragk.wordpress.com
+
+Andy Noble -- The graphics in this version are all Andy's with a gold filter applied:
+andynoble.co.uk
+
+Matthew Smith -- The genius behind the original game:
+en.wikipedia.org/wiki/Matthew_Smith_(games_programmer)
+
+WonkyPix -- The game engine development studio:
+WonkyPix.com
+
+
+Fair Use
+========
+
+This game is free/non-commercial and hopefully shows off my game editing/tweaking skills.
+No infringement of copyright is intended and the rights to the media belong to the original owners.
+If an owner objects to their media being used I am happy to remove it, please contact me at:
+bthepb@gmail.com
+
+This is a tribute to the classic Manic Miner by Matthew Smith, and the very short audio "snippets"
+have been selected to kindle nostalgia in those old enough to remember the originals release.
+It is hoped that players might seek-out and re-enjoy some of the works connect to these snippets.
+
+
+Final Words
+===========
+
+Huge thanks again to Matthew, Jason, Andy, Alex and the feedback from the peeps in
+the Central Cavern Facebook group:
+https://www.facebook.com/groups/centralcavern
+
+If you have any problems downloading or using this game please drop me an email:
+bthepb@gmail.com
+
+For taking the time to read this, a little bonus. There is a hidden block and additional music snippets
+in the first cavern, and another hidden snippet somewhere towards the middle of the game.
+Please do not share this info on forums/groups, it's meant to be a secret. If you want to mention/trigger them
+while making a playthrough video, that's up to you.
+
+Oh, instructions and screen-shots folder will be added at some point.
+
+Enjoy! :O)

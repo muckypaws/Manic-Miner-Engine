@@ -1,0 +1,95 @@
+
+; For more details on these instructions please refer to the comments in Level1Data.txt
+
+; ============ CAVERN TITLE ============
+[LevelName]
+The Root of all Evil
+;The Sixteenth Cavern
+
+; ============ MUSIC & SOUND ============
+[LevelMusic]
+Hall Echo.ogg
+
+; ============ COLOURS & GRAPHICS ============
+BLACKCOLOUR
+
+; ============ COLOURS & GRAPHICS ============
+[BorderColour]
+DARKREDCOLOUR
+
+[BlockNOP]
+BlockNOP.png
+
+;[BackGroundStaticImages]
+; +64 width, +48 height for border.
+;#Gold.png, 64, 48, 120, 0.0
+
+;[ForeGroundStaticImages]
+;sgw-border-new-trans.png, 0, 0, 35
+
+[SpriteSet]
+15
+
+[ExitBlock]
+15
+
+; ============ LEVEL LAYOUT DATA ============
+; 0=Empty, 1=Platform, 2=Platform, 3=Wall, 4=Crumble, 5=Hazard, 6=Hazard,
+; 7=Conveyor-Right, C=Conveyor-Left, 9=Key, A=Exit, B=Door, E&F=Special switch blocks.
+
+[LevelData]
+30000000000000000000000000000003
+30000000000000000000000000000003
+30000000000000000000000000000093
+30000000000000000000000000000013
+39000090000900900000009990000003
+310000100003AB390000001110000003
+300090000003BB339000000000000993
+30001000000300333900000001111113
+30000000000399333300000000000003
+34477777777777777777777777700003
+30000000000099000000000000900003
+39999999993311000000000000100003
+31111111110000000000900000900003
+30000000000000000000100000100003
+30000000000000000000055555000993
+31111111111111111111111111111113
+
+; ============ Sticky Conveyor? ============
+
+; If you want Willy to Stick to the Platform when landing and facing in the
+; opposite direction, and player is trying to move in the opposite direction:
+; 0 = Willy moves against the flow of the conveyor.
+; 1 = Willy does not move.
+[StickyConveyor]
+0
+
+; ============ Switches ============
+;
+; ActorFileName, BlockX, BlockY, StartState, SpecialFunction
+
+[Switches]
+BobMusicSwitch-L.png,	10, 6, 0, Switch1, OpenTrapDoor, 1:1, s-16-ScorpionWins.wav
+BobMusicSwitch-R.png,	17,10, 0, Switch2, OpenTrapDoor, 1:1, s-16-Doom.wav
+
+; ============ Actors/Baddies ============
+; FN = Actor Filename in Sprite Sheet, SX = Start X, SY = Start Y, ID = Initial Direction/Image,
+; MX = Min X travelled to, MY = Min Y travelled to, FX = Furthest/Max X, FY = Furthest/Max Y,
+; DX = X Distance covered in pixels, DY = Y Distance covered in pixels, TC = Tick Count,
+; LF = Left Frame, RF = Right Frame, UF = Up Frame, DF = Down Frame,
+; TF = Total Frames in animation, FP = Frames per animation segment in each direction.
+
+; FN					SX SY ID  MX MY  FX FY  DX DY TC LF RF UF DF TF FP
+[Actors]
+BlueScorpion.png,		26, 5, 2, 25, 5, 29, 5, 16, 0, 8, 4, 1, 8, 8, 8, 4
+MagentaScorpion.png,	18, 7, 2, 18, 7, 23, 7, 16, 0, 5, 4, 1, 8, 8, 8, 4
+YellowScorpion.png,		 1,10, 2,  1,10,  8,10, 16, 0, 5, 4, 1, 8, 8, 8, 4	 
+GreenScorpion.png,		10,13, 2,  1,13, 18,13, 16, 0, 5, 4, 1, 8, 8, 8, 4
+
+; ============ Willy/Hero ============
+[HeroStart]
+MinerWilly.png,2,13,1,16,2,4,16
+
+; ============ REPLAY DATA (NOT USED IN SGW) ============
+[ReplayData]
+R10n60B70090A902:0V:0`:0:<0H<0R=0^=0B>0@@0L@0`@0AB0PB04E0HE0AF0]G0iG05J0IJ0`J0YM00N02O0XO0:Q0VR0bR0@T0TU0@V0iW05X0AX0HX0JY00Z0QZ0H[0b[0h[0J^0`^0b_0Na0Za0fc08d09e0Jf0^f02g0Xh0lh0Xi0ik05l0Al08n0in0Ho0To0ho0I11021941=51961X81j<18=1b>18?1Y?15@1I@1X@11B1eB19C1ME1aE1mG1YH1MJ1TJ1`J1jM18N19O1hO1BP1HP1BQ1NQ1bQ10R1RT1fT1:U1

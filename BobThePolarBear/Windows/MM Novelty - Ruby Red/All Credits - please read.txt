@@ -1,0 +1,52 @@
+
+:: Credits:		MM Novelty - Ruby Red			::
+
+:: System:		Any modern Windows PC			::
+
+:: Made with:	WonkyPix engine 1.6b			::
+
+:: Graphics:	Based on those by Andy Noble	::
+
+:: Voice:		Alex Botten						::
+
+:: Music:		Various							::
+
+:: Edited		2022-11-25						::
+
+
+Original Manic Miner Game by Matthew Smith
+==========================================
+
+(c) 1983 BUG-BYTE Limited, and SOFTWARE PROJECTS Limited.
+(c) 1997 Alchemist Research.
+
+
+Huge Thanks To (in alphabetical order)
+======================================
+
+AGK -- The base for game engine:
+appgamekit.com
+
+Alex Botten -- Voice tallent, "Willy".	
+
+Jason Brooks -- Huge help with the game engine:
+manicmineragk.wordpress.com
+
+Andy Noble -- The graphics are based on those by Andy Noble but heavily filtered/distorted:
+andynoble.co.uk
+
+Matthew Smith -- The genius behind the original game:
+en.wikipedia.org/wiki/Matthew_Smith_(games_programmer)
+
+WonkyPix -- The game engine development studio:
+WonkyPix.com
+
+
+If you have any problems with downloading or using this game please drop me an email:
+bthepb@gmail.com
+
+I can also be found posting in the Facebook group:
+https://www.facebook.com/groups/centralcavern
+
+
+Enjoy! :O)

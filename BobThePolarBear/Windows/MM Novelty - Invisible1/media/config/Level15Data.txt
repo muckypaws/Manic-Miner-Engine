@@ -1,0 +1,100 @@
+;
+;Define The Level Name
+;
+[LevelName]
+The Bank
+;
+;  Set the Background Colour
+;
+[BackgroundColour]
+BLACKCOLOUR
+
+;
+;  Set the Border Colour
+;
+[BorderColour]
+DARKREDCOLOUR
+
+;
+; Want to use a PNG for blank background block?
+;
+[BlockNOP]
+BlockNOP.png
+
+;
+;  Which of the 20 Sprite Sets do you want to use?
+;  Starts (0-19)
+;
+[SpriteSet]
+14
+
+;
+;  Define the Door Sprite To Use
+;  (0-19)
+;
+[ExitBlock]
+14
+
+;
+;  Now define the Level Data
+;	0  = Empty Space
+;	1  = Solid Platform
+;	2  = Solid Platform
+;	3  = Impassable Wall
+;	4  = Collapsible Platform
+;	5  = Hazard 1
+;	6  = Hazard 2
+;	7  = Conveyor Platform Moving Right To Left
+;	C = Conveyor Platform Moving Left To Right 
+;	9  = Collectable Object
+;	A = Willy's Exit/Door Position (Top Left Corner)
+;	B = Special Control to detect Willy in the door
+;	F = Special Block (Willy's Home Graphic)
+;
+[LevelData]
+30000033333333333333333333333333
+30000000000000000000000000000223
+30000000000000000000000000900223
+3AB00000777777777777777711111223
+3BB00000600000000000000000006223
+31111100500000000000000000006223
+30000000000090000000000011006223
+30000004000011000000000000006223
+30011000000000000011000000006223
+30000000000000000000000001106223
+31100000000011000000000000005223
+30000000000000000011000000000223
+30000111000000000000000110000223
+30000000000011000000000000000223
+30000000000000000000000000900223
+33333333333333333333333333333333
+;
+;   Define the Actors on the Caverns
+;
+;   ActorName, Start Block X, Start Block Y, 
+;			   Initial Direction, 
+;  			   Min Block X, Min Block Y, 
+;			   Max Block X, Max Block Y, 
+;			   dx (pixels), dy (pixels), 
+;			   tick count
+;			   leftFrame, rightFrame, UpFrame, DownFrame, maxFrames, Frames Per Animation Seg
+;
+[Actors]
+YellowVault.png, 	 9,  5,  2,  9,  4, 9,  13,  0, 2,  3, 1, 1, 1, 1, 4, 4
+WhiteVault.png, 	 15, 8,  3,  15, 4, 15, 13,  0, 2,  4, 1, 1, 1, 1, 4, 4
+GreenVault.png, 	 21, 10, 1,  21, 4, 21, 13,  0, 3,  4, 1, 1, 1, 1, 4, 4
+BlueCheque.png,		 17, 13, 3,  17, 13, 19, 13, 16, 0, 6, 1, 1, 1, 1, 4, 4
+
+
+
+;
+;   Player Start Block Position
+;
+;
+;   Actor Filename, Start Block X, Start Block Y, Initial Direction, DX (Pixels), DY (Pixels), Tick Count, Segments
+
+[HeroStart]
+MinerWilly.png,2,13,1,16,2,4,16
+
+[ReplayData]
+J10P30b806:0J:0V<0J=0`>01?0@?01E0UE0IF0hG0<H0HH0BN0PN02W0VW0jW0hY0bZ00[02a0Na0:b06g0Zg0Vh0Xo0901@31a51U<1A=1
