@@ -1,0 +1,94 @@
+;
+;Define The Level Name
+;
+[LevelName]
+Farmer Barleymow's DDT Store
+;
+;  Set the Background Colour
+;
+[BackgroundColour]
+BLACKCOLOUR
+
+;
+;  Set the Border Colour
+;
+[BorderColour]
+DARKREDCOLOUR
+
+;
+;  Which of the 20 Sprite Sets do you want to use?
+;  Starts (0-19)
+;
+[SpriteSet]
+16
+
+;
+;  Define the Door Sprite To Use
+;  (0-19)
+;
+[ExitBlock]
+16
+
+;
+;  Now define the Level Data
+;	0  = Empty Space
+;	1  = Solid Platform
+;	2  = Solid Platform
+;	3  = Impassable Wall
+;	4  = Collapsible Platform
+;	5  = Hazard 1
+;	6  = Hazard 2
+;	7  = Conveyor Platform Moving Right To Left
+;	C = Conveyor Platform Moving Left To Right 
+;	9  = Collectable Object
+;	A = Willy's Exit/Door Position (Top Left Corner)
+;	B = Special Control to detect Willy in the door
+;	F = Special Block (Willy's Home Graphic)
+;
+[LevelData]
+30000000000033333330033333300333
+30000000000030000900009000000AB3
+30000000000030000000000000000BB3
+30000000000000011100001110000003
+30000000000000100000000001000003
+31144000000000000000060000000003
+30000000000031000000000000100003
+34444000030030000000000000000003
+30000000930030777770000011100093
+30000000030030000000000000000003
+34400000030030000011110000000003
+30000011110035050000000000000003
+30000000000033339000000110000043
+34400000000000000000000000000443
+30000000000000000000000000004463
+31111111113333333333333333333333
+;
+;   Define the Actors on the Caverns
+;
+;   ActorName, Start Block X, Start Block Y, 
+;			   Initial Direction, 
+;  			   Min Block X, Min Block Y, 
+;			   Max Block X, Max Block Y, 
+;			   dx (pixels), dy (pixels), 
+;			   tick count
+;			   leftFrame, rightFrame, UpFrame, DownFrame, maxFrames, Frames Per Animation Seg
+;
+[Actors]
+BlueThresher.png,  	 3, 8, 2,  3,  8,  3,  13, 0, 4, 4, 4, 1, 8, 8, 4, 4
+YellowThresher.png,	10, 8, 3,  10, 0,  10, 12, 0,-4, 4, 4, 1, 8, 8, 4, 4
+WhiteThresher.png,  19, 6, 4, 19,  0,  19,  8, 0, 4, 5, 4, 1, 8, 8, 4, 4	 
+MagentaThresher.png,27, 0, 1, 27,  0,  27, 12, 0, 4, 3, 4, 1, 8, 8, 4, 4
+RedBob.png,		     5, 13, 1,  5, 13,   8, 13,16, 0, 8, 4, 1, 8, 8, 4, 4
+BlueBob.png,	    12, 13, 1, 12, 13,  25, 13,16, 0, 4, 4, 1, 8, 8, 4, 4
+
+;
+;   Player Start Block Position
+;
+;
+;   Actor Filename, Start Block X, Start Block Y, Initial Direction, DX (Pixels), DY (Pixels), Tick Count, Segments
+
+[HeroStart]
+MinerWilly.png,1,3,1,16,2,4,16
+
+[ReplayData]
+R10`20j30F40Z40050i80h:0I;0E<01=0P>0BA0HA0jR0`S0:T0XT02U0>U0:V0IX0@Y0BZ0PZ0jZ0@^0T^0`^0J`0Nb0bb0Nf0Jg0^g0Ji0^i02k0Vk0jl00m0Im0]o0Q11821231P31I41851Z51n51B61H71Q71E81I91@:1Y=1e=18>1J?1Y?1`@1aA1mA1AB1HB1ZB1`B1iB1=C10D1:D1hE1JG1hG1TH10I1JJ1fJ14K18K1ZK1IL1XN19O1PO1iO1@P19Q1XQ1jQ1PR1IS1hW1BX1HX1Yc1`d12j18j1Bn18o1Ao1mo1902U12a12=22A22P22232`32R72f<22=2P=24?2@?2Q@2d@2IA2]B21C2jC2QF2`G2BH2`H2lH28I2jN2VO2

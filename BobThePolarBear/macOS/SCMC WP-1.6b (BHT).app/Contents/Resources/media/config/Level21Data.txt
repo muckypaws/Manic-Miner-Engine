@@ -1,0 +1,100 @@
+;
+;Define The Level Name
+;
+[LevelName]
+Slightly to One Side Cavern
+
+;
+;  Set the Background Colour
+;
+[BackgroundColour]
+BLACKCOLOUR
+
+;
+;  Set the Border Colour
+;
+[BorderColour]
+DARKREDCOLOUR
+
+;
+;  Which of the 20 Sprite Sets do you want to use?
+;  Starts (0-19)
+;
+[SpriteSet]
+0
+
+;
+;  Define the Door Sprite To Use
+;  (0-19)
+;
+[ExitBlock]
+0
+
+;
+;  Now define the Level Data
+;	0  = Empty Space
+;	1  = Solid Platform
+;	2  = Solid Platform
+;	3  = Impassable Wall
+;	4  = Collapsible Platform
+;	5  = Hazard 1
+;	6  = Hazard 2
+;	7  = Conveyor Platform Moving Right To Left
+;	C  = Conveyor Platform Moving Left To Right 
+;	9  = Collectable Object
+;	A  = Willy's Exit/Door Position (Top Left Corner)
+;	B  = Special Control to detect Willy in the door
+;	F  = Special Block (Willy's Home Graphic)
+;
+[LevelData]
+33333333333000033333333333333333
+36000600090000096000600009000003
+30000000000000000000000000000003
+30000000000000000000000000000003
+30000111100005000001111111100003
+30011000011111111110600000010003
+34409000000000000000000090000013
+30000000000000000000000011100403
+34400000000000000034441100000003
+30044334777777777777777777770003
+30000000000000000000000000000443
+30000000000000000000000000000003
+30000030000000030000003000034443
+30004430000000131104443401130AB3
+30000530000500030005503005035BB3
+31111111111111111111111111111113
+
+;
+; Sticky Conveyor
+; If you want Willy to Stick to the Platform when landing
+; and facing in the opposite direction and the player
+; is trying to move in the opposite direction
+; Set Value to 1 if you want Willy not to Move
+; Set Value to 0 if you allow Willy to move against the flow
+[StickyConveyor]
+2
+
+;
+;  Actors
+;
+;   ActorName, Start Block X, Start Block Y, 
+;			   Initial Direction, 
+;  			   Min Block X, Min Block Y, 
+;			   Max Block X, Max Block Y, 
+;			   dx (pixels), dy (pixels), 
+;			   tick count
+;			   leftFrame, rightFrame, UpFrame, DownFrame, maxFrames, Frames Per Animation Seg;
+[Actors]
+Phil.png,8,7,1,8,7,15,7,16,0,4,4,1,8,8,8,4
+
+;
+;   Hero Start Position
+;
+;   Actor Filename, Start Block X, Start Block Y, Initial Direction, DX (Pixels), DY (Pixels), Tick Count, Segments
+
+[HeroStart]
+MinerWilly.png,2,13,1,16,2,4,16
+
+[ReplayData]
+j00>10:20f20R30N50B60^70280n80b90F<0b<0F>0B?0>@0:A0IA0MB0YB0=D0aD0@E0YE00H0QH00I0JI08J0QJ0`J0aL00N0lO0@P01R0ES0QS00U0<U0PU0iU0@W0JW0^W0hW0JY0>[0J[0`[0J\0f]0B^08`0B`0``02a0Ha0ba08b0db00c0Jd0Vg0bg08h0Ri06k0Jk0
+B10V10d10h10b20n20b30n50B60680b80f=0:>0f@0j@0>C0RC0^D0bE0iE05G0IG0`G0aH05I0II0XI09J0XL0Q[0X[0a\0@]0i]0U`0i`0=d0Qd0Pe0\e0hf0:g0>h0Jh0Ph0Bj0fk02l0fm0Jn0P01i01X11L21X21b31851R51061:71@71<81@81B91N<1b<1XA1

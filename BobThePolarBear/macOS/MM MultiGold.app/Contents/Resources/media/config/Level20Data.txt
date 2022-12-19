@@ -1,0 +1,116 @@
+
+; For more details on these instructions please refer to the comments in Level1Data.txt
+
+; ============ CAVERN TITLE ============
+[LevelName]
+No Mr Willy, I Expect You To Die
+;Golden Shower
+;Solar Power Generator
+
+; ============ MUSIC & SOUND ============
+[LevelMusic]
+Rich Man Echo.ogg
+
+; ============ COLOURS & GRAPHICS ============
+[BackgroundColour]
+CUSTOM:0:40:0
+;DARKGREENCOLOUR
+
+; ============ COLOURS & GRAPHICS ============
+[BorderColour]
+DARKMAGENTACOLOUR
+
+[BlockNOP]
+BlockNOP.png
+
+;[BackGroundStaticImages]
+; +64 width, +48 height for border.
+;#Gold.png, 64, 48, 120, 0.0
+
+;[ForeGroundStaticImages]
+;sgw-border-new-trans.png, 0, 0, 35
+
+[SpriteSet]
+18
+
+[ExitBlock]
+18
+
+; ============ LEVEL LAYOUT DATA ============
+; 0=Empty, 1=Platform, 2=Platform, 3=Wall, 4=Crumble, 5=Hazard, 6=Hazard,
+; 7=Conveyor-Right, C=Conveyor-Left, 9=Key, A=Exit, B=Door, E&F=Special switch blocks.
+
+[LevelData]
+33399000000990000000000000000993
+3AB00000000000000000000000000003
+3BB00000000000000000000000000003
+30000000000000000000000000000003
+30000000000000000000000000000003
+39911000011111100000000011111113
+30000000000009900000000000000003
+30000000000000000001110000000003
+31100000000001110009900011111113
+39900000000000990000000000000003
+30000000000000000001100000000003
+31111000000000000009900011111113
+39999001177000111110000000000093
+30000000000000000000000000000003
+33300000000000000000000000000003
+33311111111111111111111311111113
+
+; ============ Sticky Conveyor? ============
+
+; If you want Willy to Stick to the Platform when landing and facing in the
+; opposite direction, and player is trying to move in the opposite direction:
+; 0 = Willy moves against the flow of the conveyor.
+; 1 = Willy does not move.
+[StickyConveyor]
+2
+
+; ============ Switches ============
+;
+; ActorFileName, BlockX, BlockY, StartState, SpecialFunction
+
+[Switches]
+BobMusicSwitch-L.png,	 1, 3, 0, Switch1, OpenTrapDoor, 8:0, s-19-BondTheme.wav
+BobMusicSwitch-R.png,	29,12, 0, Switch2, OpenTrapDoor, 8:0, s-19-Shocking.wav
+BobMusicSwitch-R.png,	22, 8, 0, Switch3, OpenTrapDoor, 8:0, s-19-Goldfinger.wav
+
+; Define Special Game Routines Here
+;
+;  SolarPoweredGenerator , Start X Pos, Start Y Pos, Alpha (0-255)
+;
+[SpecialFunction]
+SolarPoweredGenerator, 24 ,1, 210, WHITECOLOUR
+
+
+; ============ Actors/Baddies ============
+; FN = Actor Filename in Sprite Sheet, SX = Start X, SY = Start Y, ID = Initial Direction/Image,
+; MX = Min X travelled to, MY = Min Y travelled to, FX = Furthest/Max X, FY = Furthest/Max Y,
+; DX = X Distance covered in pixels, DY = Y Distance covered in pixels, TC = Tick Count,
+; LF = Left Frame, RF = Right Frame, UF = Up Frame, DF = Down Frame,
+; TF = Total Frames in animation, FP = Frames per animation segment in each direction.
+
+; FN					SX SY ID  MX  MY  FX FY  DX DY TC LF RF UF DF TF FP
+[Actors]
+YellowBall.png,			 5, 9, 1,  5,  0,  5,13,  0, 4, 3, 4, 1, 8, 8, 4, 4
+RedBall.png,			11, 7, 2, 11,  6, 11,13,  0,-4, 4, 4, 1, 8, 8, 4, 4
+BlueBall.png,			16,10, 3, 16,  0, 16,10,  0, 2, 4, 4, 1, 8, 8, 4, 4	 
+YellowReflector.png,	24, 3, 3, 23,  3, 29, 3,-16, 0, 4, 4, 1, 8, 8, 4, 4
+BlueReflector.png,		28, 6, 4, 23,  6, 29, 6,-16, 0, 4, 4, 1, 8, 8, 4, 4
+RedReflector.png,		29, 9, 2, 23,  9, 29, 9, 16, 0, 6, 4, 1, 8, 8, 4, 4
+YellowReflector.png,	16,13, 1, 13, 13, 29,13, 16, 0, 4, 4, 1, 8, 8, 4, 4
+
+;YellowReflector.png,24, 3, 3, 23,  3,  29, 3, -16, 0,  4, 4, 1, 8, 8, 4, 4
+;BlueReflector.png,  28, 6, 4, 22,  6,  29, 6, -16, 0,  3, 4, 1, 8, 8, 4, 4
+;RedReflector.png,   29, 9, 2, 23,  9,  29, 9,  16, 0,  5, 4, 1, 8, 8, 4, 4
+;YellowReflector.png,16,13, 1, 13, 13,  29,13,  16, 0,  4, 4, 1, 8, 8, 4, 4
+
+
+; ============ Willy/Hero ============
+[HeroStart]
+MinerWilly.png,14,10,5,16,2,4,16
+
+; ============ REPLAY DATA (NOT USED IN SGW) ============
+[ReplayData]
+Z50N60J70P802:0@:0B<0V<0j<0P>0Y>00?0Y?0m?0A@0`@0:A0HB0RF0>G0RG0XG0IH0mH0AI0`I0ZJ08L0RM0fM02N0@N0JN06P02Q0PR0YT0mT09U0UW0iW0=[0i[05`0i`0Rc06n0Rn0f21:31941=71Q710=1Y=1@@1IA1eB1AC12E1XE12M1>M1:N16P1:Q1`R1bS1hS1RX1FY1bY1PZ1B[1P[1J\1^\1J]1P^1Y^1=_1I_1@`19f1ef1Ig1Xj1Ao1502a02e22932

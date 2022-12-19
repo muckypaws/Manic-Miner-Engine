@@ -1,0 +1,98 @@
+; 18 TWEAKED-HARD
+
+;Bob Edit 01-10-2019
+
+[LevelName]
+The Call Of Cthulhu
+
+[LevelMusic]
+Heavy Weight.ogg
+
+[WillyDieSound]
+Ray-2e.wav
+
+[BackgroundColour]
+BLACKCOLOUR
+
+[BorderColour]
+DARKBLUECOLOUR
+
+[SpriteSet]
+17
+
+[ExitBlock]
+3
+
+
+;	0 = Empty Space
+;	1 = Solid Platform
+;	2 = Solid Platform
+;	3 = Impassable Wall
+;	4 = Collapsible Platform
+;	5 = Hazard 1
+;	6 = Hazard 2
+;	7 = Conveyor Platform Moving Right To Left
+;	C = Conveyor Platform Moving Left To Right 
+;	9 = Collectable Object
+;	A = Willy's Exit/Door Position (Top Left Corner)
+;	B = Special Control to detect Willy in the door
+;	F = Special Block (Willy's Home Graphic)
+
+
+[LevelData]
+30900000000000000900000000000AB3
+30000000000000000000000000000BB3
+30000000000000000000000000000003
+30000000000000000000000000000003
+30000000000000000000000000006003
+30444004440011121112121110004443
+35000000000000000000000000000003
+31440000000000000000000000000003
+30000000000042212212122140042403
+30444004440000000900000000000663
+30000000000000000000000000004113
+30050000500000000000000000000003
+30414004240041212121212140044403
+35000000000000000000000000000003
+32444000000000000000000000000603
+31211221112212121221222112121223
+
+
+[Switches]
+SWCloudAdark.png,       8, 0, 0, SwitchCA, OpenTrapDoor, 1:1
+SWCloudBdark.png,       9, 0, 0, SwitchCB, OpenTrapDoor, 1:1
+SWCloudCdark.png,      10, 0, 0, SwitchCC, OpenTrapDoor, 1:1
+SWCloudDdark.png,      11, 0, 0, SwitchCD, OpenTrapDoor, 1:1
+
+SWCloudAdark.png,      21, 0, 0, SwitchCE, OpenTrapDoor, 1:1
+SWCloudBdark.png,      22, 0, 0, SwitchCF, OpenTrapDoor, 1:1
+SWCloudCdark.png,      23, 0, 0, SwitchCG, OpenTrapDoor, 1:1
+SWCloudDdark.png,      24, 0, 0, SwitchCH, OpenTrapDoor, 1:1
+
+
+;   ActorName, Start Block X, Start Block Y, 
+;			   Initial Direction, 
+;  			   Min Block X, Min Block Y, 
+;			   Max Block X, Max Block Y, 
+;			   dx (pixels), dy (pixels), 
+;			   tick count
+;			   leftFrame, rightFrame, UpFrame, DownFrame, maxFrames, Frames Per Animation Seg
+
+[Actors]
+MagentaJelly.png,    5, 5, 1,  5, 0,  5,13,   0, 5, 4, 4,1,8,8, 4, 4
+GreenJelly.png,     10, 2, 1, 10, 1, 10,13,   0, 3, 4, 4,1,8,8, 4, 4
+YellowJelly.png,    25, 6, 1, 25, 0, 25,13,   0, 3, 4, 3,1,8,8, 4, 4
+
+SpikeTrolleyGreen.png,   15, 3, 1, 12, 3, 23, 3, -16, 0, 5, 1,1,1,1, 4, 4
+SpikeTrolleyMagenta.png, 16, 6, 1, 13, 6, 22, 6,  16, 0, 3, 1,1,1,1, 4, 4
+SpikeTrolleyTeal.png,    14,10, 1, 13,10, 22,10,  16, 0, 4, 1,1,1,1, 4, 4
+SpikeTrolleyYellow.png,  15,13, 2, 13,13, 22,13,  16, 0, 5, 1,1,1,1, 4, 4
+SpikeTrolleyYellow.png,  20,13, 2, 13,13, 22,13, -16, 0, 5, 1,1,1,1, 4, 4
+
+[HeroStart]
+WillyHair.png,   27,13,14,16,2,4,16
+;MinerWilly.png, 27,13,16,16,2,4,16
+
+
+[ReplayData]
+110810I700;09<0]<0i<0H?0A@0MC0<D0FD02H0HI0ZN06O0JO0fR0BS0^V0<X0MX0DY0HY0RY0PZ0iZ0@[0Q71e71981@:1a:1E;1Q;1R=1n=1J>1h?1Y@1=B1QB1hD1iE1EF1YF1hH1QN1eN1dP16Q1lQ1HS1AT1XT1<U1`V1RW1`W1jY1FZ1jZ1@\1B]1N]1j]1f_1Z`1@c1Ic1mc1Ad1Hf1Zf18g1Ri1Nj1jj1nm1\02

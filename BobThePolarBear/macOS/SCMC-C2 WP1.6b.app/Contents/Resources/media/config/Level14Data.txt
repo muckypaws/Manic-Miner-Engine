@@ -1,0 +1,107 @@
+; 14 TWEAKED-HARD
+
+; Bob Edit 26-09-2019
+
+[LevelName]
+Patient You Must Be
+
+[LevelMusic]
+Neolith.ogg
+
+[WillyDieSound]
+data2.wav
+
+[BackgroundColour]
+CUSTOM:0:0:40
+
+[BorderColour]
+DARKGREENCOLOUR
+
+[SpriteSet]
+13
+
+[ExitBlock]
+13
+
+; 0 = Empty Space
+; 1 = Solid Platform
+; 2 = Solid Platform
+; 3 = Impassable Wall
+; 4 = Collapsible Platform
+; 5 = Hazard 1
+; 6 = Hazard 2
+; 7 = Conveyor Platform Moving Right To Left
+; C = Conveyor Platform Moving Left To Right 
+; 9 = Collectable Object
+; A = Willy's Exit/Door Position (Top Left Corner)
+; B = Special Control to detect Willy in the door
+; F = Special Block (Willy's Home Graphic)
+
+
+[LevelData]
+390000000000000AB000000000000003
+300000090000000BB000000000000093
+30000000000000000000000900000003
+30000000000000000000000000000003
+30000000000000012000000000000003
+31200000000000000000000000000003
+30012004400120000001200044012003
+30000000000000009000000000000003
+30090120000001200000012000000123
+36000000000000000000000000000053
+33000000000000120012000001200033
+33330000012000000000000000003333
+33333090000000000000001200033333
+30000000000000000000000000400003
+30000000000000000000000000000003
+33333333333333333333333333333333
+
+
+[Switches]
+SWGreenWalkT.png,       1, 13, 1, LT1, OpenTrapDoor, 1:1
+SWGreenWalkT.png,       2, 13, 1, LT2, OpenTrapDoor, 1:1
+SWGreenWalkT.png,       3, 13, 1, LT3, OpenTrapDoor, 1:1
+SWGreenWalkT.png,       4, 13, 1, LT4, OpenTrapDoor, 1:1
+SWGreenWalkB.png,       1, 14, 1, LB1, OpenTrapDoor, 1:1
+SWGreenWalkB.png,       2, 14, 1, LB2, OpenTrapDoor, 1:1
+SWGreenWalkB.png,       3, 14, 1, LB3, OpenTrapDoor, 1:1
+SWGreenWalkB.png,       4, 14, 1, LB4, OpenTrapDoor, 1:1
+
+SWGreenWalkT.png,      27, 13, 1, RT1, OpenTrapDoor, 1:1
+SWGreenWalkT.png,      28, 13, 1, RT2, OpenTrapDoor, 1:1
+SWGreenWalkT.png,      29, 13, 1, RT3, OpenTrapDoor, 1:1
+SWGreenWalkT.png,      30, 13, 1, RT4, OpenTrapDoor, 1:1
+SWGreenWalkB.png,      27, 14, 1, RB1, OpenTrapDoor, 1:1
+SWGreenWalkB.png,      28, 14, 1, RB2, OpenTrapDoor, 1:1
+SWGreenWalkB.png,      29, 14, 1, RB3, OpenTrapDoor, 1:1
+SWGreenWalkB.png,      30, 14, 1, RB4, OpenTrapDoor, 1:1
+
+;   ActorName, Start Block X, Start Block Y, 
+;			   Initial Direction, 
+;  			   Min Block X, Min Block Y, 
+;			   Max Block X, Max Block Y, 
+;			   dx (pixels), dy (pixels), 
+;			   tick count
+;			   leftFrame, rightFrame, UpFrame, DownFrame, maxFrames, Frames Per Animation Seg
+
+[Actors]
+YellowSatellite.png, 11, 0, 1, 11, 0, 11, 4,  0, 4, 2, 1,1,1,1, 8, 8, Satellite
+BlueSatellite.png,   21, 0, 1, 21, 0, 21, 6,  0, 4, 2, 1,1,1,1, 8, 8, Satellite
+
+BobAlienRed.png,     12,14, 5,  5,14, 25,14,-16, 0, 2, 4,1,4,4, 8, 4
+BobAlienPink.png,    23,14, 1,  5,14, 25,14, 16, 0, 3, 4,1,4,4, 8, 4
+BobAlienPurple.png,   9,14, 2,  5,14, 25,14, 16, 0, 4, 4,1,4,4, 8, 4
+BobAlienBlue.png,    17,14, 4,  5,14, 25,14, 16, 0, 5, 4,1,4,4, 8, 4
+
+;WhiteSatellite.png, 	 1,  0, 1,  1,  0, 1,  9,  0, 4,  2, 1, 1, 1, 1, 8, 8, Satellite
+;BlueSatellite.png,  	11,  0, 1, 11,  0,11,  4,  0, 1,  3, 1, 1, 1, 1, 8, 8, Satellite
+;YellowSatellite.png, 	21,  0, 1, 21,  0,21,  7,  0, 3,  2, 1, 1, 1, 1, 8, 8, Satellite
+
+
+[HeroStart]
+MinerWilly.png,  29,13, 13,16,2,4,16
+;MinerWilly.png, 25,13, 16,16,2,4,16
+
+
+[ReplayData]
+920X30d30840\50h60Y70E80Y80X:0L;0`;0A<05>0I>05B0IB0=D0YD0XF0bF0>G0RG0PI0\I08J02K0hK0aL0]M0QN0MO0PP0bQ0hQ0JT0PT0ZW0>X0RX0FZ0Jc0>d0:e0@g0Ig0ei09j0em01n0501I01E21a21@31d31X41j41061b61671B71V81Z910;19<1@<14=1

@@ -1,0 +1,167 @@
+;
+;Define The Level Name
+;
+[LevelName]
+Alpha Cavern
+
+;
+;   Set the Level Music
+;
+;[LevelMusic]
+;MountainKingOriginal.ogg
+
+;
+;   Set the custom die sound
+;
+[WillyDieSound]
+die.wav
+
+;
+;   Set The High Score Music for the Level
+;
+;[HighScoreMusic]
+;EineKleineNachtMusic.ogg
+
+
+;
+;  Set the Background Colour
+;
+[BackgroundColour]
+BLACKCOLOUR
+
+;
+;  Set the Border Colour
+;
+[BorderColour]
+DARKREDCOLOUR
+
+
+;
+; Want to use a PNG for blank background block?
+;
+[BlockNOP]
+BlockNOP.png
+
+;
+;  Which of the 20 Sprite Sets do you want to use?
+;  Starts (0-19)
+;
+[SpriteSet]
+0
+
+;
+;  Define the Door Sprite To Use
+;  (0-19)
+;
+[ExitBlock]
+0
+
+;
+;  Now define the Level Data
+;	0  = Empty Space
+;	1  = Solid Platform
+;	2  = Solid Platform
+;	3  = Impassable Wall
+;	4  = Collapsible Platform
+;	5  = Hazard 1
+;	6  = Hazard 2
+;	7  = Conveyor Platform Moving Right To Left
+;	C  = Conveyor Platform Moving Left To Right 
+;	9  = Collectable Object
+;	A  = Willy's Exit/Door Position (Top Left Corner)
+;	B  = Special Control to detect Willy in the door
+;	F  = Special Block (Willy's Home Graphic)
+;
+[LevelData]
+30000000090600006000000000000903
+30000000000000009000000000000003
+30000000000000000000000000000003
+30000000000000000000000000000003
+30000000000000000000000590050003
+31111111111111444414444111111113
+30000000000000000000000000000093
+31110000000000000000000000000003
+30000000000000000333050000000003
+31111000777777777777777777770003
+30000000000000000000000000000113
+30000000000000000000000000000003
+30000000000050000000333444441113
+30000111111111111111000000000A03
+30000000000000000000000000000BB3
+33333333333333333333333333333333
+
+;
+; Sticky Conveyor
+; If you want Willy to Stick to the Platform when landing
+; and facing in the opposite direction and the player
+; is trying to move in the opposite direction
+; Set Value to 1 if you want Willy not to Move
+; Set Value to 0 if you allow Willy to move against the flow
+[StickyConveyor]
+2
+
+
+
+;
+; Background Static Image List (behind game-board)
+; X = 0, Y=0, Top Left Corner in Pixels.
+; Opacity (0-255) 255 Fully Opaque, 0-Fully Transparent
+;
+; Rotation Parameters Optional
+; However, Initial Angle In Degrees +/- as a float, i.e 5.2 = 5.2 degrees
+;
+; You can use Sprites from a Custom Sprite Sheet or As Individual Backgrounds
+;
+; If using sprites from custom sprite sheet 
+;	#Filename.png, X, Y, Opacity, [Rotation Angle Initial, Rotate By Angle]
+;
+; If using sprite from artwork.png file 
+; 	Filename.png, X, Y, Opacity, [Rotation Angle Initial, Rotate By Angle]
+;
+; The # Denotes if the sprite is found in the texture atlas, or in a filename.
+;
+; If you wish to centre the sprite to the Gameboard then use C instead of 
+; a pixel co-ordinate.
+;   Optionally use C for X or Y coordinate to centre on playarea...
+;
+;
+
+
+;
+; If you want to change the score to a level only
+; You can do it here
+;
+;[CollectablePoints]
+;1000
+
+
+;
+;  Actors
+;
+;   ActorName, Start Block X, Start Block Y, 
+;			   Initial Direction, 
+;  			   Min Block X, Min Block Y, 
+;			   Max Block X, Max Block Y, 
+;			   dx (pixels), dy (pixels), 
+;			   tick count
+;			   leftFrame, rightFrame, UpFrame, DownFrame, maxFrames, Frames Per Animation Seg;
+[Actors]
+Phil.png,8,7,1,8,7,15,7,16,0,4,4,2,8,8,8,4
+
+;
+;   Hero Start Position
+;
+;   Actor Filename, Start Block X, Start Block Y, Initial Direction, DX (Pixels), DY (Pixels), Tick Count, Segments
+
+[HeroStart]
+MinerWilly.png,2,13,1,16,2,4,16
+
+[HeroDeathHeight]
+5
+
+
+[ReplayData]
+J10f70080B90N90b90N>0b>0X?0<@0P@01B0mB01C08C04F0HF01G0EI01J0=N00O0DP0XP0ZQ0FS0RS0fU0BV0nW0ZX0FZ0ZZ0N\0:]0@^0Y^0<_0H_09a0Ea0aa0ha0Jc08d0id0=e0Ie00h0ih00j0Im08n0in0Ho0L01h01b31861b61671B71N;1R;1
+
+;Z50><0J<06>0:>06@0B@0nB0BC0ND0bD00E09F0=G0IG0PG0DJ0`J0IK0PM0QN00O0LP0`P0TS0@T0lT08U0JU0hU0aV05W0<W0@W0BX06Y0BY0N[0R[06^0B^0>`02a0>b02c0Vd0Be08f0\f0Xg0Ih0Mi0ai0Mk01l0Pn0Ao0U11I21h41j51@81R916:1J:1>>1J>18C1JC1
+;B100F=00:>00NA002B006F00BF006J002K00>M00:N00@N001110M2109310@310D9108:109;10=B101C10MI100L10LL10:N10N220B3206820J820F<20B=20N@20BA20ND20JF200H20<I208K20AL205O20AO20E13015300930A;30H?304A308B302H30FM302N30N540:640@>402@40

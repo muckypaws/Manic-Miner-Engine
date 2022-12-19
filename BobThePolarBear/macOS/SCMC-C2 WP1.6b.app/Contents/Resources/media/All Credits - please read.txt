@@ -1,0 +1,70 @@
+
+:: Credits: Single Cavern Murder Challenge C02 ::
+
+:: System : Any modern Windows PC ::
+
+:: Edited : 27/10/2022 ::
+
+
+Original Game
+=============
+
+(c) 1983 BUG-BYTE Limited, and SOFTWARE PROJECTS Limited.
+(c) 1997 Alchemist Research.
+
+
+Huge Thanks To (in alphabetical order)
+======================================
+
+AGK -- Base for game engine.
+appgamekit.com
+
+Alex Botton -- "Willy" voice talent.
+(.../media/sound/willy.wav)
+
+Jason Brooks -- Help with game engine.
+manicmineragk.wordpress.com
+
+Andy Noble -- The majority of the graphics, all the good ones.
+andynoble.co.uk
+
+Matthew Smith -- The original genius game.
+en.wikipedia.org/wiki/Matthew_Smith_(games_programmer)
+
+WonkyPix -- Game engine development.
+WonkyPix.com
+
+
+Default Level Theme Tune (depending on version selected)
+========================================================
+---
+C01
+---
+Back In Summer -- Nicolai Heidlas.
+https://www.youtube.com/watch?v=PUdTjXGcPHc
+
+Benny Hill Theme (Yakety Sax) -- James Q. "Spider" Rich & Boots Randolph.
+https://en.wikipedia.org/wiki/Yakety_Sax
+
+William Tell Remix -- Gioachino Rossini, VSSonic.
+https://en.wikipedia.org/wiki/William_Tell_Overture
+
+---
+C02
+---
+Hall Echo.ogg (In the Hall of the Mountain King) -- Edvard Grieg.
+https://en.wikipedia.org/wiki/In_the_Hall_of_the_Mountain_King
+
+Final Words
+===========
+
+Please do not change the copyright notices in this file,
+and make sure it is included with the game.
+
+Consider the lack of playing instructions part of the challenge :o)
+
+If you have any problems with this please drop me an email:
+bthepb@gmail.com
+
+
+Enjoy! :O)

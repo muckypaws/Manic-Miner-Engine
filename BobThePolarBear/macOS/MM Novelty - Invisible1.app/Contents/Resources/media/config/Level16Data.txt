@@ -1,0 +1,98 @@
+;
+;Define The Level Name
+;
+[LevelName]
+The Sixteenth Cavern
+;
+;  Set the Background Colour
+;
+[BackgroundColour]
+BLACKCOLOUR
+
+;
+;  Set the Border Colour
+;
+[BorderColour]
+DARKREDCOLOUR
+
+;
+; Want to use a PNG for blank background block?
+;
+[BlockNOP]
+BlockNOP.png
+
+;
+;  Which of the 20 Sprite Sets do you want to use?
+;  Starts (0-19)
+;
+[SpriteSet]
+15
+
+;
+;  Define the Door Sprite To Use
+;  (0-19)
+;
+[ExitBlock]
+15
+
+;
+;  Now define the Level Data
+;	0  = Empty Space
+;	1  = Solid Platform
+;	2  = Solid Platform
+;	3  = Impassable Wall
+;	4  = Collapsible Platform
+;	5  = Hazard 1
+;	6  = Hazard 2
+;	7  = Conveyor Platform Moving Right To Left
+;	C = Conveyor Platform Moving Left To Right 
+;	9  = Collectable Object
+;	A = Willy's Exit/Door Position (Top Left Corner)
+;	B = Special Control to detect Willy in the door
+;	F = Special Block (Willy's Home Graphic)
+;
+[LevelData]
+39000000000000000000000000000003
+30000000000000000000000000000003
+30000000000000000000000000000093
+30000000000000000000000000000003
+30000000000000000000000000000003
+310000100003AB300000001110000003
+300000000003BB330000000000000003
+30001000000309333000000001111113
+30000000000300333300000000000003
+34477777777777777777777777700003
+30000000000000000000000000000003
+30000000003311000900000000100003
+31111111110000000000000000000003
+30000000000000000000100000100003
+30000000000000000000000555000003
+33333333333333333333333333333333
+;
+;   Define the Actors on the Caverns
+;
+;   ActorName, Start Block X, Start Block Y, 
+;			   Initial Direction, 
+;  			   Min Block X, Min Block Y, 
+;			   Max Block X, Max Block Y, 
+;			   dx (pixels), dy (pixels), 
+;			   tick count
+;			   leftFrame, rightFrame, UpFrame, DownFrame, maxFrames, Frames Per Animation Seg
+;
+[Actors]
+BlueScorpion.png,  	26, 5, 2,  25, 5,  29,  5, 16, 0, 8, 4, 1, 8, 8, 8, 4
+MagentaScorpion.png,18, 7, 2,  18, 7,  23,  7, 16, 0, 5, 4, 1, 8, 8, 8, 4
+YellowScorpion.png,  1,10, 2,  1, 10,   7, 10, 16, 0, 5, 4, 1, 8, 8, 8, 4	 
+GreenScorpion.png,  10,13, 2,  1, 13,  18, 13, 16, 0, 5, 4, 1, 8, 8, 8, 4
+
+;
+;   Player Start Block Position
+;
+;
+;   Actor Filename, Start Block X, Start Block Y, Initial Direction, DX (Pixels), DY (Pixels), Tick Count, Segments
+
+[HeroStart]
+MinerWilly.png,2,13,1,16,2,4,16
+
+[ReplayData]
+R10n60B70090A902:0V:0`:0:<0H<0R=0^=0B>0@@0L@0`@0AB0PB04E0HE0AF0]G0iG05J0IJ0`J0YM00N02O0XO0:Q0VR0bR0@T0TU0@V0iW05X0AX0HX0JY00Z0QZ0H[0b[0h[0J^0`^0b_0Na0Za0fc08d09e0Jf0^f02g0Xh0lh0Xi0ik05l0Al08n0in0Ho0To0ho0I11021941=51961X81j<18=1b>18?1Y?15@1I@1X@11B1eB19C1ME1aE1mG1YH1MJ1TJ1`J1jM18N19O1hO1BP1HP1BQ1NQ1bQ10R1RT1fT1:U1

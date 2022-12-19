@@ -1,0 +1,90 @@
+; 2 TWEAKED-HARD
+
+; Bob Edit 18-12-2019
+
+[LevelName]
+When Penguins Attack!
+
+[LevelMusic]
+Elevator-tempo.ogg
+
+[WillyDieSound]
+ice-sound-1.wav
+
+[HighScoreMusic]
+EineKleineNachtMusic.ogg
+
+[BackgroundColour]
+CUSTOM:0:0:47
+
+[BorderColour]
+CUSTOM:0:0:99
+
+[SpriteSet]
+1
+
+[ExitBlock]
+1
+
+
+[LevelData]
+33333333333333333333333333333333
+30000060000006000000000000000063
+30000000090000000000000000000003
+39000000000000000000000034430003
+30000400000000000000000434430003
+30000000000000000000000034430093
+34434421211111111221120034434433
+34430000000009000000000034430063
+34430000000000000000000434430003
+34434000001121200000000034439003
+34430000000000000004400034430003
+344300CC000000000000000034430053
+34430000000000004400090434430033
+344D00000044400000000000D443AB33
+344D00500000050000000000D443BB33
+11111221111222211221212112212111
+
+
+[StickyConveyor]
+0
+
+
+;[CustomSpriteSheet]
+;CustomSpriteSheet1.png
+
+[BackGroundStaticImages]
+#Window1.png, 404, 80, 128
+#B2mid.png, 64, 48, 127, 0.0
+
+[ForeGroundStaticImages]
+B2c-e-s-tb2pix.png, 0, 0, 63
+;B4-2cfd.png, 0, 0, 63
+
+;[BlockNOP]
+;BlockNOP-B1.png
+
+
+[SwitchSoundOn]
+Chain-f2.wav
+
+[Switches]
+IceSwitchTop.png,	20, 1, 0, Switch2, OpenTrapDoor, 4:14:4:15:25:14:25:15
+;IceSwitchTop.png,	22, 1, 0, Switch3, OpenTrapDoor, 25:14:25:15
+
+
+[Actors]
+ChillyTeal.png,   15, 4, 7,  6, 4, 20, 4, -16,0, 4, 4,1,8,8, 8,4
+ChillyYellow.png,  6, 4, 1,  6, 4, 20, 4,  16,0, 4, 4,1,8,8, 8,4
+
+ChillyBlue.png, 15,13, 2,  14,13, 22,13,  16,0, 4, 4,1,8,8, 8,4, , Switch2, UpdateBlockParms, 14:13:23:13
+
+IceCrush.png,     28,12, 1, 28,12, 28,12,  16,0,12, 4,1,8,8, 8,4
+
+
+[HeroStart]
+MinerWilly.png, 4,13, 1, 16,2,4,16
+
+
+[ReplayData]
+Y10520Q20j20n30Z40N60:70X80990`90I<0]<0I=0E?0a?0`@0bA00B0YC0@D0RD0fD0:E0FG0bG00J0RL06M0BM06Q0RQ0fR0BS0HT0iT0UV0iV0@X0L[0h[0i\0`_0j`06a0Ra08c0Jd0

@@ -1,0 +1,91 @@
+; 17 TWEAKED-HARD
+
+; Bob Edit 05-10-2019
+
+[LevelName]
+Close Shave, Gromit
+
+[LevelMusic]
+Moosehead.ogg
+
+[WillyDieSound]
+splat-3.wav
+
+[BackgroundColour]
+CUSTOM:0:0:72
+
+[BorderColour]
+DARKGREENCOLOUR
+
+[SpriteSet]
+16
+
+[ExitBlock]
+16
+
+;	0 = Empty Space
+;	1 = Solid Platform
+;	2 = Solid Platform
+;	3 = Impassable Wall
+;	4 = Collapsible Platform
+;	5 = Hazard 1
+;	6 = Hazard 2
+;	7 = Conveyor Platform Moving Right To Left
+;	C = Conveyor Platform Moving Left To Right 
+;	9 = Collectable Object
+;	A = Willy's Exit/Door Position (Top Left Corner)
+;	B = Special Control to detect Willy in the door
+;	F = Special Block (Willy's Home Graphic)
+
+
+[LevelData]
+33333000000000000000000000033333
+30000000000000000000000000000003
+30000000000000000000000000000003
+30000005000000005000000000000003
+35000006000005006000050050000003
+34444449440044494440044494400493
+34444544440044444440044444400443
+34444444440044444440044444400443
+34400444440044CCCCC0044444500443
+39400444540044444440044444400443
+34400444440044944444445444400443
+34400444440054444449444444900443
+34400444440044454444444444400443
+3000000000000000000AB00000000503
+3220000000000000000BB00000002623
+31111111111111111111111111111113
+
+
+[StickyConveyor]
+0
+
+
+[Switches]
+SWCloudA.png,       8, 0, 1, SwitchCA, OpenTrapDoor, 1:1
+SWCloudB.png,       9, 0, 1, SwitchCB, OpenTrapDoor, 1:1
+SWCloudC.png,      10, 0, 1, SwitchCC, OpenTrapDoor, 1:1
+SWCloudD.png,      11, 0, 1, SwitchCD, OpenTrapDoor, 1:1
+
+SWCloudA.png,      21, 0, 1, SwitchCE, OpenTrapDoor, 1:1
+SWCloudB.png,      22, 0, 1, SwitchCF, OpenTrapDoor, 1:1
+SWCloudC.png,      23, 0, 1, SwitchCG, OpenTrapDoor, 1:1
+SWCloudD.png,      24, 0, 1, SwitchCH, OpenTrapDoor, 1:1
+
+
+[Actors]
+ThresherTeal.png,  	   3,10, 2,  3, 8,  3,13,  0, 4, 5, 4,1,8,8, 4, 4
+YellowThresher.png,	  10,11, 3, 10, 1, 10,13,  0,-4, 4, 4,1,8,8, 4, 4
+WhiteThresher.png,    19, 6, 4, 19, 0, 19, 8,  0, 4, 5, 4,1,8,8, 4, 4	 
+MagentaThresher.png,  27, 1, 1, 27, 1, 27,12,  0, 4, 3, 4,1,8,8, 4, 4
+
+RedBob.png,		       5,13, 2,  5,13,  8,13, 16, 0, 8, 4,1,8,8, 4, 4
+BlueBob.png,	      17,13, 2, 12,13, 25,13, 16, 0, 5, 4,1,8,8, 4, 4
+
+
+[HeroStart]
+MinerWilly.png, 1, 12, 2,16,2,4,16
+
+
+[ReplayData]
+j10@30950h60:70H70j80V902:0X<0l<0nA02B0FC0:D0@E0IF0XF09G0HG02H0@H0ZK0nK0BL0HL0IM00N0jN08O02Q0dT0YW0hX0<Y0HY0:]0h]0J_0P_0j_00a0Ra0fb0<d0Md0Le06f04g0Mg0Dh06i0

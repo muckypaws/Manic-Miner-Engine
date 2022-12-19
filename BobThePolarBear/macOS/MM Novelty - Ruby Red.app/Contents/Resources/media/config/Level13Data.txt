@@ -1,0 +1,84 @@
+
+; For more details on these instructions please refer to the comments in Level1Data.txt
+
+; ============ CAVERN TITLE ============
+[LevelName]
+Ore Refinery
+
+; ============ MUSIC & SOUND ============
+[LevelMusic]
+Rich Man Alt Echo.ogg
+
+; ============ COLOURS & GRAPHICS ============
+[BackgroundColour]
+BLACKCOLOUR
+
+[BorderColour]
+DARKBLUECOLOUR
+
+[BackGroundStaticImages]
+; Border: width +64, height +48. (Good transparents for gold backgrounds: 65, 105, 145).
+#BG01.png, 64, 48, 66, 0.0
+
+;[ForeGroundStaticImages]
+;sgw-border-new-trans.png, 0, 0, 35
+
+[SpriteSet]
+12
+
+[ExitBlock]
+12
+
+; ============ LEVEL LAYOUT DATA ============
+; 0=Empty, 1=Platform, 2=Platform, 3=Wall, 4=Crumble, 5=Hazard, 6=Hazard,
+; 7=Conveyor-Right, C=Conveyor-Left, 9=Key, A=Exit, B=Door, E&F=Special switch blocks.
+
+[LevelData]
+33333333333333333333333333333333
+30020000000000000000000000000003
+30020000000000000000000000000003
+30020001111111111111111110911113
+30020000000000000000000000000003
+30020000000000000000000000000003
+30020001109111100111110011110013
+30020000000000000000000000000003
+30020000000000000000000000000003
+30020001111100111009111110911113
+30020000000000000000000000000003
+30020000000000000000000000000003
+30020001110911100111100111100113
+3AB20000000000000000000000000003
+3BB20000000000000000000000000003
+311CCCCCCCCCCCCCCCCCCCCCCCCCC113
+
+; ============ Sticky Conveyor? ============
+
+; If you want Willy to Stick to the Platform when landing and facing in the
+; opposite direction, and player is trying to move in the opposite direction:
+; 0 = Willy moves against the flow of the conveyor.
+; 1 = Willy does not move.
+[StickyConveyor]
+2
+
+; ============ Actors/Baddies ============
+; FN = Actor Filename in Sprite Sheet, SX = Start X, SY = Start Y, ID = Initial Direction/Image,
+; MX = Min X travelled to, MY = Min Y travelled to, FX = Furthest/Max X, FY = Furthest/Max Y,
+; DX = X Distance covered in pixels, DY = Y Distance covered in pixels, TC = Tick Count,
+; LF = Left Frame, RF = Right Frame, UF = Up Frame, DF = Down Frame,
+; TF = Total Frames in animation, FP = Frames per animation segment in each direction.
+
+; FN					SX SY ID  MX MY  FX FY  DX DY TC LF RF UF DF TF FP
+[Actors]
+MagentaJackHammer.png,	 7, 1, 2,  7, 1, 29, 1, 16, 0, 4, 4, 1, 8, 8, 4, 4
+GreenJackHammer.png,	16, 4, 1,  7, 4, 29, 4, 16, 0, 4, 4, 1, 8, 8, 4, 4	 
+YellowJackHammer.png,	20, 7, 3,  7, 7, 29, 7,-16, 0, 4, 4, 1, 8, 8, 4, 4
+RedJackHammer.png,		18,10, 4,  7,10, 29,10, 16, 0, 8, 4, 1, 8, 8, 4, 4
+Eye.png,				 5, 1, 2,  5, 1,  5,13,  0, 4, 4, 4, 1, 8, 8, 4, 4
+
+; ============ Willy/Hero ============
+[HeroStart]
+MinerWilly.png,29,13,1,16,2,4,16
+
+; ============ REPLAY DATA (NOT USED IN SGW) ============
+[ReplayData]
+900M80a80];0i;08=0\=00>0T?0h?0<A0PA0QC0`C0JD0PD0:H0NH02I0HJ0RK0`K0:O0VO02P0FR0ZR0>V02W0`X02a0`a0Qb08c0Yh0=i0Yi00j0Yj0mk0Al05o0Io0X11b11P21B61V61j61>;12<1F>1Z>1X@1i@1HB1ZD1iD10G1BG1hG1QH1:J1hJ1YK18M1BN1`N1AS1HS1Q\1e\11]15h1Ih1

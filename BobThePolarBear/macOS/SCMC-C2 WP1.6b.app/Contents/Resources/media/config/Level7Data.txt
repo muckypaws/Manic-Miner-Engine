@@ -1,0 +1,126 @@
+; 7 TWEAKED-HARD
+
+; Bob Edit 14-10-2019
+
+[LevelName]
+Tap The Vat
+
+[LevelMusic]
+Feelin Good Fast.ogg
+
+[WillyDieSound]
+splat-3.wav
+
+[HighScoreMusic]
+EineKleineNachtMusic.ogg
+
+[BackgroundColour]
+CUSTOM:20:0:0
+
+[BorderColour]
+DARKBLUECOLOUR
+
+[SpriteSet]
+6
+
+[ExitBlock]
+11
+
+;	0  = Empty Space
+;	1  = Solid Platform
+;	2  = Solid Platform
+;	3  = Impassable Wall
+;	4  = Collapsible Platform
+;	5  = Hazard 1
+;	6  = Hazard 2
+;	7  = Conveyor Platform Moving Right To Left
+;	12 = Conveyor Platform Moving Left To Right 
+;	9  = Collectable Object
+;	10 = Willy's Exit/Door Position (Top Left Corner)
+;	11 = Special Control to detect Willy in the door
+
+[LevelData]
+33233333333333232333333333333323
+30000000000000030000000000000003
+300000000000000D0000000000000003
+300000000000000D0000000000000003
+30000000000000033334449444443333
+30000000000000034544444444444443
+31000007777000034444444444445443
+30000000000000034494445444444443
+31100000000000034444444444494443
+30000000000000134444444944444443
+3444311111111ED34454944444544443
+34943000000000334444444544444943
+33333000000000033334444444443333
+300D000001111003ABD000000000D003
+300D000000000003BBD000000000D003
+33333333333333333333333333333333
+
+
+[StickyConveyor]
+0
+
+
+;[CustomSpriteSheet]
+;CustomSpriteSheet1.png
+
+[BackGroundStaticImages]
+;#Window1.png, 404, 80, 128
+;#B2mid.png, 64, 48, 45, 0.0
+wall-vat-512x256-g70-s.png, 64, 48, 71
+
+[ForeGroundStaticImages]
+B2c-e-s-tb2pix.png, 0, 0, 47
+
+;[BlockNOP]
+;BlockNOP-B2.png
+
+
+[SwitchSoundOn]
+Chain-f2.wav
+
+[Switches]
+BobSwitchPull.png,  1, 1, 0, Switch1, OpenTrapDoor, 16:3:16:4
+BobSwitchPull.png, 14,12, 0, Switch2, OpenTrapDoor, 4:14:4:15
+BobSwitchPull.png, 29, 1, 0, Switch3, OpenTrapDoor, 29:14:29:15
+
+SWKegA.png,  1,13, 1, KA, OpenTrapDoor, 1:1
+BobSwitchPull.png,  2,13, 0, KB, OpenTrapDoor, 14:11:15:11
+SWKegC.png,  1,14, 1, KC, OpenTrapDoor, 1:1
+SWKegD.png,  2,14, 1, KD, OpenTrapDoor, 1:1
+
+BobSwitchPull.png, 29,13, 0, KAA, OpenTrapDoor, 19:14:19:15
+SWKegB.png, 30,13, 1, KBB, OpenTrapDoor, 1:1
+SWKegC.png, 29,14, 1, KCC, OpenTrapDoor, 1:1
+SWKegD.png, 30,14, 1, KDD, OpenTrapDoor, 1:1
+
+;   ActorName, Start Block X, Start Block Y, 
+;			   Initial Direction, 
+;  			Min Block X, Min Block Y, 
+;			   Max Block X, Max Block Y, 
+;			   dx (pixels), dy (pixels), 
+;			   tick count
+;			   leftFrame, rightFrame, UpFrame, DownFrame, maxFrames, Frames Per Animation Seg
+;
+[Actors]
+Rat.png,		  9,14, 2,  4,14, 13,14,  16, 0, 4, 4,1,8,8, 8, 4, , Switch2, UpdateBlockParms, 3:14:13:14
+
+;SpiderWalk.png,   7, 0, 1,  3, 0, 12, 0,  16, 0, 6, 4,1,8,8, 8, 4
+SpiderWalk.png,   9, 0, 3,  3, 0, 12, 0, -16, 0, 6, 4,1,8,8, 8, 4
+SpiderWalk.png,  25, 0, 1, 17, 0, 27, 0, -16, 0, 6, 4,1,8,8, 8, 4
+
+MagentaRoo.png,  29, 2, 2, 16, 2, 29, 2, -16, 0, 4, 4,1,8,8, 8, 4, , Switch1, UpdateBlockParms, 15:2:29:2
+
+MagentaRoo.png,  12, 8, 7,  4, 8, 12, 8, -16, 0, 4, 4,1,8,8, 8, 4, , KB, UpdateBlockParms, 4:8:11:8
+YellowRoo.png,    4, 8, 1,  4, 8, 12, 8,  16, 0, 4, 4,1,8,8, 8, 4, , KB, UpdateBlockParms, 4:8:11:8
+
+YellowRoo.png,   19,13, 2, 19,13, 26,13,  16, 0, 4, 4,1,8,8, 8, 4, , Switch3, UpdateBlockParms, 19:13:27:13
+
+
+[HeroStart]
+MinerWilly.png, 5,13,1,16,2,4,16
+
+
+[ReplayData]
+Z10630R30650e50P70i80m90i:05<0I<0e=0\>0f>0T@08C0RE06F0jF0NJ0:K0hN0QR00T0:T0>V0RV0HY0jY0`\0i\08]0Y_0@`04a0`a0dc0Hd0ad05g0Ig0Hj09n0

@@ -1,0 +1,97 @@
+; 19 TWEAKED-HARD
+
+; Bob Edit 02-10-2019
+
+[LevelName]
+Adjust The Gravitation, HAL
+
+[LevelMusic]
+Blue Danube Level-e.ogg
+;William Tell Remix.ogg
+
+[WillyDieSound]
+splat-3.wav
+
+[BackgroundColour]
+CUSTOM:20:0:8
+
+[BorderColour]
+CUSTOM:58:8:28
+
+[SpriteSet]
+18
+
+[ExitBlock]
+17
+
+
+;	0 = Empty Space
+;	1 = Solid Platform
+;	2 = Solid Platform
+;	3 = Impassable Wall
+;	4 = Collapsible Platform
+;	5 = Hazard 1
+;	6 = Hazard 2
+;	7 = Conveyor Platform Moving Right To Left
+;	C = Conveyor Platform Moving Left To Right 
+;	9 = Collectable Object
+;	A = Willy's Exit/Door Position (Top Left Corner)
+;	B = Special Control to detect Willy in the door
+;	F = Special Block (Willy's Home Graphic)
+
+
+[LevelData]
+31111111111111111111123332111113
+30000000000000000000000000000093
+3AB00000000000000000000000000003
+3BB00000000000000000000000000003
+31100000000000000000000000000003
+39010000011007700000111014444443
+30000000000000000000000009000003
+30000000000000000001110000000003
+31100000000001110000000001111113
+39000000770000000000000000000003
+34410000000000000011100000000093
+30000000000000000000000000111113
+30000001100000114411000000000003
+3DD30000000000000000000000000003
+39030000056000005600000000000003
+33332222222222222222223332222223
+
+
+[StickyConveyor]
+2
+
+
+[Switches]
+BobSwitchPurpleLeft.png,	 1, 1, 0, SwitchL, OpenTrapDoor, 2:14:3:14
+BobSwitchFlashTop.png,     23, 0, 0, SwitchT, OpenTrapDoor, 0:0
+BobSwitchFlashBottom.png,  23,15, 0, SwitchB, OpenTrapDoor, 0:0
+
+
+; Define Special Game Routines Here
+;
+[SpecialFunction]
+SolarPoweredGenerator, 24, 2, 140, WHITECOLOUR
+
+
+[Actors]
+YellowBall.png,    	  5, 1,  1,  5, 1,  5,13,  0,  4, 3, 4,1,8,8, 4, 4
+RedBall.png, 		 11, 5,  2, 11, 1, 11,13,  0,  4, 4, 4,1,8,8, 4, 4
+BlueBall.png, 	     16, 5,  3, 16, 1, 16,10,  0,  4, 4, 4,1,8,8, 4, 4
+	 
+RedReflector.png,     24, 3,  3, 20, 3, 29, 3,  16, 0, 4, 4,1,8,8, 4, 4
+ReflectorGreen.png,   25, 6,  4, 25, 6, 29, 6,  16, 0, 4, 4,1,8,8, 4, 4
+BlueReflector.png,    27, 9,  2, 26, 9, 29, 9,  16, 0, 5, 4,1,8,8, 4, 4
+YellowReflector.png,  27,13,  1, 18,13, 29,13, -16, 0, 3, 4,1,8,8, 4, 4
+
+;BobFlash.png,         23,14,  1, 23,14, 23,14,  16, 0, 4, 4,1,8,8, 4, 4
+
+
+[HeroStart]
+WillySpaceSuit.png,	 28,13,16,16,2,5,16
+;MinerWilly.png,	 28,13,16,16,2,4,16
+
+
+[ReplayData]
+a10=40Y40X90i:0U;0i;0H<0i=0U>0i>0H?0R?0V@02A0FC0:D0`E0JF06G0JG0`I0jM0>N0jN00P09P0UP01Q0XR02S0HS0LW0`W0RX0N[0b[09^0H^01a0ea09b08f0=g0ag0Ui09j0@l0Q01=11a11531A41H41b41Y61081B81@91:<1F<1B=1P?1i@1mB1IC10F1:F1HF1ZG1nG1BH1aJ15K1IK1hL1ZM1`M12R1FR1ZR10U1RX16Y1JY1V[1:\1`]1A^1P^1a`1m`1Aa1Hc1jc1@d1:f1Hf1:j1Nj12k1hl1Am1Xm1102@02Y22=32i32062R72882:92H921:2U:2i:2m<2i=2]?2

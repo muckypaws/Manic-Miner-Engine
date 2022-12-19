@@ -1,0 +1,85 @@
+; 11 (was 10) TWEAKED-HARD
+
+; Bob Edit 05-10-2019
+
+[LevelName]
+The Only Water In The Forrest>
+
+[LevelMusic]
+Teddy Picnic-ev.ogg
+;Monkeys Spinning Monkeys.ogg
+
+[WillyDieSound]
+timber4.wav
+
+[BackgroundColour]
+CUSTOM:0:0:16
+
+[BorderColour]
+DARKGREENCOLOUR
+
+[SpriteSet]
+9
+
+[ExitBlock]
+9
+
+;	0 = Empty Space
+;	1 = Solid Platform
+;	2 = Solid Platform
+;	3 = Impassable Wall
+;	4 = Collapsible Platform
+;	5 = Hazard 1
+;	6 = Hazard 2
+;	7 = Conveyor Platform Moving Right To Left
+;	C = Conveyor Platform Moving Left To Right 
+;	9 = Collectable Object
+;	A = Willy's Exit/Door Position (Top Left Corner)
+;	B = Special Control to detect Willy in the door
+;	F = Special Block (Willy's Home Graphic)
+
+[LevelData]
+31660000000611133106111111111113
+39000000000009033110600000060963
+31111140000000033000900000000113
+30060000000000033000000000000003
+30000000000000033111000000000003
+30000000014444433000000011111113
+31111000000900033000000000000093
+30000000000000033111111440000003
+31111100000000033090000000000003
+36000000111111133000000000000113
+31111400000000033111111440000063
+39000000000000033600006644000093
+30000041111111133110000000000003
+311000000000000AB000000000004113
+350000000000000BB000000000000553
+322CCCCCCCCCC22222222CCCCCC22223
+
+;
+;   Define the Actors on the Caverns
+;
+;   ActorName, Start Block X, Start Block Y, 
+;			   Initial Direction, 
+;  			Min Block X, Min Block Y, 
+;			   Max Block X, Max Block Y, 
+;			   dx (pixels), dy (pixels), 
+;			   tick count
+;			   leftFrame, rightFrame, UpFrame, DownFrame, maxFrames, Frames Per Animation Seg
+
+[Actors]
+BlueBunny.png,  	18, 5, 2, 17, 5, 21, 5, 16, 0, 4, 4,1,8,8, 8, 4
+YellowBunny.png,	13, 7, 2,  8, 7, 13, 7, 16, 0, 4, 4,1,8,8, 8, 4
+MagentaBunny.png,	11,10, 2,  7,10, 13,10, 16, 0, 7, 4,1,8,8, 8, 4	 
+RedBunny.png,		17,13, 2,  3,13, 26,13, 16, 0, 3, 4,1,8,8, 8, 4
+
+;Acorn.png,        	 1, 0, 1,  1, 0,  1,13,  0, 3, 2, 1,1,1,1, 8, 8, Satellite
+Acorn.png,        	11, 0, 1, 11, 0, 11,13,  0, 5, 2, 1,1,1,1, 8, 8, Satellite
+;Acorn.png, 	    21, 0, 1, 21, 0, 21,13,  0, 2, 2, 1,1,1,1, 8, 8, Satellite
+
+[HeroStart]
+MinerWilly.png, 13,13,10, 16,2,4,16
+
+
+[ReplayData]
+Q00510T10n10L30`30B40f60R70V:0Z;0h;0I=0X=09?0]?09@00C0AD0hD02E0^O0:P0@Q0IQ0=R0AT0`V0jV0>Z02[0H\0Q\0E]0L^0N_0R_0Fb0Rb0hb01c0=i0Yi00k0Bk0^k0Jl08o0a01

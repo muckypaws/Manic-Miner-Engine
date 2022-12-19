@@ -1,0 +1,86 @@
+; 10 (was 11) TWEAKED-HARD
+
+; Bob Edit 06-10-2019
+
+[LevelName]
+Game Of Phones
+
+[LevelMusic]
+Show Your Moves-e3-t3.ogg
+
+[WillyDieSound]
+tone.wav
+
+[BackgroundColour]
+CUSTOM:12:12:0
+
+[BorderColour]
+CUSTOM:90:110:10
+
+[SpriteSet]
+10
+
+[ExitBlock]
+10
+
+;	0 = Empty Space
+;	1 = Solid Platform
+;	2 = Solid Platform
+;	3 = Impassable Wall
+;	4 = Collapsible Platform
+;	5 = Hazard 1
+;	6 = Hazard 2
+;	7 = Conveyor Platform Moving Right To Left
+;	C = Conveyor Platform Moving Left To Right 
+;	9 = Collectable Object
+;	A = Willy's Exit/Door Position (Top Left Corner)
+;	B = Special Control to detect Willy in the door
+;	F = Special Block (Willy's Home Graphic)
+
+
+[LevelData]
+33333390090000000006000900000323
+3ABD0000000000000005000000000603
+3BBD0000000000000000000000000503
+31110000000000000000000000000003
+39000000000000000000000000000003
+30000014410000177777777710001443
+30000000000000000009000000000003
+30000000000000000000000000000143
+30000007700000000000000000000093
+31110000000111111111000CC0001443
+35000000000060090060000090000003
+39000014410060000060000000000003
+30000000000050000050000000000003
+3CCC0000000000000000000770000AB3
+30000000000000000000000000000BB3
+31111111111111111111111111111113
+
+
+[StickyConveyor]
+0
+
+
+[Switches]
+BobSwitchPull.png,  14, 6, 0, Switch1, OpenTrapDoor, 4:2:4:3
+
+
+[Actors]
+MagentaPhone.png,  	4, 3, 3,  4,  1,   4, 13,   0, 4,  4, 4, 1, 8, 8, 4, 4
+GreenPhone.png,	   11, 3, 4, 11,  0,  11,  7,   0,-4,  4, 4, 1, 8, 8, 4, 4
+YellowPhone.png,   21, 9, 2, 21,  6,  21, 13,   0, 2,  4, 4, 1, 8, 8, 4, 4	 
+RedPhone.png,      26, 2, 1, 26,  0,  26, 13,   0, 5,  4, 4, 1, 8, 8, 4, 4
+
+YellowSpinner.png, 22, 3, 1, 14,  3,  23,  3, -16, 0,  4, 1, 1, 1, 1, 4, 4
+GreenSpinner.png,  14, 7, 1, 14,  7,  18,  7,  16, 0,  8, 1, 1, 1, 1, 4, 4
+RedSpinner.png,    17,13, 3,  6, 13,  19,  13,-16, 0,  3, 1, 1, 1, 1, 4, 4
+
+;BobWebRightRed.png, 29, 1, 1, 29, 1, 29, 1, 16, 0, 8, 4,1,8,8, 4, 4
+
+
+[HeroStart]
+MinerWilly.png, 29,13, 10,16,2,4,16
+
+
+[ReplayData]
+Z10f30:40^80j80P;0i;0X<0i=05>0A>0`>0Z?0h@09A0HA0aB05E0YE0eG09H0ZI0^J0:K08N0YN0mP01Q0jR00W0jW00X01Y0@Y04Z0`[0B\08g0Ag0Xg0ii0Pl0dl08m0Rm0fn0Bo0Xo0411]11<31051951e51A61`61L71`811>1=>1Q>1EC11D1]E11F1MH1iH1

@@ -1,0 +1,90 @@
+
+; For more details on these instructions please refer to the comments in Level1Data.txt
+
+; ============ CAVERN TITLE ============
+[LevelName]
+A Giant is Missing his Anser?
+;The Menagerie
+
+; ============ MUSIC & SOUND ============
+[LevelMusic]
+Rich Man Echo.ogg
+
+; ============ COLOURS & GRAPHICS ============
+[BackgroundColour]
+BLACKCOLOUR
+
+[BorderColour]
+DARKREDCOLOUR
+
+[BlockNOP]
+BlockNOP.png
+
+;[BackGroundStaticImages]
+; +64 width, +48 height for border.
+;#Gold.png, 64, 48, 120, 0.0
+
+;[ForeGroundStaticImages]
+;sgw-border-new-trans.png, 0, 0, 35
+
+[SpriteSet]
+2
+
+[ExitBlock]
+2
+
+; ============ LEVEL LAYOUT DATA ============
+; 0=Empty, 1=Platform, 2=Platform, 3=Wall, 4=Crumble, 5=Hazard, 6=Hazard,
+; 7=Conveyor-Right, C=Conveyor-Left, 9=Key, A=Exit, B=Door, E&F=Special switch blocks.
+
+[LevelData]
+39900900006000900020000900060993
+30000000000000000060000000000003
+30000000000000000000000000000003
+30000000000000000000000000000003
+30000000000000000000000000000003
+31111444444444444444444444444443
+30000000000000000009900000000003
+31111110000000000000000000011113
+32000000000000000000000000099993
+32000077777700000000000000000003
+32000099999900000000000001111113
+36000000000000111110000009999AB3
+30000111111000999990000000000BB3
+30000000000000000000011111111113
+30000000000000000000000000000003
+31111111111111111111111111111113
+
+; ============ Sticky Conveyor? ============
+
+; If you want Willy to Stick to the Platform when landing and facing in the
+; opposite direction, and player is trying to move in the opposite direction:
+; 0 = Willy moves against the flow of the conveyor.
+; 1 = Willy does not move.
+[StickyConveyor]
+2
+
+; ============ Switches ============
+
+[Switches]
+BobMusicSwitch-L.png,	1, 6, 0, Switch1, OpenTrapDoor, 1:13, s-3-Sugar.wav
+
+; ============ Actors/Baddies ============
+; FN = Actor Filename in Sprite Sheet, SX = Start X, SY = Start Y, ID = Initial Direction/Image,
+; MX = Min X travelled to, MY = Min Y travelled to, FX = Furthest/Max X, FY = Furthest/Max Y,
+; DX = X Distance covered in pixels, DY = Y Distance covered in pixels, TC = Tick Count,
+; LF = Left Frame, RF = Right Frame, UF = Up Frame, DF = Down Frame,
+; TF = Total Frames in animation, FP = Frames per animation segment in each direction.
+
+; FN          		SX SY  ID  MX  MY  FX FY  DX DY TC LF RF UF DF TF FP
+[Actors]
+MagentaBird.png,	16, 3,  8,  1,  3, 16, 3,-16, 0, 4, 4, 1, 8, 8, 8, 4
+RedBird.png,    	18, 3,  1, 18,  3, 29, 3, 16, 0, 4, 4, 1, 8, 8, 8, 4
+GreenBird.png,  	19,13,  8,  1, 13, 19,13,-16, 0, 4, 4, 1, 8, 8, 8, 4
+
+; ============ Willy/Hero ============
+[HeroStart]
+MinerWilly.png,2,13,1,16,2,4,16
+; ============ REPLAY DATA (NOT USED IN SGW) ============
+[ReplayData]
+Z10640j40690b90h:0L;0h;0A=0e=09>0P>0j>0^?0h?01A0EC0QC0UF0aF0UH0aH0bL0TM0`M0BO0XO0JT0VT0jT0^X0:Y0^\02]0Ha0Ib0Rf0^g0jg00h0

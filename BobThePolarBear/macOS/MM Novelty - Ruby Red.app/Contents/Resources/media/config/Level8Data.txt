@@ -1,0 +1,105 @@
+
+; For more details on these instructions please refer to the comments in Level1Data.txt
+
+; ============ CAVERN TITLE ============
+[LevelName]
+Miner Willy meets the Kong Beast
+
+; ============ MUSIC & SOUND ============
+[LevelMusic]
+Hall Echo.ogg
+
+; ============ COLOURS & GRAPHICS ============
+[BackgroundColour]
+BLACKCOLOUR
+
+[BorderColour]
+DARKREDCOLOUR
+
+[BackGroundStaticImages]
+; Border: width +64, height +48. (Good transparents for gold backgrounds: 65, 105, 145).
+#BG01.png, 64, 48, 66, 0.0
+
+;[ForeGroundStaticImages]
+;sgw-border-new-trans.png, 0, 0, 35
+
+[SpriteSet]
+7
+
+[ExitBlock]
+7
+
+; ============ LEVEL LAYOUT DATA ============
+; 0=Empty, 1=Platform, 2=Platform, 3=Wall, 4=Crumble, 5=Hazard, 6=Hazard,
+; 7=Conveyor-Right, C=Conveyor-Left, 9=Key, A=Exit, B=Door, E&F=Special switch blocks.
+
+[LevelData]
+30600000006000000300300000000003
+30000000000000000300300000000003
+300000000000090EE300000000000113
+30000000000000000300000000000003
+30000000000000000300000000000003
+31110000011111100311000000000003
+30000000000000900300011110000013
+30111000000000000300000000010003
+30900000111000000300000000000003
+30000000000000000311111000000003
+31000000000011100300000000011113
+30000000011000000D00000000000003
+30001100000000000D00001111100003
+30000000000CCC3AB311000000000903
+300000000000003BB300000500000003
+31111111111111111111111111111113
+
+; ============ Sticky Conveyor? ============
+
+; If you want Willy to Stick to the Platform when landing and facing in the
+; opposite direction, and player is trying to move in the opposite direction:
+; 0 = Willy moves against the flow of the conveyor.
+; 1 = Willy does not move.
+[StickyConveyor]
+1
+
+; ============ Switches ============
+
+; FN, 			X,  Y, State, Function, FunctionParameters,         Optional Switch Sound
+[Switches]
+Switches.png,	6,  0,     0,  Switch1, OpenTrapDoor, 18:12:18:13 , pick.wav
+Switches.png,	18, 0,     0,  Switch2, OpenTrapDoor, 16:3:17:3
+
+; Custom Switch Sound
+[SwitchSoundOn]
+pick.wav
+
+[SwitchSoundOff]
+pick.wav
+
+; The presence of this tag will ensure that ACTORS are in front of switches.
+[ZActor]
+
+; The presence of this tag will ensure that our Hero is behind switches (";" means not used here).
+;[ZHero]
+
+; ============ Actors/Baddies ============
+; FN = Actor Filename in Sprite Sheet, SX = Start X, SY = Start Y, ID = Initial Direction/Image,
+; MX = Min X travelled to, MY = Min Y travelled to, FX = Furthest/Max X, FY = Furthest/Max Y,
+; DX = X Distance covered in pixels, DY = Y Distance covered in pixels, TC = Tick Count,
+; LF = Left Frame, RF = Right Frame, UF = Up Frame, DF = Down Frame,
+; TF = Total Frames in animation, FP = Frames per animation segment in each direction.
+
+; FN				SX SY ID  MX MY  FX FY  DX DY TC LF RF UF DF TF FP
+[Actors]
+GreenBarrel.png,	 9,13, 4,  1,13,  9,13,-16, 0, 4, 4, 1, 8, 8, 4, 4
+BlueBarrel.png,		18, 7, 2, 18, 7, 21, 7, 16, 0, 4, 4, 1, 8, 8, 4, 4
+MagentaBarrel.png,	11,11, 1, 11,11, 15,11, 16, 0, 8, 4, 1, 8, 8, 4, 4, , Switch1, UpdateBlockParms, 11:11:18:11
+GreenKong.png,		15, 0, 1, 15, 0, 15, 0,  0, 0,45, 4, 1, 8, 8, 2, 2, , Switch2, DoKongDrop, MagentaKong.png:15:0:15:13:0:8:2:4:AddKongPoints
+
+; ============ Willy/Hero ============
+[HeroStart]
+MinerWilly.png,2,13,1,16,2,4,16
+;MinerWilly.png,19,3,1,16,2,5,16
+;MinerWilly.png,2,3,1,16,2,5,16
+
+; ============ REPLAY DATA (NOT USED IN SGW) ============
+[ReplayData]
+:00@00j00F10P10:20950P50<60]60A805:0Q:0m<09=0X=0R>0^>0h>01A0HB0RB06C0bC0NE0RE0hE02F08F0BG0PG0<H0HH0iI0=K0AK0MM0YM0`O0lO08P0jQ0FR0jR0XV04W08W0YX0b[0Y^08_0B_0hb0Jc0>e0Je0^h0jh0Al0em0An0801i01Z11821A31`31j31H41T41`41b61n61B71^81J91P911:10;1a=1m=1A>1@@1J@1>A12B1AC1UC11D1mF19G1eH1II1PI1ZJ1^M12N11Q1]V11W1

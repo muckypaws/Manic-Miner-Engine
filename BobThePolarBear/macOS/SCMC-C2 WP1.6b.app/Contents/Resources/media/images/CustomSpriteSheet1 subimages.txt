@@ -1,0 +1,12 @@
+BlockNOP.png:977:645:32:32
+SpinnerBackGround1.png:851:3:640:640
+Swirl.png:3:3:846:846
+Window1.png:851:645:61:173
+Window2.png:914:645:61:173
+
+;C01
+scmc-no10.png:10:1010:706:454
+
+;C02
+B2mid.png:16:864:512:256
+C2.png:730:1010:512:256

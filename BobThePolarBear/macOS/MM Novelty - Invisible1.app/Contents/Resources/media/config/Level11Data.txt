@@ -1,0 +1,112 @@
+;
+;Define The Level Name
+;
+[LevelName]
+Attack of the Mutant Telephones
+;
+;  Set the Background Colour
+;
+[BackgroundColour]
+BLACKCOLOUR
+
+;
+;  Set the Border Colour
+;
+[BorderColour]
+DARKREDCOLOUR
+
+;
+; Want to use a PNG for blank background block?
+;
+[BlockNOP]
+BlockNOP.png
+
+;
+;  Which of the 20 Sprite Sets do you want to use?
+;  Starts (0-19)
+;
+[SpriteSet]
+10
+
+;
+;  Define the Door Sprite To Use
+;  (0-19)
+;
+[ExitBlock]
+10
+
+;
+;  Now define the Level Data
+;	0  = Empty Space
+;	1  = Solid Platform
+;	2  = Solid Platform
+;	3  = Impassable Wall
+;	4  = Collapsible Platform
+;	5  = Hazard 1
+;	6  = Hazard 2
+;	7  = Conveyor Platform Moving Right To Left
+;	C = Conveyor Platform Moving Left To Right 
+;	9  = Collectable Object
+;	A = Willy's Exit/Door Position (Top Left Corner)
+;	B = Special Control to detect Willy in the door
+;	F = Special Block (Willy's Home Graphic)
+;
+[LevelData]
+33333330000000000006000000000003
+3AB00000000000000005000090000093
+3BB00000000000000000000000000003
+31111000000000000000000000000003
+39000000000000000000000000000003
+30000111111000011222222211000003
+30000000000000000009000060000113
+30000000000000000000000060000003
+31100770000000000000000060000113
+30000000000111111111000050000003
+30000000000060000006000000001003
+30000044410060000005000000000003
+30000000000050000000000000001113
+31100000000000000000000111000093
+30000000000000000000000000000003
+33333333333333333333333333333333
+
+;
+; Sticky Conveyor
+; If you want Willy to Stick to the Platform when landing
+; and facing in the opposite direction and the player
+; is trying to move in the opposite direction
+; Set Value to 1 if you want Willy not to Move
+; Set Value to 0 if you allow Willy to move against the flow
+[StickyConveyor]
+0
+
+;
+;   Define the Actors on the Caverns
+;
+;   ActorName, Start Block X, Start Block Y, 
+;			   Initial Direction, 
+;  			   Min Block X, Min Block Y, 
+;			   Max Block X, Max Block Y, 
+;			   dx (pixels), dy (pixels), 
+;			   tick count
+;			   leftFrame, rightFrame, UpFrame, DownFrame, maxFrames, Frames Per Animation Seg
+;
+[Actors]
+GreenPhone.png,  	3, 4, 3,  3,  4,   3, 13,  0, 2,  4, 4, 1, 8, 8, 4, 4
+MagentaPhone.png,  12, 1, 4, 12,  0,  12,  7,  0, 4,  4, 4, 1, 8, 8, 4, 4
+YellowPhone.png,   21, 6, 2, 21,  6,  21, 13,  0, 2,  4, 4, 1, 8, 8, 4, 4	 
+RedPhone.png,      26, 5, 1, 26,  0,  26, 13,  0, 4,  4, 4, 1, 8, 8, 4, 4
+YellowSpinner.png, 15, 3, 1, 15,  3,  24,  3, 16, 0,  5, 1, 1, 1, 1, 4, 4
+GreenSpinner.png,  14, 7, 1, 14,  7,  18,  7, 16, 0, 10, 1, 1, 1, 1, 4, 4
+RedSpinner.png,    17,13, 1,  5, 13, 18,  13,-16, 0,  5, 1, 1, 1, 1, 4, 4
+
+;
+;   Player Start Block Position
+;
+;   Actor Filename, Start Block X, Start Block Y, Initial Direction, DX (Pixels), DY (Pixels), Tick Count, Segments
+
+[HeroStart]
+MinerWilly.png,3,1,1,16,2,4,16
+
+[ReplayData]
+:00H40B50X50:60F80Z80090Q90`:09>0M>0Y>0h>0b?0QA00B0YB0mD0YE0]G09H0hI0:J0^J0jJ08O02P0`R0ZS0fS08T0JU0HY0B]0`_0i_0E`0a`0@b0Jb0fb0:c0Xc0Qd08e0Qe0Xe0le0@f0<g0Hh0dh0hi0Jj06k0Hk09m0Xm0Q21`21a41m41A51071<71H71291`91i918:1I>1]>1i>1@C1YC1hC1DF1`F1iH15I1iI1eM1AN1
+089

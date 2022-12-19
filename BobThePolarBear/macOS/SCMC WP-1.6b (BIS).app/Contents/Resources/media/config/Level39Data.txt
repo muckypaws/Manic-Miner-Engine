@@ -1,0 +1,121 @@
+;
+;Define The Level Name
+;
+[LevelName]
+Warp Core Breach
+;
+;  Set the Background Colour
+;
+[BackgroundColour]
+DARKGREENCOLOUR
+
+;
+;  Set the Border Colour
+;
+[BorderColour]
+DARKMAGENTACOLOUR
+
+;
+;  Which of the 20 Sprite Sets do you want to use?
+;  Starts (0-19)
+;
+[SpriteSet]
+18
+
+;
+;  Define the Door Sprite To Use
+;  (0-19)
+;
+[ExitBlock]
+18
+
+;
+;  Now define the Level Data
+;	0  = Empty Space
+;	1  = Solid Platform
+;	2  = Solid Platform
+;	3  = Impassable Wall
+;	4  = Collapsible Platform
+;	5  = Hazard 1
+;	6  = Hazard 2
+;	7  = Conveyor Platform Moving Right To Left
+;	C = Conveyor Platform Moving Left To Right 
+;	9  = Collectable Object
+;	A = Willy's Exit/Door Position (Top Left Corner)
+;	B = Special Control to detect Willy in the door
+;	F = Special Block (Willy's Home Graphic)
+;
+[LevelData]
+33333000000000000000000000000003
+3AB00000000000000000000000090003
+3BB00000000000000000000000000003
+33330000000000000000000000000003
+30003000000000000000000000000003
+39000003300003330000001011111113
+30000000000000000010000000000003
+30000000000003000000000000000003
+30000000000000000000001011111113
+31000000000000000010000000000003
+30001000000003000000000000000003
+30000000000003000000001011111113
+33000007777003111110000000000093
+33300000000000000000000000000003
+33330000000000000000000000000003
+33333333333111111111113331111113
+
+;
+; Sticky Conveyor
+; If you want Willy to Stick to the Platform when landing
+; and facing in the opposite direction and the player
+; is trying to move in the opposite direction
+; Set Value to 1 if you want Willy not to Move
+; Set Value to 0 if you allow Willy to move against the flow
+[StickyConveyor]
+2
+
+;
+; Define Special Game Routines Here
+;
+;
+;  SolarPoweredGenerator , Start X Pos, Start Y Pos, Alpha (0-255), COLOUR
+;
+[SpecialFunction]
+SolarPoweredGenerator, 24 ,1, 210, WHITECOLOUR
+
+
+;
+;   Define the Actors on the Caverns
+;
+;   ActorName, Start Block X, Start Block Y, 
+;			   Initial Direction, 
+;  			   Min Block X, Min Block Y, 
+;			   Max Block X, Max Block Y, 
+;			   dx (pixels), dy (pixels), 
+;			   tick count
+;			   leftFrame, rightFrame, UpFrame, DownFrame, maxFrames, Frames Per Animation Seg
+;
+[Actors]
+YellowBall.png,    	 5, 9, 1,  5,  0,   5, 13,  0, 4,  3, 4, 1, 8, 8, 4, 4
+RedBall.png, 		11, 7, 2, 11,  6,  11, 13,  0,-4,  4, 4, 1, 8, 8, 4, 4
+BlueBall.png, 	    16,10, 3, 16,  0,  16, 10,  0, 2,  4, 4, 1, 8, 8, 4, 4	 
+YellowReflector.png,24, 3, 3, 23,  3,  29, 3, -16, 0,  4, 4, 1, 8, 8, 4, 4
+BlueReflector.png,  28, 6, 4, 22,  6,  29, 6, -16, 0,  4, 4, 1, 8, 8, 4, 4
+RedReflector.png,   29, 9, 2, 23,  9,  29, 9,  16, 0,  6, 4, 1, 8, 8, 4, 4
+YellowReflector.png,16,13, 1, 13, 13,  29,13,  16, 0,  4, 4, 1, 8, 8, 4, 4
+
+;YellowReflector.png,24, 3, 3, 23,  3,  29, 3, -16, 0,  4, 4, 1, 8, 8, 4, 4
+;BlueReflector.png,  28, 6, 4, 22,  6,  29, 6, -16, 0,  3, 4, 1, 8, 8, 4, 4
+;RedReflector.png,   29, 9, 2, 23,  9,  29, 9,  16, 0,  5, 4, 1, 8, 8, 4, 4
+;YellowReflector.png,16,13, 1, 13, 13,  29,13,  16, 0,  4, 4, 1, 8, 8, 4, 4
+
+;
+;   Player Start Block Position
+;
+;
+;   Actor Filename, Start Block X, Start Block Y, Initial Direction, DX (Pixels), DY (Pixels), Tick Count, Segments
+
+[HeroStart]
+MinerWilly.png,14,10,1,16,2,4,16
+
+[ReplayData]
+j30h60J80>90b90>=0J=0@>0Q>0]B0iB0`G0iJ0@M0IP0mQ0YR0MS01T0@T0:W0NW0XW0IX0eY09Z0`Z0R[0h[0Y\0@]0J_08`0Ba0`a0Z81n81J91f;1b<1`>12D1^E1jE10H19H1]H11I18I11J18J1jL1>M1JM1hM1aN1UO1iO1@Q1AR1XR12S1HS12T1FT1ZT1>W1RW10Z19Z1HZ11[1=[1I[1M^1Y^1h_1j`1@a19e1Me1ae1Uh19i10k1Q02m02A12E32Q32
