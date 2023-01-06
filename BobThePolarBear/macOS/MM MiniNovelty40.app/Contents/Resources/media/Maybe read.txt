@@ -1,0 +1,38 @@
+
+:: TITLE   : MM MiniNovelty - 40								::
+:: SYSTEM  : Modern Windows PC 				 					::
+:: TWEAKER : BobThePolarBear    								::
+:: EDITED  : 2023-01-03        									::
+
+
+Original Manic Miner Game by Matthew Smith
+==========================================
+
+(c) 1983 BUG-BYTE Limited, and SOFTWARE PROJECTS Limited.
+(c) 1997 Alchemist Research.
+
+
+Huge Thanks To (in alphabetical order)
+======================================
+
+AGK -- The base for game engine:
+appgamekit.com
+
+Jason Brooks -- Huge help with the game engine:
+manicmineragk.wordpress.com
+
+Andy Noble -- All character and title background graphics:
+andynoble.co.uk
+
+Matthew Smith -- The genius behind the original game:
+en.wikipedia.org/wiki/Matthew_Smith_(games_programmer)
+
+WonkyPix -- The game engine development studio:
+WonkyPix.com
+
+
+If you have any problems with downloading or using this game please drop me an email:
+bthepb@gmail.com
+
+
+Enjoy! :O)
