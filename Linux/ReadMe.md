@@ -8,6 +8,8 @@ To install this Version, Download ManicMinerV17aLinux.zip to your Linux Distro
 this has been tested on Ubuntu but may well work with others.  Your feedback is
 appreciated.
 
+A video how to is available here: https://youtu.be/Y2SGzG40z6E
+
 Unzip the contents to 
 
 `~/ManicMiner`
